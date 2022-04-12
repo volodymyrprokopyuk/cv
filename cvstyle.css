@@ -1,0 +1,39 @@
+@import "style/modern-normalize.min.css";
+
+@font-face {
+  font-family: NotoSansDisplay;
+  src: url("style/NotoSansDisplay-VariableFont_wdth,wght.ttf") format("ttf");
+}
+body {
+  font-family: NotoSansDisplay, sans-serif;
+  font-size: 1.10em;
+  line-height: 1.30em;
+  font-weight: 300;
+}
+
+@media screen {
+  main {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+h3{
+  display: inline;
+}
+img {
+  width: 12vw;
+}
+
+.fact {
+  display: flex;
+}
+.lside {
+  flex-basis: 15%;
+}
+.main {
+  flex-basis: 60%;
+}
+.rside {
+  flex-basis: 25%;
+}

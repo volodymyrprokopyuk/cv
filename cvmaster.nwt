@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>{{cv.title}}</title>
+    <link href="cvstyle.css" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      {% block summary %}{% endblock %}
+      {% block education %}{% endblock %}
+      {% block employment %}{% endblock %}
+    </main>
+  </body>
+</html>

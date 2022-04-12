@@ -1,0 +1,76 @@
+{% extends cvmaster.nwt %}
+
+{% block summary %}
+  <section id="summary">
+    <div class="fact">
+      <div class="lside">
+        <img src="{{cv.selfie}}">
+      </div>
+      <div class="main">
+        <h1>{{cv.name}}</h1>
+        <h2>{{cv.role}}</h2>
+        <div><a href="mailto:{{cv.email}}">{{cv.email}}</a></div>
+        {% let phone = cv.phone.replace(re"[^\\d\\+]", "") %}
+        <div><a href="tel:{{phone}}">{{cv.phone}}</a></div>
+        <div><a href="{{cv.url}}">{{cv.url}}</a></div>
+        <div>{{cv.location}}</div>
+        <p>{{cv.summary}}</p>
+      </div>
+      <div class="rside">
+        <h3>Languages</h3>
+        <ul>
+          {% for lang in cv.languages %}<li>{{lang}}</li>{% endfor %}
+        </ul>
+        <h3>Key capabilities</h3>
+        <ul>
+          {% for cap in cv.keyCapabilities %}<li>{{cap}}</li>{% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+{% endblock %}
+
+{% block education %}
+  <section id="education">
+    <h1>Education</h1>
+    {% for ed in cv.educationList %}
+      <div class="fact">
+        <div class="lside">
+          <img src="{{ed.logo}}">
+        </div>
+        <div class="main">
+          {% for course in ed.courses %}
+            <h3>{{course.title}}</h3>
+            <div>{{course.duration}}</div>
+          {% endfor %}
+        </div>
+        <div class="rside">
+          <a href="{{ed.url}}">{{ed.center}}</a><span>, {{ed.location}}</span>
+        </div>
+      </div>
+    {% endfor %}
+  </section>
+{% endblock %}
+
+{% block employment %}
+  <section id="employment">
+    <h1>Employment</h1>
+    {% for em in cv.employmentList %}
+      <div class="fact">
+        <div class="lside">
+          <img src="{{em.logo}}">
+        </div>
+        <div class="main">
+          <h3>{{em.position}}</h3> <span>({{em.contract}})</span>
+          <div>{{em.duration}}</div>
+          <p>{{em.summary}}</p>
+        </div>
+        <div class="rside">
+          <a href="{{em.url}}">{{em.company}}</a><span>, {{em.location}}</span>
+          <div>{{em.description}}</div>
+          <div>{{em.industry}}</div>
+        </div>
+      </div>
+    {% endfor %}
+  </section>
+{% endblock %}

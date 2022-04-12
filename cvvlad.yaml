@@ -1,0 +1,214 @@
+%YAML 1.2
+---
+title: CV Vlad
+name: Volodymyr Prokopyuk (Vlad)
+role: Banking and Payments Architect, Cloud Security Architect, Team Lead
+email: volodymyrprokopyuk@gmail.com
+phone: +(34) 663 564 178
+url: https://volodymyrprokopyuk.github.io/cv
+location: Madrid, Spain
+summary: >
+  I'm an International Payments Platform Architect, Cloud Security Architect and
+  R&D Team Lead with business focus and more than 14 years of experience in
+  international payments platform architecture and security design, team
+  management, team technical leadership, software/infrastructure design,
+  software quality assurance, distributed and reactive system design on AWS,
+  Azure and GCP, and DevOps automation on AWS, Azure and GCP. I enjoy agile
+  methodologies, communicating and working with people on challenging projects.
+  I'm interested in banking and international payments systems, cyber security,
+  blockchain, data analysis and machine learning, cloud computing,
+  infrastructure automation, DSLs, microservices, modern web technologies, and
+  mathematics
+selfie: image/selfie.jpg
+languages:
+  - English fluent
+  - Spanish fluent
+  - Ukrainian mother tongue
+  - Russian native
+keyCapabilities:
+  - Effective communication
+  - Management leadership
+  - Technical leadership
+  - Banking and international payments platforms architecture design
+  - Cyber security design and blockchain
+  - Architecture design on AWS, Azure
+  - DevOps automation on AWS, Azure
+  - Data analysis, visualization and reporting with R
+educationList:
+  - courses:
+    - title: Master of Business Administration, MBA
+      duration: Sep 2012 - Jul 2015 (3 years)
+    center: EAE Business School
+    url: http://www.eae.es/
+    location: Madrid
+    logo: image/logo-eae.jpg
+  - courses:
+    - title: Master of Informatics Engineering, MSc
+      duration: Sep 2010 - Jul 2011 (1 year)
+    center: Universidad Carlos III de Madrid
+    url: https://www.uc3m.es/home
+    location: Madrid
+    logo: image/logo-uc3m.png
+  - courses:
+    - title: Master of Science in Computing Systems, MSc
+      duration: Sep 2007 - Jul 2008 (1 year). Homologated/certified in Spain
+    - title: Bachelor of Science in Computer Science, BSc
+      duration: Sep 2003 - Jul 2007 (4 years). Homologated/certified in Spain
+    center: National Technical University of Oil and Gas
+    url: http://nung.edu.ua/
+    location: Ukraine
+    logo: image/logo-ifntung.jpg
+  - courses:
+    - title: Oxford Cyber Security for Business Leaders
+      duration: Oct - Nov 2020 (6 weeks)
+    center: Saïd Business School, University of Oxford
+    url: https://www.sbs.ox.ac.uk/
+    location: UK
+    logo: image/logo-said.png
+  - courses:
+    - title: Blockchain, Cryptocurrencies, Smart Contracts and Ethereum
+      duration: Apr 2019 (1 week)
+    center: CEU IAM Institute for Advanced Management
+    url: https://www.ceuiam.com/business-school
+    location: Madrid
+    logo: image/logo-ceu.png
+employmentList:
+  - position: Senior Payments Architect
+    contract: permanent
+    duration: Apr 2021 - current
+    summary: >
+      Worked as a Senior Payments Architect on the next generation instant
+      payments framework (IPF) for Icon Solutions, a leading global provider of
+      instant payments technology and mission critical transaction banking
+      solutions for the global banks and payment service providers worldwide
+    company: Icon Solutions
+    url: https://iconsolutions.com/
+    location: London
+    description: >
+      World class payments and enterprise solutions for the global financial
+      sector
+    industry: Instant payments industry
+    logo: image/logo-icon.png
+  - position: International Payments Platform Architect
+    contract: permanent
+    duration: Nov 2019 - Mar 2021 (1 year, 4 months)
+    summary: >
+      Worked as an International Payments Platform Architect on the next
+      generation international payments platform (PayTech) and foreign exchange
+      (FX) PagoFX FinTech for Santander, a multinational commercial bank and
+      financial services company
+    company: PagoFX by Santander
+    url: https://pagofx.com/
+    location: Madrid
+    description: >
+      A new way to send money abroad
+    industry: Payments industry
+    logo: image/logo-santander.png
+  - position: "R&D Team Lead, Security Architect"
+    contract: permanent
+    duration: Aug 2018 - Oct 2019 (1 year, 3 months)
+    summary: >
+      Worked as an R&D Team Lead and Security Architect on the bleeding edge
+      technology Content Sharing Anti-Piracy Response platform Armada for NAGRA,
+      the global leader in digital security, conditional access, and convergent
+      media solutions
+    company: Nagravision Kudelski Group
+    url: https://www.nagra.com/
+    location: Madrid
+    description: >
+      Connecting people to the content they love
+    industry: Content sharing industry
+    logo: image/logo-nagra.png
+  - position: Solution Architect
+    contract: permanent
+    duration: Feb 2018 - Jul 2018 (6 months)
+    summary: >
+      Worked as a Solution Architect for a leading Spanish IT consultancy
+    company: atSistemas
+    url: https://www.atsistemas.com/en
+    location: Madrid
+    description: >
+      We hope to create a leading company in digital transformation by joining
+      people, technology and business
+    industry: IT consultancy
+    logo: image/logo-atsistemas.png
+  - position: Solution Architect
+    contract: contractor
+    duration: Feb 2018 - Jul 2018 (6 months)
+    summary: >
+      Worked as a Solution Architect on the full digital transformation project
+      of the core credit card business for Diners Club Spain, the charge and
+      credit card international company
+    company: Diners Club Spain
+    url: https://www.dinersclub.es/
+    location: Madrid
+    description: >
+      Experience and innovation in credit cards
+    industry: Credit cards industry
+    logo: image/logo-dinersclub.jpg
+  - position: Software Architect
+    contract: permanent
+    duration: Nov 2016 - Jan 2018 (1 year, 3 months)
+    summary: >
+      Worked as a Software Architect for a leading international IT consultancy
+    company: TATA Consultancy Services
+    url: https://www.tcs.com/
+    location: Madrid
+    description: >
+      Global leader in IT services, digital and business solutions
+    industry: IT consultancy
+    logo: image/logo-tcs.png
+  - position: Project Technical Lead
+    contract: contractor
+    duration: Nov 2016 - Jan 2018 (1 year, 3 months)
+    summary: >
+      Worked as a Project Technical Lead on the next generation Salesforce CRM
+      Intelligent Integration project for Iberia, the flag carrier airline of
+      Spain
+    company: Iberia
+    url: http://www.iberia.com
+    location: Madrid
+    description: >
+      Leading airline between Europe and Latin America
+    industry: Airline and travel industry
+    logo: image/logo-iberia.png
+  - position: Software Architect
+    contract: permanent
+    duration: Feb 2016 - Oct 2016 (9 months)
+    summary: >
+      Worked as a Software Architect for a leading Spanish IT consultancy
+    company: Kairos Digital Solutions
+    url: https://www.kairosds.com/
+    location: Madrid
+    description: >
+      We transform organizations supported by agile principles
+    industry: IT consultancy
+    logo: image/logo-kairos.png
+  - position: Global Banking Solutions Quality Architect
+    contract: contractor
+    duration: Feb 2016 - Oct 2016 (9 months)
+    summary: >
+      Worked as a Global Banking Solutions Quality Architect on the next
+      generation global banking mobile application for BBVA, the international
+      Spanish banking group
+    company: BBVA
+    url: https://www.bbva.com/
+    location: Madrid
+    description: >
+      The best digital bank of the 21st century
+    industry: Mobile banking industry
+    logo: image/logo-bbva.png
+  - position: Senior Software Engineer
+    contract: permanent
+    duration: Mar 2009 - Jan 2016 (6 years, 11 months)
+    summary: >
+      Worked as a Senior Software Engineer on flight booking and flight/fare
+      change monitoring projects for Amadeus, the major international IT
+      provider for the global travel and tourism industry
+    company: Amadeus IT Group
+    url: http://www.amadeus.com/
+    location: Madrid
+    description: >
+      World’s leading IT provider for the global travel and tourism industry
+    industry: Travel and tourism industry
+    logo: image/logo-amadeus.png
