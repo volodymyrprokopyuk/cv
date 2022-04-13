@@ -5,6 +5,7 @@
   font-family: NotoSansDisplay;
   src: url("style/NotoSansDisplay-VariableFont_wdth,wght.ttf") format("ttf");
 }
+
 body {
   font-family: NotoSansDisplay, sans-serif;
   font-size: 1.10em;
