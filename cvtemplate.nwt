@@ -40,8 +40,8 @@
         </div>
         <div class="main">
           {% for course in ed.courses %}
-            <h3>{{course.title}}</h3>
-            <div>{{course.duration}}</div>
+            <h2>{{course.title}}</h2>
+            <div class="subtitle">{{course.duration}}</div>
           {% endfor %}
         </div>
         <div class="rside">
@@ -59,16 +59,17 @@
       <div class="fact">
         <div class="lside">
           <img src="{{em.logo}}">
+          {% if em.auxlogo != "" %}<img src="{{em.auxlogo}}">{% endif %}
         </div>
         <div class="main">
-          <h3>{{em.position}}</h3> <span>({{em.contract}})</span>
-          <div>{{em.duration}}</div>
+          <h2>{{em.position}}</h2> <span>({{em.contract}})</span>
+          <div class="subtitle">{{em.duration}}</div>
           <p>{{em.summary}}</p>
         </div>
         <div class="rside">
           <a href="{{em.url}}">{{em.company}}</a><span>, {{em.location}}</span>
-          <div>{{em.description}}</div>
-          <div>{{em.industry}}</div>
+          <div class="subtitle">{{em.description}}</div>
+          <div class="emph">{{em.industry}}</div>
         </div>
       </div>
     {% endfor %}

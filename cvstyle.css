@@ -1,5 +1,6 @@
 @import "style/modern-normalize.min.css";
 
+/* Font */
 @font-face {
   font-family: NotoSansDisplay;
   src: url("style/NotoSansDisplay-VariableFont_wdth,wght.ttf") format("ttf");
@@ -7,8 +8,53 @@
 body {
   font-family: NotoSansDisplay, sans-serif;
   font-size: 1.10em;
-  line-height: 1.30em;
+  line-height: 1.35em;
   font-weight: 300;
+}
+
+/* headings */
+h1 {
+  font-size: 1.50em;
+  font-weight: 600;
+  margin: 0.6em auto;
+}
+h2 {
+  font-size: 1.35em;
+  font-weight: 500;
+  margin: 0.4em auto;
+  display: inline;
+}
+h3{
+  font-size: 1.20em;
+  font-weight: 400;
+  margin: 0.2em auto;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.3em auto;
+}
+ul {
+  margin: 0.3em auto;
+}
+.subtitle {
+  font-weight: 400;
+  font-style: italic;
+  color: gray;
+}
+.emph {
+  font-weight: 400;
+  font-style: italic;
+}
+.rside {
+  text-align: right;
+}
+#summary .rside {
+  text-align: left;
 }
 
 @media screen {
@@ -18,9 +64,12 @@ body {
   }
 }
 
-h3{
-  display: inline;
+@media print {
+  div {
+    break-inside: avoid;
+  }
 }
+
 img {
   width: 12vw;
 }
@@ -37,3 +86,14 @@ img {
 .rside {
   flex-basis: 25%;
 }
+
+.fact {
+  margin: 1.2em 0;
+}
+.main {
+  margin: 0 1em;
+}
+
+/* .lside, .main, .rside { */
+/*   border: thin solid black; */
+/* } */

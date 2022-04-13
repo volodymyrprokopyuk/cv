@@ -20,6 +20,7 @@ type
     description: string
     industry: string
     logo: string
+    auxlogo: string
     # responsibilities: seq[string]
     # skills: seq[string]
     # technologies: seq[string]

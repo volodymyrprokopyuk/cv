@@ -89,6 +89,7 @@ employmentList:
       sector
     industry: Instant payments industry
     logo: image/logo-icon.png
+    auxlogo:
   - position: International Payments Platform Architect
     contract: permanent
     duration: Nov 2019 - Mar 2021 (1 year, 4 months)
@@ -104,6 +105,7 @@ employmentList:
       A new way to send money abroad
     industry: Payments industry
     logo: image/logo-santander.png
+    auxlogo: image/logo-pagofx.jpg
   - position: "R&D Team Lead, Security Architect"
     contract: permanent
     duration: Aug 2018 - Oct 2019 (1 year, 3 months)
@@ -119,6 +121,7 @@ employmentList:
       Connecting people to the content they love
     industry: Content sharing industry
     logo: image/logo-nagra.png
+    auxlogo:
   - position: Solution Architect
     contract: permanent
     duration: Feb 2018 - Jul 2018 (6 months)
@@ -132,6 +135,7 @@ employmentList:
       people, technology and business
     industry: IT consultancy
     logo: image/logo-atsistemas.png
+    auxlogo:
   - position: Solution Architect
     contract: contractor
     duration: Feb 2018 - Jul 2018 (6 months)
@@ -146,6 +150,7 @@ employmentList:
       Experience and innovation in credit cards
     industry: Credit cards industry
     logo: image/logo-dinersclub.jpg
+    auxlogo:
   - position: Software Architect
     contract: permanent
     duration: Nov 2016 - Jan 2018 (1 year, 3 months)
@@ -158,6 +163,7 @@ employmentList:
       Global leader in IT services, digital and business solutions
     industry: IT consultancy
     logo: image/logo-tcs.png
+    auxlogo:
   - position: Project Technical Lead
     contract: contractor
     duration: Nov 2016 - Jan 2018 (1 year, 3 months)
@@ -172,6 +178,7 @@ employmentList:
       Leading airline between Europe and Latin America
     industry: Airline and travel industry
     logo: image/logo-iberia.png
+    auxlogo:
   - position: Software Architect
     contract: permanent
     duration: Feb 2016 - Oct 2016 (9 months)
@@ -184,6 +191,7 @@ employmentList:
       We transform organizations supported by agile principles
     industry: IT consultancy
     logo: image/logo-kairos.png
+    auxlogo:
   - position: Global Banking Solutions Quality Architect
     contract: contractor
     duration: Feb 2016 - Oct 2016 (9 months)
@@ -198,6 +206,7 @@ employmentList:
       The best digital bank of the 21st century
     industry: Mobile banking industry
     logo: image/logo-bbva.png
+    auxlogo:
   - position: Senior Software Engineer
     contract: permanent
     duration: Mar 2009 - Jan 2016 (6 years, 11 months)
@@ -212,3 +221,4 @@ employmentList:
       World’s leading IT provider for the global travel and tourism industry
     industry: Travel and tourism industry
     logo: image/logo-amadeus.png
+    auxlogo:
