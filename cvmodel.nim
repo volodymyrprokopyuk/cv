@@ -56,4 +56,4 @@ proc render(cv: CV, file: string) =
 
 var cv: CV
 "cvvlad.yaml".load(cv)
-cv.render("cvvlad.html")
+cv.render("index.html")
