@@ -90,6 +90,40 @@ employmentList:
     industry: Instant payments industry
     logo: image/logo-icon.png
     auxlogo:
+    responsibilities:
+      - >
+        Let the design and succesfully presented to the customer (tier 1 global
+        bank headquartered in Zurich) **global security architecture for the
+        next-generation instant payment platform** operated in a hybrid cloud
+      - >
+        Led the design and succesfully presented to the customer (one of the
+        biggest US banks) the mission-critical **settlement and reconciliation
+        platform** for the PayPal digital wallet payouts
+      - >
+        Successfully concluded the desing of the generic, extensible, **ISO
+        20022-compatible operational data store product** that powers billions
+        of instant payment transactions in several leading global banking
+        institutions
+      - >
+        Successfully architected fully automated benchmarking suite to **measure
+        and analyze performance of key instant payment business functions** with
+        insightful benchmarking data analysis and visual reporting of
+        benchmarking results
+    skills:
+      - Design of settlement and reconciliation systems
+      - Relational data modeling
+      - Design of instant payment data stores
+      - Document-oriented data modeling
+      - Asyncronous data integration
+      - Design of business-orieted REST API
+      - Security design of instant payment platform
+      - Authentication and identity management
+      - Authorization and permission management
+      - Application security in cloud environments
+      - Application instrumentation and benchmarking
+      - Statistical data analysis and visualization
+    technologies: [
+      Domain-Driven-Design, ISO 20022, Azure AD, PostgreSQL, Kafka]
   - position: International Payments Platform Architect
     contract: permanent
     duration: Nov 2019 - Mar 2021 (1 year, 4 months)
@@ -106,6 +140,9 @@ employmentList:
     industry: Payments industry
     logo: image/logo-santander.png
     auxlogo: image/logo-pagofx.jpg
+    responsibilities: []
+    skills: []
+    technologies: []
   - position: "R&D Team Lead, Security Architect"
     contract: permanent
     duration: Aug 2018 - Oct 2019 (1 year, 3 months)
@@ -122,6 +159,9 @@ employmentList:
     industry: Content sharing industry
     logo: image/logo-nagra.png
     auxlogo:
+    responsibilities: []
+    skills: []
+    technologies: []
   - position: Solution Architect
     contract: permanent
     duration: Feb 2018 - Jul 2018 (6 months)
@@ -136,6 +176,9 @@ employmentList:
     industry: IT consultancy
     logo: image/logo-atsistemas.png
     auxlogo:
+    responsibilities: []
+    skills: []
+    technologies: []
   - position: Solution Architect
     contract: contractor
     duration: Feb 2018 - Jul 2018 (6 months)
@@ -151,6 +194,9 @@ employmentList:
     industry: Credit cards industry
     logo: image/logo-dinersclub.jpg
     auxlogo:
+    responsibilities: []
+    skills: []
+    technologies: []
   - position: Software Architect
     contract: permanent
     duration: Nov 2016 - Jan 2018 (1 year, 3 months)
@@ -164,6 +210,9 @@ employmentList:
     industry: IT consultancy
     logo: image/logo-tcs.png
     auxlogo:
+    responsibilities: []
+    skills: []
+    technologies: []
   - position: Project Technical Lead
     contract: contractor
     duration: Nov 2016 - Jan 2018 (1 year, 3 months)
@@ -179,6 +228,9 @@ employmentList:
     industry: Airline and travel industry
     logo: image/logo-iberia.png
     auxlogo:
+    responsibilities: []
+    skills: []
+    technologies: []
   - position: Software Architect
     contract: permanent
     duration: Feb 2016 - Oct 2016 (9 months)
@@ -192,6 +244,9 @@ employmentList:
     industry: IT consultancy
     logo: image/logo-kairos.png
     auxlogo:
+    responsibilities: []
+    skills: []
+    technologies: []
   - position: Global Banking Solutions Quality Architect
     contract: contractor
     duration: Feb 2016 - Oct 2016 (9 months)
@@ -207,6 +262,9 @@ employmentList:
     industry: Mobile banking industry
     logo: image/logo-bbva.png
     auxlogo:
+    responsibilities: []
+    skills: []
+    technologies: []
   - position: Senior Software Engineer
     contract: permanent
     duration: Mar 2009 - Jan 2016 (6 years, 11 months)
@@ -222,3 +280,6 @@ employmentList:
     industry: Travel and tourism industry
     logo: image/logo-amadeus.png
     auxlogo:
+    responsibilities: []
+    skills: []
+    technologies: []

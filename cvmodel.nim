@@ -21,9 +21,9 @@ type
     industry: string
     logo: string
     auxlogo: string
-    # responsibilities: seq[string]
-    # skills: seq[string]
-    # technologies: seq[string]
+    responsibilities: seq[string]
+    skills: seq[string]
+    technologies: seq[string]
 
   CV = object
     title: string

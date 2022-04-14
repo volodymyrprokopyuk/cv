@@ -14,7 +14,7 @@
         <div><a href="tel:{{phone}}">{{cv.phone}}</a></div>
         <div><a href="{{cv.url}}">{{cv.url}}</a></div>
         <div>{{cv.location}}</div>
-        <p>{{cv.summary}}</p>
+        <p>{{md cv.summary}}</p>
       </div>
       <div class="rside">
         <h3>Languages</h3>
@@ -64,7 +64,7 @@
         <div class="main">
           <h2>{{em.position}}</h2> <span>({{em.contract}})</span>
           <div class="subtitle">{{em.duration}}</div>
-          <p>{{em.summary}}</p>
+          <p>{{md em.summary}}</p>
         </div>
         <div class="rside">
           <a href="{{em.url}}">{{em.company}}</a><span>, {{em.location}}</span>
@@ -72,6 +72,29 @@
           <div class="emph">{{em.industry}}</div>
         </div>
       </div>
+      {% if em.responsibilities.len != 0 %}
+        <div class="fact detail">
+          <div class="lside"></div>
+          <div class="main">
+            <h3>Main responsibilities. Key projects and achievements</h3>
+            <ul>
+              {% for resp in em.responsibilities %}
+                <li>{{md resp}}</li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="rside">
+            <h3>Skills and competencies</h3>
+            <ul>
+              {% for skill in em.skills %}<li>{{skill}}</li>{% endfor %}
+            </ul>
+            <h3>Technologies</h3>
+            {% for tech in em.technologies %}
+              <span class="item">{{tech}}</span>
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
     {% endfor %}
   </section>
 {% endblock %}

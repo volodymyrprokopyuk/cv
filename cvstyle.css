@@ -28,7 +28,7 @@ h2 {
 h3{
   font-size: 1.20em;
   font-weight: 400;
-  margin: 0.2em auto;
+  margin: 0.6em auto 0.2em;
 }
 
 /* Links */
@@ -41,6 +41,7 @@ p {
 }
 ul {
   margin: 0.3em auto;
+  padding-left: 1em;
 }
 .subtitle {
   font-weight: 400;
@@ -54,7 +55,8 @@ ul {
 .rside {
   text-align: right;
 }
-#summary .rside {
+#summary .fact .rside,
+#employment .fact.detail .rside {
   text-align: left;
 }
 
@@ -82,17 +84,28 @@ img {
   flex-basis: 15%;
 }
 .main {
-  flex-basis: 60%;
+  flex-basis: 50%;
 }
 .rside {
-  flex-basis: 25%;
+  flex-basis: 35%;
 }
 
-.fact {
-  margin: 1.2em 0;
+.fact.detail {
+  margin: 0.2em 0;
+}
+.fact:not(.detail) {
+  margin-top: 1.2em;
 }
 .main {
   margin: 0 1em;
+}
+.item {
+  line-height: 2em;
+  margin-right: 0.2em;
+  padding: 0 0.2em;
+  background: blanchedalmond;
+  border-radius: 0.2em;
+  border: thin solid gray;
 }
 
 /* .lside, .main, .rside { */
