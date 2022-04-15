@@ -6,6 +6,7 @@ role: Banking and Payments Architect, Cloud Security Architect, Team Lead
 email: volodymyrprokopyuk@gmail.com
 phone: +(34) 663 564 178
 url: https://volodymyrprokopyuk.github.io/cv
+linkedin: https://www.linkedin.com/in/volodymyrprokopyuk
 location: Madrid, Spain
 summary: >
   I'm an International Payments Platform Architect, Cloud Security Architect and
@@ -21,10 +22,10 @@ summary: >
   mathematics
 selfie: image/selfie.jpg
 languages:
-  - English fluent
-  - Spanish fluent
-  - Ukrainian mother tongue
-  - Russian native
+  - "**English** fluent"
+  - "**Spanish** fluent"
+  - "**Ukrainian** mother tongue"
+  - "**Russian** native"
 keyCapabilities:
   - Effective communication
   - Management leadership
@@ -77,10 +78,10 @@ employmentList:
     contract: permanent
     duration: Apr 2021 - current
     summary: >
-      Worked as a Senior Payments Architect on the next generation instant
-      payments framework (IPF) for Icon Solutions, a leading global provider of
-      instant payments technology and mission critical transaction banking
-      solutions for the global banks and payment service providers worldwide
+      Worked as a Senior Payments Architect on the **next generation instant
+      payments framework** IPF for Icon Solutions, a leading global provider of
+      instant payments technology and mission-critical banking solutions for
+      tier 1 global banks and payment service providers worldwide
     company: Icon Solutions
     url: https://iconsolutions.com/
     location: London
@@ -122,16 +123,32 @@ employmentList:
       - Application security in cloud environments
       - Application instrumentation and benchmarking
       - Statistical data analysis and visualization
-    technologies: [
-      Domain-Driven-Design, ISO 20022, Azure AD, PostgreSQL, Kafka]
-  - position: International Payments Platform Architect
+    technologies:
+      - {tech: DDD, desc: Domain-Driven Design}
+      - {tech: EDA, desc: Event-Driven Architecture}
+      - {tech: CEP, desc: Complex Event Processing}
+      - {tech: FRP, desc: Functional Reactive Programming}
+      - {tech: ISO 20022, desc: Payments messaging standard}
+      - {tech: Azure, desc: Cloud provider}
+      - {tech: Kubernetes, desc: Container orchestration}
+      - {tech: Docker, desc: Container management}
+      - {tech: Java, desc: Programming language}
+      - {tech: PostgreSQL, desc: Relational database}
+      - {tech: Kafka, desc: Distributed event store}
+      - {tech: MFA, desc: Microservices Architecture}
+      - {tech: OAuth2, desc: Authorizaiton framework}
+      - {tech: OpenID Connect, desc: Authentication protocol}
+      - {tech: OpenSSL, desc: Cryptography library}
+      - {tech: R, desc: Statistical programming language}
+      - {tech: data.table, desc: Data manipulation package}
+      - {tech: ggplot2, desc: Data visualization package}
+  - position: Cross-border Payments Platform Architect
     contract: permanent
     duration: Nov 2019 - Mar 2021 (1 year, 4 months)
     summary: >
-      Worked as an International Payments Platform Architect on the next
-      generation international payments platform (PayTech) and foreign exchange
-      (FX) PagoFX FinTech for Santander, a multinational commercial bank and
-      financial services company
+      Worked as an Cross-border Payments Platform Architect on the **next
+      generation cross-border payments and foreign exchange platform** PagoFX for
+      Santander, a multinational commercial bank and financial services company
     company: PagoFX by Santander
     url: https://pagofx.com/
     location: Madrid
@@ -140,9 +157,53 @@ employmentList:
     industry: Payments industry
     logo: image/logo-santander.png
     auxlogo: image/logo-pagofx.jpg
-    responsibilities: []
-    skills: []
-    technologies: []
+    responsibilities:
+      - >
+        Designed **cloud-native microservices architecture of the cross-border
+        payments and foreign exchange platform**
+      - >
+        Architected key platform commponents to support credit card and bank
+        account **payment funding**, **AML and fraud** checking, cross-border
+        **payments routing** and execution, **FX pricing** and execution,
+        **digital wallet** management, **accounting ledger** and reconciliation
+        processing
+      - >
+        Designed **customer onboarding** (KYC) and **identity management**
+        platform including **digital identity verification**, customer,
+        beneficiary and **payment screening** (AML), customer profile and
+        **payment risk assessment**
+      - >
+        Designed **effective security architecture for the cross-border payments
+        and foreign exchange platform** compliant with the GDPR, PSD2 and EBA
+        guidelines
+      - >
+        Led the design of the **bidirectional, real-time integration** of the
+        cross-border payments platform with **Salesforce Servicing Cloud** (CRM
+        and case management) and **Salesforce Marketing Cloud** (lead generation
+        and marketing communication)
+    skills:
+      - Design of cloud-native microservices architectures
+      - Design of cross-border payment systems
+      - Design of foreign exchange integrations
+      - KYC, digital identity management and verification
+      - AML, fraud and payment risk assessment
+      - Design of standrard-compliant security architectures
+      - Design of integrations with Salesforce cloud services
+    technologies:
+      - {tech: DDD, desc: Domain-Driven Design}
+      - {tech: KYC, desc: Know Your Customer}
+      - {tech: AML, desc: Anti-Money Laundering}
+      - {tech: GDPR, desc: General Data Protection Regulation}
+      - {tech: Salesforce CRM, desc: Customer Relationships Management}
+      - {tech: MFA, desc: Microservices Architecture}
+      - {tech: GCP, desc: Google Cloud Platform}
+      - {tech: Kubernetes, desc: Container orchestration}
+      - {tech: Docker, desc: Container management}
+      - {tech: OAuth2, desc: Authorizaiton framework}
+      - {tech: OpenID Connect, desc: Authentication protocol}
+      - {tech: Node.js, desc: JavaScript runtime}
+      - {tech: TypeScript, desc: Programming language}
+      - {tech: PostgreSQL, desc: Relational database}
   - position: "R&D Team Lead, Security Architect"
     contract: permanent
     duration: Aug 2018 - Oct 2019 (1 year, 3 months)

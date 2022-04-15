@@ -35,6 +35,10 @@ h3{
 a {
   text-decoration: none;
 }
+.rside a {
+  font-size: 1.15em;
+  font-weight: 400;
+}
 
 p {
   margin: 0.3em auto;
@@ -59,6 +63,9 @@ ul {
 #employment .fact.detail .rside {
   text-align: left;
 }
+#summary .lside img {
+  filter: drop-shadow(0.5rem 0.5rem 0.5rem gray);
+}
 
 @media screen {
   main {
@@ -73,21 +80,25 @@ ul {
   }
 }
 
+span {
+  white-space: nowrap;
+}
+
 img {
-  width: 12vw;
+  width: 8vw;
 }
 
 .fact {
   display: flex;
 }
 .lside {
-  flex-basis: 15%;
+  flex-basis: 10%;
 }
 .main {
   flex-basis: 50%;
 }
 .rside {
-  flex-basis: 35%;
+  flex-basis: 40%;
 }
 
 .fact.detail {

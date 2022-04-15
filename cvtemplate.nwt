@@ -13,13 +13,14 @@
         {% let phone = cv.phone.replace(re"[^\\d\\+]", "") %}
         <div><a href="tel:{{phone}}">{{cv.phone}}</a></div>
         <div><a href="{{cv.url}}">{{cv.url}}</a></div>
+        <div><a href="{{cv.linkedin}}">{{cv.linkedin}}</a></div>
         <div>{{cv.location}}</div>
         <p>{{md cv.summary}}</p>
       </div>
       <div class="rside">
         <h3>Languages</h3>
         <ul>
-          {% for lang in cv.languages %}<li>{{lang}}</li>{% endfor %}
+          {% for lang in cv.languages %}<li>{{md lang}}</li>{% endfor %}
         </ul>
         <h3>Key capabilities</h3>
         <ul>
@@ -90,7 +91,7 @@
             </ul>
             <h3>Technologies</h3>
             {% for tech in em.technologies %}
-              <span class="item">{{tech}}</span>
+              <span title="{{tech.desc}}" class="item">{{tech.tech}}</span>
             {% endfor %}
           </div>
         </div>

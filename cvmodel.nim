@@ -23,7 +23,7 @@ type
     auxlogo: string
     responsibilities: seq[string]
     skills: seq[string]
-    technologies: seq[string]
+    technologies: seq[tuple[tech, desc: string]]
 
   CV = object
     title: string
@@ -32,6 +32,7 @@ type
     email: string
     phone: string
     url: string
+    linkedin: string
     location: string
     summary: string
     selfie: string
