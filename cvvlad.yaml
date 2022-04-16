@@ -129,7 +129,7 @@ employmentList:
       - {tech: CEP, desc: Complex Event Processing}
       - {tech: FRP, desc: Functional Reactive Programming}
       - {tech: ISO 20022, desc: Payments messaging standard}
-      - {tech: Azure, desc: Cloud provider}
+      - {tech: Azure, desc: Microsoft cloud service provider}
       - {tech: Kubernetes, desc: Container orchestration}
       - {tech: Docker, desc: Container management}
       - {tech: Java, desc: Programming language}
@@ -208,10 +208,10 @@ employmentList:
     contract: permanent
     duration: Aug 2018 - Oct 2019 (1 year, 3 months)
     summary: >
-      Worked as an R&D Team Lead and Security Architect on the bleeding edge
-      technology Content Sharing Anti-Piracy Response platform Armada for NAGRA,
-      the global leader in digital security, conditional access, and convergent
-      media solutions
+      Worked as an R&D Team Lead and a Security Architect on the **content
+      sharing anti-piracy response platform** Armada for NAGRA, the global
+      leader in digital security, conditional access, and convergent media
+      solutions
     company: Nagravision Kudelski Group
     url: https://www.nagra.com/
     location: Madrid
@@ -220,9 +220,62 @@ employmentList:
     industry: Content sharing industry
     logo: image/logo-nagra.png
     auxlogo:
-    responsibilities: []
-    skills: []
-    technologies: []
+    responsibilities:
+      - >
+        Led the brainstorming sessions on **definition of product features for
+        the anti-piracy response platform** with program managers and business
+        representatives
+      - >
+        Successfully conducted **technical leadership on the design and
+        implementation of the anti-piracy response platform** distributed,
+        scalable serverless system deployed to AWS
+      - >
+        Became **technical coach** and organized 20+ **technical knowledge
+        transfer sessions** for the engineering and service delivery teams
+      - >
+        Led organization of strategical and tactical work planning, effort
+        estimaitons, dependency management and work prioritization
+      - >
+        Led **technical coordination of the international, cross-functional and
+        multi-cultural engineering team of 12-15 members** distributed across
+        Spain, Switzerland and India
+      - >
+        Built highly cohesive, **cross-functional and empowered team of
+        engineers** that enjoy **advanced agile and lean methodologies** and
+        deliver quality products on time. Made people feel comfortable about
+        what they do, actively participate in the process and have the feeling
+        of achievement
+      - >
+        Gracefully **conducted 30+ technical interviews** and succesfully
+        recruited 5 senior software engineers
+    skills:
+      - Technical leadership and effective communication
+      - Strategical work planning and prioritization
+      - Analythical thinking and problem solving
+      - Focus on results and attention to details
+      - Knowledge sharing and clear technical communication
+      - Cross-functional team building and soft skills
+      - Technical interviewing and recruitment
+      - Design of scalable, serverless solutions on AWS
+      - Relational data modeling
+      - Software lifecycle management
+    technologies:
+      - {tech: Scrum/Kanban/Lean, desc: Agile methodologies}
+      - {tech: AWS, desc: Amazon Web Services}
+      - {tech: VPC, desc: Vitual Private Cloud}
+      - {tech: IAM, desc: Identity and Access Management}
+      - {tech: ELB, desc: Elastic Load Balancer}
+      - {tech: API Gateway, desc: Web API delivery}
+      - {tech: AWS Lambda, desc: AWS serverless computation}
+      - {tech: REST, desc: Representation State Transfer}
+      - {tech: OAuth2, desc: Authorizaiton framework}
+      - {tech: SQS, desc: Simple Queue Service}
+      - {tech: RDS, desc: Relational Database Service}
+      - {tech: S3, desc: Simple Storage Service}
+      - {tech: CloudWatch, desc: Observability of AWS resources}
+      - {tech: CloudFormation, desc: AWS infrastructure provisioning}
+      - {tech: Python, desc: Programming language}
+      - {tech: SQL, desc: Structured Query Language}
   - position: Solution Architect
     contract: permanent
     duration: Feb 2018 - Jul 2018 (6 months)
