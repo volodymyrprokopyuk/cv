@@ -10,7 +10,7 @@ linkedin: https://www.linkedin.com/in/volodymyrprokopyuk
 location: Madrid, Spain
 summary: >
   I'm an International Payments Platform Architect, Cloud Security Architect and
-  R&D Team Lead with business focus and more than 14 years of experience in
+  Team Lead with business focus and more than 14 years of experience in
   international payments platform architecture and security design, team
   management, team technical leadership, software/infrastructure design,
   software quality assurance, distributed and reactive system design on AWS,
@@ -204,14 +204,13 @@ employmentList:
       - {tech: Node.js, desc: JavaScript runtime}
       - {tech: TypeScript, desc: Programming language}
       - {tech: PostgreSQL, desc: Relational database}
-  - position: "R&D Team Lead, Security Architect"
+  - position: Team Lead, Security Architect
     contract: permanent
     duration: Aug 2018 - Oct 2019 (1 year, 3 months)
     summary: >
-      Worked as an R&D Team Lead and a Security Architect on the **content
-      sharing anti-piracy response platform** Armada for NAGRA, the global
-      leader in digital security, conditional access, and convergent media
-      solutions
+      Worked as a Team Lead and a Security Architect on the **content sharing
+      anti-piracy response platform** Armada for NAGRA, the global leader in
+      digital security, conditional access, and convergent media solutions
     company: Nagravision Kudelski Group
     url: https://www.nagra.com/
     location: Madrid
@@ -347,11 +346,11 @@ employmentList:
       - {tech: MS SQL Server, desc: Relational database}
       - {tech: OAuth2, desc: Authorizaiton framework}
       - {tech: Keycloak, desc: Identity and Access Management}
-  - position: Software Architect
+  - position: Solution Architect
     contract: permanent
     duration: Nov 2016 - Jan 2018 (1 year, 3 months)
     summary: >
-      Worked as a Software Architect for a leading international IT consultancy
+      Worked as a Solution Architect for a leading international IT consultancy
     company: TATA Consultancy Services
     url: https://www.tcs.com/
     location: Madrid
@@ -363,13 +362,12 @@ employmentList:
     responsibilities: []
     skills: []
     technologies: []
-  - position: Project Technical Lead
+  - position: Technical Lead
     contract: contractor
     duration: Nov 2016 - Jan 2018 (1 year, 3 months)
     summary: >
-      Worked as a Project Technical Lead on the next generation Salesforce CRM
-      Intelligent Integration project for Iberia, the flag carrier airline of
-      Spain
+      Worked as a Technical Lead on the **next generation Salesforce CRM
+      intelligent integration** for Iberia, the flag carrier airline of Spain
     company: Iberia
     url: http://www.iberia.com
     location: Madrid
@@ -378,14 +376,38 @@ employmentList:
     industry: Airline and travel industry
     logo: image/logo-iberia.png
     auxlogo:
-    responsibilities: []
-    skills: []
-    technologies: []
-  - position: Software Architect
+    responsibilities:
+      - >
+        Successfully conducted translation of business requirements to detailed
+        technical solution design being **effective bridge between business
+        stakeholders and the engineering team**
+      - >
+        Successfully **led and coorditaned cross-functional and mulli-cultural
+        engineering team** distributed between Spain and India
+      - >
+        Designed the **intelligent integration layer between Iberia core
+        business systems and Salesforce CRM cloud services** as a set of 30+
+        cohesive microservices deployed to AWS
+    skills:
+      - Effective mediation between business and engineering
+      - Technical leadership of distributed engineering teams
+      - Design of in-cloud integration microservices
+      - Security of integration services
+    technologies:
+      - {tech: AWS, desc: Amazon Web Services}
+      - {tech: EC2, desc: Elastic Compute Cloud}
+      - {tech: ELB, desc: Elastic Load Balancer}
+      - {tech: REST, desc: Representation State Transfer}
+      - {tech: Java, desc: Programming language}
+      - {tech: Spring, desc: Java application framework}
+      - {tech: OAuth2, desc: Authorizaiton framework}
+      - {tech: Keycloak, desc: Identity and Access Management}
+      - {tech: ELK, desc: Elasticsearch Logstash Kibana}
+  - position: Frontend Architect
     contract: permanent
     duration: Feb 2016 - Oct 2016 (9 months)
     summary: >
-      Worked as a Software Architect for a leading Spanish IT consultancy
+      Worked as a Frontend Architect for a leading Spanish IT consultancy
     company: Kairos Digital Solutions
     url: https://www.kairosds.com/
     location: Madrid
@@ -397,13 +419,13 @@ employmentList:
     responsibilities: []
     skills: []
     technologies: []
-  - position: Global Banking Solutions Quality Architect
+  - position: Frontend Quality Architect
     contract: contractor
     duration: Feb 2016 - Oct 2016 (9 months)
     summary: >
-      Worked as a Global Banking Solutions Quality Architect on the next
-      generation global banking mobile application for BBVA, the international
-      Spanish banking group
+      Worked as a Forntend Quality Architect on the **next generation global
+      banking mobile application** for BBVA, the international Spanish banking
+      group
     company: BBVA
     url: https://www.bbva.com/
     location: Madrid
@@ -412,16 +434,32 @@ employmentList:
     industry: Mobile banking industry
     logo: image/logo-bbva.png
     auxlogo:
-    responsibilities: []
-    skills: []
-    technologies: []
+    responsibilities:
+      - >
+        Participated in the **design of the software lifecycle and testing
+        strategy** for the global banking mobile application
+      - >
+        Implemented an **advanced testing tool for visual detection of
+        regression errors in application UI screenshots** between sebsequenct
+        builds of global banking mobile applicaiton
+    skills:
+      - Software lifecycle management
+      - Design of testing strategy for bankning applications
+    technologies:
+      - {tech: Polymer, desc: Web UI library}
+      - {tech: HTML, desc: HyperText Markup Language}
+      - {tech: CSS, desc: Cascading Style Sheets}
+      - {tech: JavaScript, desc: Programming language}
+      - {tech: Node.js, desc: JavaScript runtime}
+      - {tech: TDD, desc: Test-Driven Development}
+      - {tech: BDD, desc: Behavior-Driven Development}
   - position: Senior Software Engineer
     contract: permanent
     duration: Mar 2009 - Jan 2016 (6 years, 11 months)
     summary: >
-      Worked as a Senior Software Engineer on flight booking and flight/fare
-      change monitoring projects for Amadeus, the major international IT
-      provider for the global travel and tourism industry
+      Worked as a Senior Software Engineer on **flight reservation services and
+      travel agency business applications** for Amadeus, the major international
+      IT provider for the global travel and tourism industry
     company: Amadeus IT Group
     url: http://www.amadeus.com/
     location: Madrid
@@ -430,6 +468,40 @@ employmentList:
     industry: Travel and tourism industry
     logo: image/logo-amadeus.png
     auxlogo:
-    responsibilities: []
-    skills: []
-    technologies: []
+    responsibilities:
+      - >
+        Designed and developed **flight and hotel reservation and payment
+        solution** that integrates the Amadeus Selling Platform with the
+        American Express payment provider
+      - >
+        Designed and developed **massive flight itinerary PDF generation and
+        notificaiton system** for the leading international travel agency
+      - >
+        Designed and developed **flight and fare change monitoring and
+        notificaiton system** on top of the Amadeus Global Distribution System
+        (GDS)
+      - >
+        Designed and developed 5+ **flight booking and payment web
+        applications** on top of the Amadeus Selling platform
+      - >
+        Developed 5+ **B2B integrations with Amadeus Web Services**
+      - >
+        Designed and developed the **Amadeus GDS mainframe integration library**
+        that exposes airline content as a cohesive set of REST microservices
+    skills:
+      - Design of flight/hotel resarvation and payment solutions
+      - Design of flight initirary PDF generation systems
+      - Design of flight/fare change monitoring systems
+      - Desidn of travel management applications
+      - Integration of payment providers
+      - Relational data modeling
+      - Web service system integration
+      - Fullstack development of web applications
+    technologies:
+      - {tech: Java, desc: Programming language}
+      - {tech: Spring, desc: Java application framework}
+      - {tech: JavaScript, desc: Programming language}
+      - {tech: Node.js, desc: JavaScript runtime}
+      - {tech: MS SQL Server, desc: Relational database}
+      - {tech: HTML, desc: HyperText Markup Language}
+      - {tech: CSS, desc: Cascading Style Sheets}
