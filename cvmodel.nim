@@ -31,12 +31,12 @@ type
     role: string
     email: string
     phone: string
+    location: string
     url: string
     linkedin: string
-    location: string
-    summary: string
-    selfie: string
     languages: seq[string]
+    selfie: string
+    summary: string
     keyCapabilities: seq[string]
     educationList: seq[Education]
     employmentList: seq[Employment]

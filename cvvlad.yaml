@@ -5,36 +5,30 @@ name: Volodymyr Prokopyuk (Vlad)
 role: Payments Architect, Cloud Security Architect,<br> Team Lead
 email: volodymyrprokopyuk@gmail.com
 phone: +(34) 663 564 178
-url: https://volodymyrprokopyuk.github.io/cv
-linkedin: https://www.linkedin.com/in/volodymyrprokopyuk
 location: Madrid, Spain
-summary: >
-  I'm an International Payments Platform Architect, Cloud Security Architect and
-  Team Lead with business focus and more than 14 years of experience in
-  international payments platform architecture and security design, team
-  management, team technical leadership, software/infrastructure design,
-  software quality assurance, distributed and reactive system design on AWS,
-  Azure and GCP, and DevOps automation on AWS, Azure and GCP. I enjoy agile
-  methodologies, communicating and working with people on challenging projects.
-  I'm interested in banking and international payments systems, cyber security,
-  blockchain, data analysis and machine learning, cloud computing,
-  infrastructure automation, DSLs, microservices, modern web technologies, and
-  mathematics
-selfie: image/selfie.jpg
+url: https://volodymyrprokopyuk.github.io/cv/
+linkedin: https://www.linkedin.com/in/volodymyrprokopyuk/
 languages:
   - "**English** fluent"
   - "**Spanish** fluent"
   - "**Ukrainian** mother tongue"
   - "**Russian** native"
+selfie: image/selfie.jpg
+summary: >
+  I'm an enthusiastic IT professional with business focus and more than 14 years
+  of contrasted experience in design and development of **modern payment
+  systems**, design and deployment of **standard-compliant, cloud-native
+  security solutions** and **technical leadership of engineering teams**. I
+  enjoy pragmatic approach to software development, **constructive
+  communicating** and **fruitful collaboration** with people on challenging
+  projects. I'm interested in modern payments systems, cyber security,
+  cryptocurrencies, blockchains, DeFi solutions, cloud computing, modern web
+  technologies and mathematics
 keyCapabilities:
-  - Effective communication
-  - Management leadership
-  - Technical leadership
-  - Banking and international payments platforms architecture design
-  - Cyber security design and blockchain
-  - Architecture design on AWS, Azure
-  - DevOps automation on AWS, Azure
-  - Data analysis, visualization and reporting with R
+  - Technical leadership and effective communication
+  - Effective mediation between business and engineering
+  - Design and development of modern payment systems
+  - Standard-compliant, cloud-native security solutions
 educationList:
   - courses:
     - title: Master of Business Administration, MBA
@@ -47,7 +41,7 @@ educationList:
     - title: Master of Informatics Engineering, MSc
       duration: Sep 2010 - Jul 2011 (1 year)
     center: Universidad Carlos III de Madrid
-    url: https://www.uc3m.es/home
+    url: https://www.uc3m.es/
     location: Madrid
     logo: image/logo-uc3m.png
   - courses:
@@ -70,7 +64,7 @@ educationList:
     - title: Blockchain, Cryptocurrencies, Smart Contracts and Ethereum
       duration: Apr 2019 (1 week)
     center: CEU IAM Institute for Advanced Management
-    url: https://www.ceuiam.com/business-school
+    url: https://www.uspceu.com/
     location: Madrid
     logo: image/logo-ceu.png
 employmentList:
@@ -150,7 +144,7 @@ employmentList:
       generation cross-border payments and foreign exchange platform** PagoFX for
       Santander, a multinational commercial bank and financial services company
     company: PagoFX by Santander
-    url: https://pagofx.com/
+    url: https://www.pagonxt.com/
     location: Madrid
     description: >
       A new way to send money abroad
@@ -281,7 +275,7 @@ employmentList:
     summary: >
       Worked as a Solution Architect for a leading Spanish IT consultancy
     company: atSistemas
-    url: https://www.atsistemas.com/en
+    url: https://www.atsistemas.com/
     location: Madrid
     description: >
       We hope to create a leading company in digital transformation by joining
