@@ -2,7 +2,7 @@
 ---
 title: CV Vlad
 name: Volodymyr Prokopyuk (Vlad)
-role: Banking and Payments Architect, Cloud Security Architect, Team Lead
+role: Payments Architect, Cloud Security Architect,<br> Team Lead
 email: volodymyrprokopyuk@gmail.com
 phone: +(34) 663 564 178
 url: https://volodymyrprokopyuk.github.io/cv
@@ -297,8 +297,8 @@ employmentList:
     contract: contractor
     duration: Feb 2018 - Jul 2018 (6 months)
     summary: >
-      Worked as a Solution Architect on the full digital transformation project
-      of the core credit card business for Diners Club Spain, the charge and
+      Worked as a Solution Architect on the **full digital transformation of the
+      credit card business core system** for Diners Club Spain, the charge and
       credit card international company
     company: Diners Club Spain
     url: https://www.dinersclub.es/
@@ -308,9 +308,45 @@ employmentList:
     industry: Credit cards industry
     logo: image/logo-dinersclub.jpg
     auxlogo:
-    responsibilities: []
-    skills: []
-    technologies: []
+    responsibilities:
+      - >
+        Worked side by side with the client to **elaborate detailed business
+        requirements**, **define the well-architected technical solution** and
+        select the most appropriate technological stack
+      - >
+        Completely **redesigned the credit card business core system** from a
+        monolithic legacy mainframe application to a cloud-ready, scalable and
+        modular system using modern technological stack
+      - >
+        Closely followed the development and testing of the **online credit card
+        transaction authorization**, **core credit card batch processing** and
+        **transaction inquiry and investigation operational portal** with
+        microservices backed
+      - >
+        Successfully designed the **credit card business core system to be
+        compliant with the PCI DSS and GDPR**
+      - >
+        Successfully conducted **technical leadership** of a remote engineering
+        team of 10-12 members to **rebuild from scratch the cloud-ready credit
+        card business core system**
+      - >
+        Gracefully **conducted 10+ technical interviews** and succesfully
+        recruited 3 senior developers
+    skills:
+      - Technical leadership and effective communication
+      - Design of credit card business core systems
+      - Design of cloud-ready microservices architectures
+      - Security and compliance with PCI DSS and GDPR
+      - Technical interviewing and recruitment
+    technologies:
+      - {tech: PCI DSS, desc: Payment Card Industry Data Security Standard}
+      - {tech: GDPR, desc: General Data Protection Regulation}
+      - {tech: Java, desc: Programming language}
+      - {tech: Kotlin, desc: Programming language}
+      - {tech: Spring, desc: Java application framework}
+      - {tech: MS SQL Server, desc: Relational database}
+      - {tech: OAuth2, desc: Authorizaiton framework}
+      - {tech: Keycloak, desc: Identity and Access Management}
   - position: Software Architect
     contract: permanent
     duration: Nov 2016 - Jan 2018 (1 year, 3 months)

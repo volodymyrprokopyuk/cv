@@ -11,17 +11,23 @@
         <h2>{{cv.role}}</h2>
         <div><a href="mailto:{{cv.email}}">{{cv.email}}</a></div>
         {% let phone = cv.phone.replace(re"[^\\d\\+]", "") %}
-        <div><a href="tel:{{phone}}">{{cv.phone}}</a></div>
+        <span><a href="tel:{{phone}}">{{cv.phone}}</a></span>
+        <span>, {{cv.location}}</span>
         <div><a href="{{cv.url}}">{{cv.url}}</a></div>
         <div><a href="{{cv.linkedin}}">{{cv.linkedin}}</a></div>
-        <div>{{cv.location}}</div>
-        <p>{{md cv.summary}}</p>
       </div>
       <div class="rside">
         <h3>Languages</h3>
         <ul>
           {% for lang in cv.languages %}<li>{{md lang}}</li>{% endfor %}
         </ul>
+      </div>
+    </div>
+    <div class="fact">
+      <div class="lmain">
+        <p>{{md cv.summary}}</p>
+      </div>
+      <div class="rside">
         <h3>Key capabilities</h3>
         <ul>
           {% for cap in cv.keyCapabilities %}<li>{{cap}}</li>{% endfor %}

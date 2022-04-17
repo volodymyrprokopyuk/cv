@@ -4,8 +4,19 @@
     <meta charset="UTF-8">
     <title>CV Vlad</title>
     <link href="cvstyle.css" rel="stylesheet">
+    <script>
+     function toggleDetails() {
+       let details = document.getElementsByClassName("detail");
+       Array.from(details).forEach(detail => detail.style.display =
+         detail.style.display === "flex" ? "none" : "flex");
+       let toggle = document.getElementById("toggle");
+       toggle.textContent =
+         toggle.textContent === "More details" ? "Less details" : "More details";
+     }
+    </script>
   </head>
   <body>
+    <button id="toggle" onclick="toggleDetails()">More details</button>
     <main>
       
   <section id="summary">
@@ -15,20 +26,26 @@
       </div>
       <div class="main">
         <h1>Volodymyr Prokopyuk (Vlad)</h1>
-        <h2>Banking and Payments Architect, Cloud Security Architect, Team Lead</h2>
+        <h2>Payments Architect, Cloud Security Architect,<br> Team Lead</h2>
         <div><a href="mailto:volodymyrprokopyuk@gmail.com">volodymyrprokopyuk@gmail.com</a></div>
         
-        <div><a href="tel:+34663564178">+(34) 663 564 178</a></div>
+        <span><a href="tel:+34663564178">+(34) 663 564 178</a></span>
+        <span>, Madrid, Spain</span>
         <div><a href="https://volodymyrprokopyuk.github.io/cv">https://volodymyrprokopyuk.github.io/cv</a></div>
         <div><a href="https://www.linkedin.com/in/volodymyrprokopyuk">https://www.linkedin.com/in/volodymyrprokopyuk</a></div>
-        <div>Madrid, Spain</div>
-        <p>I'm an International Payments Platform Architect, Cloud Security Architect and R&amp;D Team Lead with business focus and more than 14 years of experience in international payments platform architecture and security design, team management, team technical leadership, software/infrastructure design, software quality assurance, distributed and reactive system design on AWS, Azure and GCP, and DevOps automation on AWS, Azure and GCP. I enjoy agile methodologies, communicating and working with people on challenging projects. I'm interested in banking and international payments systems, cyber security, blockchain, data analysis and machine learning, cloud computing, infrastructure automation, DSLs, microservices, modern web technologies, and mathematics</p>
       </div>
       <div class="rside">
         <h3>Languages</h3>
         <ul>
           <li><strong>English</strong> fluent</li><li><strong>Spanish</strong> fluent</li><li><strong>Ukrainian</strong> mother tongue</li><li><strong>Russian</strong> native</li>
         </ul>
+      </div>
+    </div>
+    <div class="fact">
+      <div class="lmain">
+        <p>I'm an International Payments Platform Architect, Cloud Security Architect and R&amp;D Team Lead with business focus and more than 14 years of experience in international payments platform architecture and security design, team management, team technical leadership, software/infrastructure design, software quality assurance, distributed and reactive system design on AWS, Azure and GCP, and DevOps automation on AWS, Azure and GCP. I enjoy agile methodologies, communicating and working with people on challenging projects. I'm interested in banking and international payments systems, cyber security, blockchain, data analysis and machine learning, cloud computing, infrastructure automation, DSLs, microservices, modern web technologies, and mathematics</p>
+      </div>
+      <div class="rside">
         <h3>Key capabilities</h3>
         <ul>
           <li>Effective communication</li><li>Management leadership</li><li>Technical leadership</li><li>Banking and international payments platforms architecture design</li><li>Cyber security design and blockchain</li><li>Architecture design on AWS, Azure</li><li>DevOps automation on AWS, Azure</li><li>Data analysis, visualization and reporting with R</li>
@@ -391,7 +408,7 @@
         <div class="main">
           <h2>Solution Architect</h2> <span>(contractor)</span>
           <div class="subtitle">Feb 2018 - Jul 2018 (6 months)</div>
-          <p>Worked as a Solution Architect on the full digital transformation project of the core credit card business for Diners Club Spain, the charge and credit card international company</p>
+          <p>Worked as a Solution Architect on the <strong>full digital transformation of the credit card business core system</strong> for Diners Club Spain, the charge and credit card international company</p>
         </div>
         <div class="rside">
           <a href="https://www.dinersclub.es/">Diners Club Spain</a><span>, Madrid</span>
@@ -400,6 +417,52 @@
           <div class="emph">Credit cards industry</div>
         </div>
       </div>
+      
+        <div class="fact detail">
+          <div class="lside"></div>
+          <div class="main">
+            <h3>Main responsibilities. Key projects and achievements</h3>
+            <ul>
+              
+                <li>Worked side by side with the client to <strong>elaborate detailed business requirements</strong>, <strong>define the well-architected technical solution</strong> and select the most appropriate technological stack</li>
+              
+                <li>Completely <strong>redesigned the credit card business core system</strong> from a monolithic legacy mainframe application to a cloud-ready, scalable and modular system using modern technological stack</li>
+              
+                <li>Closely followed the development and testing of the <strong>online credit card transaction authorization</strong>, <strong>core credit card batch processing</strong> and <strong>transaction inquiry and investigation operational portal</strong> with microservices backed</li>
+              
+                <li>Successfully designed the <strong>credit card business core system to be compliant with the PCI DSS and GDPR</strong></li>
+              
+                <li>Successfully conducted <strong>technical leadership</strong> of a remote engineering team of 10-12 members to <strong>rebuild from scratch the cloud-ready credit card business core system</strong></li>
+              
+                <li>Gracefully <strong>conducted 10+ technical interviews</strong> and succesfully recruited 3 senior developers</li>
+              
+            </ul>
+          </div>
+          <div class="rside">
+            <h3>Skills and competencies</h3>
+            <ul>
+              <li>Technical leadership and effective communication</li><li>Design of credit card business core systems</li><li>Design of cloud-ready microservices architectures</li><li>Security and compliance with PCI DSS and GDPR</li><li>Technical interviewing and recruitment</li>
+            </ul>
+            <h3>Technologies</h3>
+            
+              <span title="Payment Card Industry Data Security Standard" class="item">PCI DSS</span>
+            
+              <span title="General Data Protection Regulation" class="item">GDPR</span>
+            
+              <span title="Programming language" class="item">Java</span>
+            
+              <span title="Programming language" class="item">Kotlin</span>
+            
+              <span title="Java application framework" class="item">Spring</span>
+            
+              <span title="Relational database" class="item">MS SQL Server</span>
+            
+              <span title="Authorizaiton framework" class="item">OAuth2</span>
+            
+              <span title="Identity and Access Management" class="item">Keycloak</span>
+            
+          </div>
+        </div>
       
     
       <div class="fact">
