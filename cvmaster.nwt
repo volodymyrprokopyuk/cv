@@ -17,7 +17,7 @@
   </head>
   <body>
     <button id="toggle" onclick="toggleDetails()">More details</button>
-    <main>
+    <main id="cv">
       {% block summary %}{% endblock %}
       {% block education %}{% endblock %}
       {% block employment %}{% endblock %}

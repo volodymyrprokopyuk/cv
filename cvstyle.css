@@ -1,6 +1,5 @@
 @import "style/modern-normalize.min.css";
 
-/* Font */
 @font-face {
   font-family: NotoSansDisplay;
   src: url("style/NotoSansDisplay-VariableFont_wdth,wght.ttf") format("ttf");
@@ -13,7 +12,6 @@ body {
   font-weight: 300;
 }
 
-/* headings */
 h1 {
   font-size: 1.50em;
   font-weight: 600;
@@ -31,7 +29,6 @@ h3{
   margin: 0.6em auto 0.2em;
 }
 
-/* Links */
 a {
   text-decoration: none;
 }
@@ -47,12 +44,12 @@ ul {
   margin: 0.3em auto;
   padding-left: 1em;
 }
-.subtitle {
+.duration, .description {
   font-weight: 400;
   font-style: italic;
   color: gray;
 }
-.emph {
+.industry {
   font-weight: 400;
   font-style: italic;
 }
@@ -125,7 +122,7 @@ img {
   display: none;
   margin: 0.2em 0;
 }
-.fact:not(.detail) {
+.fact.title {
   margin-top: 1.2em;
 }
 .main {
@@ -134,7 +131,7 @@ img {
 .lmain {
   margin-right: 2em;
 }
-.item {
+.tech {
   line-height: 2em;
   margin-right: 0.2em;
   padding: 0 0.2em;

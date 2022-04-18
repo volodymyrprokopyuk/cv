@@ -2,34 +2,36 @@
 
 {% block summary %}
   <section id="summary">
-    <div class="fact">
-      <div class="lside">
+    <div class="fact title">
+      <div class="lside selfie">
         <img src="{{cv.selfie}}">
       </div>
       <div class="main">
         <h1>{{cv.name}}</h1>
         <h2>{{cv.role}}</h2>
-        <div><a href="mailto:{{cv.email}}">{{cv.email}}</a></div>
+        <div class="email"><a href="mailto:{{cv.email}}">{{cv.email}}</a></div>
         {% let phone = cv.phone.replace(re"[^\\d\\+]", "") %}
-        <span><a href="tel:{{phone}}">{{cv.phone}}</a></span>
-        <span>, {{cv.location}}</span>
-        <div><a href="{{cv.url}}">{{cv.url}}</a></div>
-        <div><a href="{{cv.linkedin}}">{{cv.linkedin}}</a></div>
+        <div class="phone">
+          <a href="tel:{{phone}}">{{cv.phone}}</a><span class="location">,
+            {{cv.location}}</span>
+        </div>
+        <div class="url"><a href="{{cv.url}}">{{cv.url}}</a></div>
+        <div class="url"><a href="{{cv.linkedin}}">{{cv.linkedin}}</a></div>
       </div>
       <div class="rside">
         <h3>Languages</h3>
-        <ul>
+        <ul class="languages">
           {% for lang in cv.languages %}<li>{{md lang}}</li>{% endfor %}
         </ul>
       </div>
     </div>
-    <div class="fact">
+    <div class="fact summary">
       <div class="lmain">
-        <p>{{md cv.summary}}</p>
+        <p class="summary">{{md cv.summary}}</p>
       </div>
       <div class="rside">
         <h3>Key capabilities</h3>
-        <ul>
+        <ul class="capabilities">
           {% for cap in cv.keyCapabilities %}<li>{{cap}}</li>{% endfor %}
         </ul>
       </div>
@@ -41,18 +43,19 @@
   <section id="education">
     <h1>Education</h1>
     {% for ed in cv.educationList %}
-      <div class="fact">
-        <div class="lside">
+      <div class="fact title">
+        <div class="lside logo">
           <img src="{{ed.logo}}">
         </div>
         <div class="main">
           {% for course in ed.courses %}
             <h2>{{course.title}}</h2>
-            <div class="subtitle">{{course.duration}}</div>
+            <div class="duration">{{course.duration}}</div>
           {% endfor %}
         </div>
-        <div class="rside">
-          <a href="{{ed.url}}">{{ed.center}}</a><span>, {{ed.location}}</span>
+        <div class="rside url">
+          <a href="{{ed.url}}">{{ed.center}}</a><span class="location">,
+            {{ed.location}}</span>
         </div>
       </div>
     {% endfor %}
@@ -63,20 +66,24 @@
   <section id="employment">
     <h1>Employment</h1>
     {% for em in cv.employmentList %}
-      <div class="fact">
-        <div class="lside">
+      <div class="fact title">
+        <div class="lside logo">
           <img src="{{em.logo}}">
           {% if em.auxlogo != "" %}<img src="{{em.auxlogo}}">{% endif %}
         </div>
         <div class="main">
-          <h2>{{em.position}}</h2> <span>({{em.contract}})</span>
-          <div class="subtitle">{{em.duration}}</div>
-          <p>{{md em.summary}}</p>
+          <h2>{{em.position}}</h2><span class="contract">
+            ({{em.contract}})</span>
+          <div class="duration">{{em.duration}}</div>
+          <p class="summary">{{md em.summary}}</p>
         </div>
         <div class="rside">
-          <a href="{{em.url}}">{{em.company}}</a><span>, {{em.location}}</span>
-          <div class="subtitle">{{em.description}}</div>
-          <div class="emph">{{em.industry}}</div>
+          <div class="url">
+            <a href="{{em.url}}">{{em.company}}</a><span class="location">,
+              {{em.location}}</span>
+          </div>
+          <div class="description">{{em.description}}</div>
+          <div class="industry">{{em.industry}}</div>
         </div>
       </div>
       {% if em.responsibilities.len != 0 %}
@@ -84,7 +91,7 @@
           <div class="lside"></div>
           <div class="main">
             <h3>Main responsibilities. Key projects and achievements</h3>
-            <ul>
+            <ul class="respponsibilities">
               {% for resp in em.responsibilities %}
                 <li>{{md resp}}</li>
               {% endfor %}
@@ -92,12 +99,12 @@
           </div>
           <div class="rside">
             <h3>Skills and competencies</h3>
-            <ul>
+            <ul class="skills">
               {% for skill in em.skills %}<li>{{skill}}</li>{% endfor %}
             </ul>
             <h3>Technologies</h3>
             {% for tech in em.technologies %}
-              <span title="{{tech.desc}}" class="item">{{tech.tech}}</span>
+              <span class="tech" title="{{tech.desc}}">{{tech.tech}}</span>
             {% endfor %}
           </div>
         </div>
