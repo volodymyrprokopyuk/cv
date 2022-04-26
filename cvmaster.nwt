@@ -13,7 +13,8 @@
        let toggle = document.getElementById("toggle");
        // Toggle button text
        toggle.textContent =
-         toggle.textContent === "More details" ? "Less details" : "More details";
+         toggle.textContent === "More details"
+           ? "Less details" : "More details";
        // Toggle page title
        document.title =
          document.title === "CV Vlad - Summary"
