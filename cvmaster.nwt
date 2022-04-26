@@ -6,12 +6,18 @@
     <link href="cvstyle.css" rel="stylesheet">
     <script>
      function toggleDetails() {
+       // Toggle content
        let details = document.getElementsByClassName("detail");
        Array.from(details).forEach(detail => detail.style.display =
          detail.style.display === "flex" ? "none" : "flex");
        let toggle = document.getElementById("toggle");
+       // Toggle button text
        toggle.textContent =
          toggle.textContent === "More details" ? "Less details" : "More details";
+       // Toggle page title
+       document.title =
+         document.title === "CV Vlad - Summary"
+           ? "CV Vlad - Details" : "CV Vlad - Summary"
      }
     </script>
   </head>
