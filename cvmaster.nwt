@@ -5,21 +5,32 @@
     <title>{{cv.title}}</title>
     <link href="cvstyle.css" rel="stylesheet">
     <script>
-     function toggleDetails() {
-       // Toggle content
-       let details = document.getElementsByClassName("detail");
-       Array.from(details).forEach(detail => detail.style.display =
-         detail.style.display === "flex" ? "none" : "flex");
-       let toggle = document.getElementById("toggle");
-       // Toggle button text
-       toggle.textContent =
-         toggle.textContent === "More details"
-           ? "Less details" : "More details";
-       // Toggle page title
-       document.title =
-         document.title === "CV Vlad - Summary"
-           ? "CV Vlad - Details" : "CV Vlad - Summary"
-     }
+      function showToggle() {
+        let
+          employment = document.getElementById("employment");
+          toggle = document.getElementById("toggle");
+        if ((employment.offsetTop - window.scrollY) > 0) {
+          toggle.style.display = "none";
+        } else {
+          toggle.style.display = "block";
+        }
+      }
+      window.addEventListener("scroll", showToggle)
+      function toggleDetails() {
+        // Toggle content
+        let details = document.getElementsByClassName("detail");
+        Array.from(details).forEach(detail => detail.style.display =
+          detail.style.display === "flex" ? "none" : "flex");
+        let toggle = document.getElementById("toggle");
+        // Toggle button text
+        toggle.textContent =
+          toggle.textContent === "More details"
+            ? "Less details" : "More details";
+        // Toggle page title
+        document.title =
+          document.title === "CV Vlad - Summary"
+            ? "CV Vlad - Details" : "CV Vlad - Summary"
+      }
     </script>
   </head>
   <body>

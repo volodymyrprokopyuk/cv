@@ -64,6 +64,7 @@ ul {
   filter: drop-shadow(0.5rem 0.5rem 0.5rem gray);
 }
 #toggle {
+  display: none;
   position: sticky;
   top: 0;
   left: 0;
@@ -87,7 +88,7 @@ ul {
     font-size: 0.6em;
   }
   #toggle {
-    display: none;
+    display: none !important;
   }
   div {
     break-inside: avoid;
