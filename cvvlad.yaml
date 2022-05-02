@@ -100,10 +100,10 @@ employmentList:
         of instant payment transactions in several leading global banking
         institutions
       - >
-        Successfully architected fully automated benchmarking suite to **measure
-        and analyze performance of key instant payment business functions** with
-        insightful benchmarking data analysis and visual reporting of
-        benchmarking results
+        Successfully architected fully automated monitoring and benchmarking
+        suite to **measure and analyze performance of key instant payment
+        business functions** with insightful monitoring and benchmarking data
+        analysis and visualalizaiton
     skills:
       - Design of settlement and reconciliation systems
       - Relational data modeling
@@ -115,8 +115,9 @@ employmentList:
       - Authentication and identity management
       - Authorization and permission management
       - Application security in cloud environments
-      - Application instrumentation and benchmarking
+      - Application monitoring and benchmarking
       - Statistical data analysis and visualization
+      - Time series data analysis and visualization
     technologies:
       - {tech: DDD, desc: Domain-Driven Design}
       - {tech: EDA, desc: Event-Driven Architecture}
@@ -133,9 +134,8 @@ employmentList:
       - {tech: OAuth2, desc: Authorizaiton framework}
       - {tech: OpenID Connect, desc: Authentication protocol}
       - {tech: OpenSSL, desc: Cryptography library}
-      - {tech: R, desc: Statistical programming language}
-      - {tech: data.table, desc: Data manipulation package}
-      - {tech: ggplot2, desc: Data visualization package}
+      - {tech: Prometheus, desc: Application monitoring and alerting}
+      - {tech: Grafana, desc: Metrics analytics and visualization}
   - position: Cross-border Payments Platform Architect
     contract: permanent
     duration: Nov 2019 - Mar 2021 (1 year, 4 months)
