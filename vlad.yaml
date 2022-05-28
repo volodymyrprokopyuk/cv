@@ -136,6 +136,8 @@ employmentList:
       - {tech: OpenSSL, desc: Cryptography library}
       - {tech: Prometheus, desc: Application monitoring and alerting}
       - {tech: Grafana, desc: Metrics analytics and visualization}
+      - {tech: TimescaleDB, desc: Time series database}
+      - {tech: Plotly.js, desc: Graphing and plotting library}
   - position: Cross-border Payments Platform Architect
     contract: permanent
     duration: Nov 2019 - Mar 2021 (1 year, 4 months)

@@ -1,0 +1,19 @@
+{
+  "name": "cv",
+  "version": "0.1.0",
+  "description": "CV",
+  "main": "index.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volodymyrprokopyuk/cv.git"
+  },
+  "author": "Volodymyr Prokopyuk",
+  "license": "MIT",
+  "homepage": "https://volodymyrprokopyuk.github.io/cv",
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "marked": "^4.0.16",
+    "nunjucks": "^3.2.3"
+  }
+}

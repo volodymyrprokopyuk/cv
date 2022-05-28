@@ -1,4 +1,4 @@
-{% extends cvmaster.nwt %}
+{% extends "master.njk" %}
 
 {% block summary %}
   <section id="summary">
@@ -10,7 +10,7 @@
         <h1>{{cv.name}}</h1>
         <h2>{{cv.role}}</h2>
         <div class="email"><a href="mailto:{{cv.email}}">{{cv.email}}</a></div>
-        {% let phone = cv.phone.replace(re"[^\\d\\+]", "") %}
+        {% set phone = cv.phone.replace("[^\\d\\+]", "") %}
         <div class="phone">
           <a href="tel:{{phone}}">{{cv.phone}}</a><span class="location">,
             {{cv.location}}</span>
@@ -21,13 +21,13 @@
       <div class="rside">
         <h3>Languages</h3>
         <ul class="languages">
-          {% for lang in cv.languages %}<li>{{md lang}}</li>{% endfor %}
+          {% for lang in cv.languages %}<li>{{lang | md}}</li>{% endfor %}
         </ul>
       </div>
     </div>
     <div class="fact summary">
       <div class="lmain">
-        <p class="summary">{{md cv.summary}}</p>
+        <p class="summary">{{cv.summary | md}}</p>
       </div>
       <div class="rside">
         <h3>Key capabilities</h3>
@@ -75,7 +75,7 @@
           <h2>{{em.position}}</h2><span class="contract">
             ({{em.contract}})</span>
           <div class="duration">{{em.duration}}</div>
-          <p class="summary">{{md em.summary}}</p>
+          <p class="summary">{{em.summary | md}}</p>
         </div>
         <div class="rside">
           <div class="url">
@@ -93,7 +93,7 @@
             <h3>Main responsibilities. Key projects and achievements</h3>
             <ul class="respponsibilities">
               {% for resp in em.responsibilities %}
-                <li>{{md resp}}</li>
+                <li>{{resp | md}}</li>
               {% endfor %}
             </ul>
           </div>
