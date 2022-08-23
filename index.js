@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { readFile, writeFile } from "fs/promises"
 import { load } from "js-yaml"
 import { marked } from "marked"

@@ -100,6 +100,11 @@ employmentList:
         of instant payment transactions in several leading global banking
         institutions
       - >
+        Led the design and implementation of the **platform-wide scheduling
+        service for the Icon's instant payment framework** (IPF) proving expert
+        knowledge and skills in concurrent and distributed payment systems
+        design
+      - >
         Successfully architected fully automated monitoring and benchmarking
         suite to **measure and analyze performance of key instant payment
         business functions** with insightful monitoring and benchmarking data
@@ -115,6 +120,7 @@ employmentList:
       - Authentication and identity management
       - Authorization and permission management
       - Application security in cloud environments
+      - Distributed task scheduling and process control
       - Application monitoring and benchmarking
       - Statistical data analysis and visualization
       - Time series data analysis and visualization
@@ -134,6 +140,7 @@ employmentList:
       - {tech: OAuth2, desc: Authorizaiton framework}
       - {tech: OpenID Connect, desc: Authentication protocol}
       - {tech: OpenSSL, desc: Cryptography library}
+      - {tech: Svelte, desc: Modern web app library}
       - {tech: Prometheus, desc: Application monitoring and alerting}
       - {tech: Grafana, desc: Metrics analytics and visualization}
       - {tech: TimescaleDB, desc: Time series database}
