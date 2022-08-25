@@ -73,8 +73,8 @@ employmentList:
     duration: Apr 2021 - current
     summary: >
       Worked as a Senior Payments Architect on the **next generation instant
-      payments framework** IPF for Icon Solutions, a leading global provider of
-      instant payments technology and mission-critical banking solutions for
+      payments framework** IPF for Icon Solutions, the leading global provider
+      of instant payments technology and mission-critical banking solutions for
       tier 1 global banks and payment service providers worldwide
     company: Icon Solutions
     url: https://iconsolutions.com/
@@ -149,15 +149,16 @@ employmentList:
     contract: permanent
     duration: Nov 2019 - Mar 2021 (1 year, 4 months)
     summary: >
-      Worked as an Cross-border Payments Platform Architect on the **next
-      generation cross-border payments and foreign exchange platform** PagoFX for
-      Santander, a multinational commercial bank and financial services company
+      Worked as a Cross-border Payments Platform Architect on the **next
+      generation cross-border payments and foreign exchange platform** PagoFX
+      for Santander, the multinational commercial bank and financial services
+      company
     company: PagoFX by Santander
     url: https://www.pagonxt.com/
     location: Madrid
     description: >
       A new way to send money abroad
-    industry: Payments industry
+    industry: Cross-border payments industry
     logo: image/logo-santander.png
     auxlogo: image/logo-pagofx.jpg
     responsibilities:
@@ -211,7 +212,7 @@ employmentList:
     contract: permanent
     duration: Aug 2018 - Oct 2019 (1 year, 3 months)
     summary: >
-      Worked as a Team Lead and a Security Architect on the **content sharing
+      Worked as a Team Lead and a Security Architect on the **content protection
       anti-piracy response platform** Armada for NAGRA, the global leader in
       digital security, conditional access, and convergent media solutions
     company: Nagravision Kudelski Group
@@ -219,7 +220,7 @@ employmentList:
     location: Madrid
     description: >
       Connecting people to the content they love
-    industry: Content sharing industry
+    industry: Content protection industry
     logo: image/logo-nagra.png
     auxlogo:
     responsibilities:
@@ -282,7 +283,7 @@ employmentList:
     contract: permanent
     duration: Feb 2018 - Jul 2018 (6 months)
     summary: >
-      Worked as a Solution Architect for a leading Spanish IT consultancy
+      Worked as a Solution Architect for the leading Spanish IT consultancy
     company: atSistemas
     url: https://www.atsistemas.com/
     location: Madrid
@@ -353,7 +354,7 @@ employmentList:
     contract: permanent
     duration: Nov 2016 - Jan 2018 (1 year, 3 months)
     summary: >
-      Worked as a Solution Architect for a leading international IT consultancy
+      Worked as a Solution Architect for the leading international IT consultancy
     company: TATA Consultancy Services
     url: https://www.tcs.com/
     location: Madrid
@@ -410,7 +411,7 @@ employmentList:
     contract: permanent
     duration: Feb 2016 - Oct 2016 (9 months)
     summary: >
-      Worked as a Frontend Architect for a leading Spanish IT consultancy
+      Worked as a Frontend Architect for the leading Spanish IT consultancy
     company: Kairos Digital Solutions
     url: https://www.kairosds.com/
     location: Madrid
@@ -433,7 +434,7 @@ employmentList:
     url: https://www.bbva.com/
     location: Madrid
     description: >
-      The best digital bank of the 21st century
+      The best digital bank of the 21<sup>st</sup> century
     industry: Mobile banking industry
     logo: image/logo-bbva.png
     auxlogo:
@@ -460,9 +461,10 @@ employmentList:
     contract: permanent
     duration: Mar 2009 - Jan 2016 (6 years, 11 months)
     summary: >
-      Worked as a Senior Software Engineer on **flight reservation services and
-      travel agency business applications** for Amadeus, the major international
-      IT provider for the global travel and tourism industry
+      Worked as a Senior Software Engineer on **global flight reservation
+      services and travel agency backoffice business applications** for Amadeus,
+      the major international IT provider for the global travel and tourism
+      industry
     company: Amadeus IT Group
     url: http://www.amadeus.com/
     location: Madrid
