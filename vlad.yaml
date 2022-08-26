@@ -279,7 +279,7 @@ employmentList:
       - {tech: CloudWatch, desc: Observability of AWS resources}
       - {tech: CloudFormation, desc: AWS infrastructure provisioning}
       - {tech: Python, desc: Programming language}
-      - {tech: SQL, desc: Structured Query Language}
+      - {tech: MySQL, desc: Relational database}
   - position: Solution Architect
     contract: permanent
     duration: Feb 2018 - Jul 2018 (6 months)
@@ -314,28 +314,28 @@ employmentList:
     auxlogo:
     responsibilities:
       - >
-        Worked side by side with the client to **elaborate detailed business
+        Worked side-by-side with the client to **elaborate the detailed business
         requirements**, **define the well-architected technical solution** and
         select the most appropriate technological stack
       - >
-        Completely **redesigned the credit card business core system** from a
-        monolithic legacy mainframe application to a cloud-ready, scalable and
-        modular system using modern technological stack
+        Completely **redesigned the credit card business core system** from the
+        monolithic legacy mainframe application to the cloud-ready, modular and
+        scalable system using modern technological stack
       - >
-        Closely followed the development and testing of the **online credit card
-        transaction authorization**, **core credit card batch processing** and
-        **transaction inquiry and investigation operational portal** with
-        microservices backed
+        Let the development and testing of the **online credit card transaction
+        authorization**, **core credit card batch processing** and **transaction
+        inquiry and investigation operational portal** with the microservices
+        backed
       - >
-        Successfully designed the **credit card business core system to be
-        compliant with the PCI DSS and GDPR**
+        Successfully designed **the credit card business core system to be
+        compliant with the PCI DSS and the GDPR**
       - >
-        Successfully conducted **technical leadership** of a remote engineering
-        team of 10-12 members to **rebuild from scratch the cloud-ready credit
-        card business core system**
+        Successfully conducted **the technical leadership of a remote
+        engineering team of 10-12 members** to rebuild from scratch the
+        cloud-ready credit card business core system
       - >
-        Gracefully **conducted 10+ technical interviews** and succesfully
-        recruited 3 senior developers
+        Gracefully **conducted 10+ technical recruiting interviews** and
+        succesfully recruited 3 senior developers
     skills:
       - Technical leadership and effective communication
       - Design of credit card business core systems
@@ -383,16 +383,16 @@ employmentList:
     auxlogo:
     responsibilities:
       - >
-        Successfully conducted translation of business requirements to detailed
-        technical solution design being **effective bridge between business
-        stakeholders and the engineering team**
+        Successfully conducted the translation of business requirements to the
+        detailed technical solution design acting as **the effective bridge
+        between the business stakeholders and the engineering team**
       - >
-        Successfully **led and coorditaned cross-functional and mulli-cultural
-        engineering team** distributed between Spain and India
+        Successfully **led and coorditaned the cross-functional and
+        mulli-cultural engineering team** distributed between Spain and India
       - >
-        Designed the **intelligent integration layer between Iberia core
-        business systems and Salesforce CRM cloud services** as a set of 30+
-        cohesive microservices deployed to AWS
+        Designed the **intelligent integration layer between the Iberia core
+        business systems and the Salesforce CRM cloud services** as a set of 30+
+        reliable and secure microservices deployed to AWS
     skills:
       - Effective mediation between business and engineering
       - Technical leadership of distributed engineering teams
@@ -441,15 +441,16 @@ employmentList:
     auxlogo:
     responsibilities:
       - >
-        Participated in the **design of the software lifecycle and testing
-        strategy** for the global banking mobile application
+        Actively participated and contribued to **the design of the quality
+        enabling software lifecycle and testing strategies** for the global
+        banking mobile application
       - >
-        Implemented an **advanced testing tool for visual detection of
-        regression errors in application UI screenshots** between sebsequenct
-        builds of global banking mobile applicaiton
+        Implemented **the advanced testing tool for automated visual detection
+        of regression errors in the application UI screenshots** between
+        sebsequent builds of global banking mobile applicaiton
     skills:
       - Software lifecycle management
-      - Design of testing strategy for bankning applications
+      - Design of testing strategies for mobile bankning applications
     technologies:
       - {tech: Polymer, desc: Web UI library}
       - {tech: HTML, desc: HyperText Markup Language}
@@ -458,6 +459,7 @@ employmentList:
       - {tech: Node.js, desc: JavaScript runtime}
       - {tech: TDD, desc: Test-Driven Development}
       - {tech: BDD, desc: Behavior-Driven Development}
+      - {tech: CI/CD, desc: Continuous Integration/Continuous Deployment}
   - position: Senior Software Engineer
     contract: permanent
     duration: Mar 2009 - Jan 2016 (6 years, 11 months)
@@ -476,32 +478,33 @@ employmentList:
     auxlogo:
     responsibilities:
       - >
-        Designed and developed **flight and hotel reservation and payment
+        Designed and developed **the flight and hotel reservation and payment
         solution** that integrates the Amadeus Selling Platform with the
         American Express payment provider
       - >
-        Designed and developed **massive flight itinerary PDF generation and
+        Designed and developed **the massive flight itinerary PDF generation and
         notificaiton system** for the leading international travel agency
       - >
-        Designed and developed **flight and fare change monitoring and
+        Designed and developed **the flight and fare change monitoring and
         notificaiton system** on top of the Amadeus Global Distribution System
         (GDS)
       - >
-        Designed and developed 5+ **flight booking and payment web
-        applications** on top of the Amadeus Selling platform
+        Designed and developed **5+ flight booking and payment web applications
+        for travel agency backoffice** on top of the Amadeus Selling platform
       - >
-        Developed 5+ **B2B integrations with Amadeus Web Services**
+        Developed **5+ B2B integrations with the Amadeus Web Services**
       - >
-        Designed and developed the **Amadeus GDS mainframe integration library**
-        that exposes airline content as a cohesive set of REST microservices
+        Designed and developed **the Amadeus GDS mainframe integration library**
+        that exposes airline content as a cohesive set of microservices with the
+        REST API
     skills:
       - Design of flight/hotel resarvation and payment solutions
       - Design of flight initirary PDF generation systems
       - Design of flight/fare change monitoring systems
-      - Desidn of travel management applications
+      - Desidn of travel management backoffice applications
       - Integration of payment providers
       - Relational data modeling
-      - Web service system integration
+      - Web services system integration
       - Fullstack development of web applications
     technologies:
       - {tech: Java, desc: Programming language}
