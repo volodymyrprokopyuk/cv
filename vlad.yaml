@@ -87,40 +87,40 @@ employmentList:
     auxlogo:
     responsibilities:
       - >
-        Let the design and succesfully presented to the customer (tier 1 global
-        bank headquartered in Zurich) **global security architecture for the
-        next-generation instant payment platform** operated in a hybrid cloud
+        Led the design and succesfully presented to the customer (tier 1 global
+        bank headquartered in Zurich) **the global security architecture for
+        their next-generation instant payment platform** operated in a hybrid
+        cloud
       - >
         Led the design and succesfully presented to the customer (one of the
-        biggest US banks) the mission-critical **settlement and reconciliation
+        biggest US banks) **the mission-critical settlement and reconciliation
         platform** for the PayPal digital wallet payouts
       - >
-        Successfully concluded the desing of the generic, extensible, **ISO
+        Successfully conducted the desing of the **generic, extensible, ISO
         20022-compatible operational data store product** that powers billions
         of instant payment transactions in several leading global banking
         institutions
       - >
-        Led the design and implementation of the **platform-wide scheduling
-        service for the Icon's instant payment framework** (IPF) proving expert
-        knowledge and skills in concurrent and distributed payment systems
-        design
+        Led the design and implementation of **the platform-wide job scheduling
+        and management service for the Icon's instant payment framework** (IPF)
+        that schedules, orchestrates and controls billions of instant payment
+        transactions worldwide
       - >
-        Successfully architected fully automated monitoring and benchmarking
-        suite to **measure and analyze performance of key instant payment
-        business functions** with insightful monitoring and benchmarking data
-        analysis and visualization
+        Successfully architected the fully automated monitoring and benchmarking
+        suite to **measures and analyzes the performance of key business
+        functions of the Icon's instant payments platform** (IPF) with
+        insightful monitoring and benchmarking data analysis and visualization
     skills:
-      - Design of settlement and reconciliation systems
-      - Relational data modeling
-      - Design of instant payment data stores
-      - Document-oriented data modeling
-      - Asyncronous data integration
-      - Design of business-orieted REST API
-      - Security design of instant payment platform
+      - Security design of instant payments platforms
       - Authentication and identity management
       - Authorization and permission management
       - Application security in cloud environments
-      - Distributed task scheduling and process control
+      - Design of settlement and reconciliation systems
+      - Data modeling of instant payments data stores
+      - Relational and document-oriented data modeling
+      - Asyncronous event-based payment data integration
+      - Design of business-oriented microservices architectures
+      - Distributed job scheduling, management and control
       - Application monitoring and benchmarking
       - Statistical data analysis and visualization
       - Time series data analysis and visualization
@@ -130,20 +130,20 @@ employmentList:
       - {tech: CEP, desc: Complex Event Processing}
       - {tech: FRP, desc: Functional Reactive Programming}
       - {tech: ISO 20022, desc: Payments messaging standard}
+      - {tech: MFA, desc: Microservices Architecture}
+      - {tech: OAuth2, desc: Authorizaiton framework}
+      - {tech: OpenID Connect, desc: Authentication protocol}
+      - {tech: OpenSSL, desc: Cryptography library}
       - {tech: Azure, desc: Microsoft cloud service provider}
       - {tech: Kubernetes, desc: Container orchestration}
       - {tech: Docker, desc: Container management}
       - {tech: Java, desc: Programming language}
       - {tech: PostgreSQL, desc: Relational database}
       - {tech: Kafka, desc: Distributed event store}
-      - {tech: MFA, desc: Microservices Architecture}
-      - {tech: OAuth2, desc: Authorizaiton framework}
-      - {tech: OpenID Connect, desc: Authentication protocol}
-      - {tech: OpenSSL, desc: Cryptography library}
-      - {tech: Svelte, desc: Modern web app library}
       - {tech: Prometheus, desc: Application monitoring and alerting}
       - {tech: Grafana, desc: Metrics analytics and visualization}
       - {tech: TimescaleDB, desc: Time series database}
+      - {tech: Svelte, desc: Modern web app library}
       - {tech: Plotly.js, desc: Graphing and plotting library}
   - position: Cross-border Payments Platform Architect
     contract: permanent
@@ -163,28 +163,28 @@ employmentList:
     auxlogo: image/logo-pagofx.jpg
     responsibilities:
       - >
-        Designed **cloud-native microservices architecture of the cross-border
-        payments and foreign exchange platform**
+        Designed **the cloud-native microservices architecture of the
+        cross-border payments and foreign exchange platform**
       - >
-        Architected key platform commponents to support credit card and bank
-        account **payment funding**, **AML and fraud** checking, cross-border
-        **payments routing** and execution, **FX pricing** and execution,
-        **digital wallet** management, **accounting ledger** and reconciliation
-        processing
+        Architected the key platform components to support the credit card and
+        bank account **payment funding**, **AML and fraud checking**,
+        **cross-border payments routing and execution**, **FX pricing and
+        execution**, **digital wallet management**, **accounting ledger** and
+        **reconciliation processing**
       - >
-        Designed **customer onboarding** (KYC) and **identity management**
-        platform including **digital identity verification**, customer,
+        Designed **the customer onboarding** (KYC) and **identity management
+        platform** including **the digital identity verification**, customer,
         beneficiary and **payment screening** (AML), customer profile and
         **payment risk assessment**
       - >
-        Designed **effective security architecture for the cross-border payments
-        and foreign exchange platform** compliant with the GDPR, PSD2 and EBA
-        guidelines
+        Designed **the effective security architecture for the cross-border
+        payments and foreign exchange platform** compliant with the GDPR, PSD2
+        and EBA guidelines
       - >
-        Led the design of the **bidirectional, real-time integration** of the
-        cross-border payments platform with **Salesforce Servicing Cloud** (CRM
-        and case management) and **Salesforce Marketing Cloud** (lead generation
-        and marketing communication)
+        Led the design of **the bidirectional, real-time integration** of the
+        cross-border payments platform with **the Salesforce Servicing Cloud**
+        (CRM and case management) and **the Salesforce Marketing Cloud** (lead
+        generation and marketing communication)
     skills:
       - Design of cloud-native microservices architectures
       - Design of cross-border payment systems
@@ -200,13 +200,14 @@ employmentList:
       - {tech: GDPR, desc: General Data Protection Regulation}
       - {tech: Salesforce CRM, desc: Customer Relationships Management}
       - {tech: MFA, desc: Microservices Architecture}
+      - {tech: OAuth2, desc: Authorizaiton framework}
+      - {tech: OpenID Connect, desc: Authentication protocol}
       - {tech: GCP, desc: Google Cloud Platform}
       - {tech: Kubernetes, desc: Container orchestration}
       - {tech: Docker, desc: Container management}
-      - {tech: OAuth2, desc: Authorizaiton framework}
-      - {tech: OpenID Connect, desc: Authentication protocol}
       - {tech: Node.js, desc: JavaScript runtime}
       - {tech: TypeScript, desc: Programming language}
+      - {tech: JavaScript, desc: Programming language}
       - {tech: PostgreSQL, desc: Relational database}
   - position: Team Lead, Security Architect
     contract: permanent
@@ -225,34 +226,34 @@ employmentList:
     auxlogo:
     responsibilities:
       - >
-        Led the brainstorming sessions on **definition of product features for
-        the anti-piracy response platform** with program managers and business
-        representatives
+        Led the brainstorming sessions on **the definition of product features
+        for the content protection anti-piracy response platform** with program
+        managers and business representatives
       - >
-        Successfully conducted **technical leadership on the design and
+        Successfully conducted **the technical leadership on the design and
         implementation of the anti-piracy response platform** distributed,
         scalable serverless system deployed to AWS
       - >
-        Became **technical coach** and organized 20+ **technical knowledge
+        Became **the technical coach** and organized 20+ **technical knowledge
         transfer sessions** for the engineering and service delivery teams
       - >
-        Led organization of strategical and tactical work planning, effort
-        estimaitons, dependency management and work prioritization
+        Led the organization of **strategical and tactical work planning**,
+        effort estimaitons, dependency management and work prioritization
       - >
-        Led **technical coordination of the international, cross-functional and
-        multi-cultural engineering team of 12-15 members** distributed across
-        Spain, Switzerland and India
+        Led **the technical coordination of the international, cross-functional
+        and multi-cultural engineering team of 12-15 members** distributed
+        across Spain, Switzerland and India
       - >
-        Built highly cohesive, **cross-functional and empowered team of
+        Built the highly cohesive, **cross-functional and empowered team of
         engineers** that enjoy **advanced agile and lean methodologies** and
         deliver quality products on time. Made people feel comfortable about
         what they do, actively participate in the process and have the feeling
         of achievement
       - >
-        Gracefully **conducted 30+ technical interviews** and succesfully
-        recruited 5 senior software engineers
+        Gracefully **conducted 30+ technical recruiting interviews** and
+        succesfully recruited 5 senior software architects and engineers
     skills:
-      - Technical leadership and effective communication
+      - Technical leadership and effective business communication
       - Strategical work planning and prioritization
       - Analythical thinking and problem solving
       - Focus on results and attention to details
