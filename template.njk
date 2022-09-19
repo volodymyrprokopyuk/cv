@@ -15,8 +15,12 @@
           <a href="tel:{{phone}}">{{cv.phone}}</a><span class="location">,
             {{cv.location}}</span>
         </div>
-        <div class="url"><a href="{{cv.url}}">{{cv.url}}</a></div>
-        <div class="url"><a href="{{cv.linkedin}}">{{cv.linkedin}}</a></div>
+        <div class="url">
+          <a href="{{cv.url}}">{{cv.url}}</a>
+        </div>
+        <div class="url">
+          <a href="{{cv.linkedin}}" target="_blank">{{cv.linkedin}}</a>
+        </div>
       </div>
       <div class="rside">
         <h3>Languages</h3>
@@ -33,6 +37,20 @@
         <h3>Key capabilities</h3>
         <ul class="capabilities">
           {% for cap in cv.keyCapabilities %}<li>{{cap}}</li>{% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="fact profiles">
+      <div class="lmain">
+        <ul>
+          {% for pr in cv.profiles %}
+            <li>
+              <a href="{{pr.url}}">{{pr.name}}</a>
+              by
+              <a href="{{pr.producerUrl}}" target="_blank">{{pr.producer}}</a>,
+              <span class="duration">{{pr.date}}</span>
+            </li>
+          {% endfor %}
         </ul>
       </div>
     </div>
@@ -54,8 +72,8 @@
           {% endfor %}
         </div>
         <div class="rside url">
-          <a href="{{ed.url}}">{{ed.center}}</a><span class="location">,
-            {{ed.location}}</span>
+          <a href="{{ed.url}}" target="_blank">
+            {{ed.center}}</a><span class="location">, {{ed.location}}</span>
         </div>
       </div>
     {% endfor %}
@@ -79,8 +97,8 @@
         </div>
         <div class="rside">
           <div class="url">
-            <a href="{{em.url}}">{{em.company}}</a><span class="location">,
-              {{em.location}}</span>
+            <a href="{{em.url}}"  target="_blank">
+              {{em.company}}</a><span class="location">, {{em.location}}</span>
           </div>
           <div class="description">{{em.description}}</div>
           <div class="industry">{{em.industry}}</div>

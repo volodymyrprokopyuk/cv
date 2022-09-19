@@ -24,6 +24,12 @@ summary: >
   interested in modern payments systems, cyber security, cryptocurrencies,
   blockchains, DeFi solutions, cloud computing, modern web technologies and
   mathematics
+profiles:
+  - name: Personal profile discovery insights
+    url: asset/2022-09-personal-profile-maxima.pdf
+    producer: Maxima
+    producerUrl: https://www.maximatraining.com/
+    date: Sep 2022
 keyCapabilities:
   - Technical leadership and effective communication
   - Effective mediation between business and engineering
