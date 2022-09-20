@@ -88,7 +88,7 @@ employmentList:
     description: >
       World class payments and enterprise solutions for the global financial
       sector
-    industry: Instant payments industry
+    industry: Instant payments industry (FinTech)
     logo: image/logo-icon.png
     auxlogo:
     responsibilities:
@@ -164,7 +164,7 @@ employmentList:
     location: Madrid
     description: >
       A new way to send money abroad
-    industry: Cross-border payments industry
+    industry: Cross-border payments industry (FinTech)
     logo: image/logo-santander.png
     auxlogo: image/logo-pagofx.jpg
     responsibilities:
