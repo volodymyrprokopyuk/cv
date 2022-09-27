@@ -9,6 +9,7 @@
       <div class="main">
         <h1>{{cv.name}}</h1>
         <h2>{{cv.role}}</h2>
+        <div class="industry">{{cv.industries}}</div>
         <div class="email"><a href="mailto:{{cv.email}}">{{cv.email}}</a></div>
         {% set phone = cv.phone.replace("[^\\d\\+]", "") %}
         <div class="phone">
