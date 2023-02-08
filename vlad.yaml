@@ -109,14 +109,19 @@ employmentList:
         institutions
       - >
         Led the design and implementation of **the platform-wide job scheduling
-        and management service for the Icon's instant payment framework** (IPF)
+        and management service for the Icon's instant payments framework** (IPF)
         that schedules, orchestrates and controls billions of instant payment
         transactions worldwide
       - >
         Successfully architected the fully automated monitoring and benchmarking
-        suite to **measures and analyzes the performance of key business
+        suite that **measures and analyzes the performance of key business
         functions of the Icon's instant payments platform** (IPF) with
         insightful monitoring and benchmarking data analysis and visualization
+      - >
+        Led the design and implementation of **zero downtime rolling upgrades
+        for the Icon's instant payments framework** (IPF) with strong data
+        consistency and system resilience guarantees in handling in-flight
+        transactions
     skills:
       - Security design of instant payments platforms
       - Authentication and identity management
