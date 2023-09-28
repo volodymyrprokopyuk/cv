@@ -2,7 +2,7 @@
 ---
 title: CV Vlad - Summary
 name: Volodymyr Prokopyuk (Vlad)
-role: Payments Architect, Cloud Security Architect,<br> Team Lead
+role: Payments Architect, Solutions Architect
 industries: Instant payments, cross-border payments
 email: volodymyrprokopyuk@gmail.com
 phone: +(34) 663 564 178
@@ -16,15 +16,15 @@ languages:
   - "**Russian** native"
 selfie: image/selfie.jpg
 summary: >
-  I'm an enthusiastic IT professional with business focus and more than 14 years
-  of contrasted experience in design and development of **modern payment
-  systems**, design and deployment of **standard-compliant, cloud-native
-  security solutions** and **technical leadership of engineering teams**. I
-  enjoy pragmatic approach to software development, **effective communication**
-  and **fruitful collaboration** with people on challenging projects. I'm
-  interested in modern payments systems, cyber security, cryptocurrencies,
-  blockchains, DeFi solutions, cloud computing, modern web technologies and
-  mathematics
+  I'm an enthusiastic IT professional with business focus and 15 years of
+  contrasted experience in design and development of **modern payment systems**,
+  design and implementation of **standard-compliant, cloud-native security
+  solutions** with proven track in **technical leadership of engineering
+  teams**. I enjoy pragmatic approach to software development, **effective
+  communication** and **fruitful collaboration** with people on challenging
+  projects. I'm interested in modern payments systems, cybersecurity,
+  distributed systems, blockchain technologies, DeFi solutions, modern web
+  technologies, algorithms and data structures
 profiles:
   - name: Personal profile discovery insights
     url: asset/2022-09-vlad-personal-profile-maxima.pdf
