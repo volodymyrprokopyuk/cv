@@ -58,23 +58,20 @@
   </section>
 {% endblock %}
 
-{% block education %}
-  <section id="education">
-    <h1>Education</h1>
-    {% for ed in cv.educationList %}
+{% block achievements %}
+  <section id="achievements">
+    <h1>Achievements</h1>
+    {% for ach in cv.achievementsList %}
       <div class="fact title">
         <div class="lside logo">
-          <img src="{{ed.logo}}">
+          <img src={{ach.logo}}>
+          {% if ach.auxlogo %}<img src="ach.auxlogo">{% endif %}
         </div>
-        <div class="main">
-          {% for course in ed.courses %}
-            <h2>{{course.title}}</h2>
-            <div class="duration">{{course.duration}}</div>
-          {% endfor %}
-        </div>
-        <div class="rside url">
-          <a href="{{ed.url}}" target="_blank">
-            {{ed.center}}</a><span class="location">, {{ed.location}}</span>
+        <div class="rmain">
+          <h2>{{ach.project}}</h2>
+            <ul class="achievements">
+              {% for st in ach.start %}<li>{{ st | md }}</li>{% endfor %}
+            </ul>
         </div>
       </div>
     {% endfor %}
@@ -88,7 +85,7 @@
       <div class="fact title">
         <div class="lside logo">
           <img src="{{em.logo}}">
-          {% if em.auxlogo != "" %}<img src="{{em.auxlogo}}">{% endif %}
+          {% if em.auxlogo %}<img src="{{em.auxlogo}}">{% endif %}
         </div>
         <div class="main">
           <h2>{{em.position}}</h2><span class="contract">
@@ -110,7 +107,7 @@
           <div class="lside"></div>
           <div class="main">
             <h3>Main responsibilities. Key projects and achievements</h3>
-            <ul class="respponsibilities">
+            <ul class="responsibilities">
               {% for resp in em.responsibilities %}
                 <li>{{resp | md}}</li>
               {% endfor %}
@@ -128,6 +125,29 @@
           </div>
         </div>
       {% endif %}
+    {% endfor %}
+  </section>
+{% endblock %}
+
+{% block education %}
+  <section id="education">
+    <h1>Education</h1>
+    {% for ed in cv.educationList %}
+      <div class="fact title">
+        <div class="lside logo">
+          <img src="{{ed.logo}}">
+        </div>
+        <div class="main">
+          {% for course in ed.courses %}
+            <h2>{{course.title}}</h2>
+            <div class="duration">{{course.duration}}</div>
+          {% endfor %}
+        </div>
+        <div class="rside url">
+          <a href="{{ed.url}}" target="_blank">
+            {{ed.center}}</a><span class="location">, {{ed.location}}</span>
+        </div>
+      </div>
     {% endfor %}
   </section>
 {% endblock %}

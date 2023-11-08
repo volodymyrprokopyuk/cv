@@ -2,7 +2,7 @@
 ---
 title: CV Vlad - Summary
 name: Volodymyr Prokopyuk (Vlad)
-role: Payments Architect, Solutions Architect
+role: Payments Architect, Solution Architect
 industries: Instant payments, cross-border payments
 email: volodymyrprokopyuk@gmail.com
 phone: +(34) 663 564 178
@@ -36,44 +36,30 @@ keyCapabilities:
   - Effective mediation between business and engineering
   - Design and development of modern payment systems
   - Standard-compliant, cloud-native security solutions
-educationList:
-  - courses:
-    - title: Master of Business Administration, MBA
-      duration: Sep 2012 - Jul 2015 (3 years)
-    center: EAE Business School
-    url: http://www.eae.es/
-    location: Madrid
-    logo: image/logo-eae.jpg
-  - courses:
-    - title: Master of Informatics Engineering, MSc
-      duration: Sep 2010 - Jul 2011 (1 year)
-    center: Universidad Carlos III de Madrid
-    url: https://www.uc3m.es/
-    location: Madrid
-    logo: image/logo-uc3m.png
-  - courses:
-    - title: Master of Science in Computing Systems, MSc
-      duration: Sep 2007 - Jul 2008 (1 year). Homologated/certified in Spain
-    - title: Bachelor of Science in Computer Science, BSc
-      duration: Sep 2003 - Jul 2007 (4 years). Homologated/certified in Spain
-    center: National Technical University of Oil and Gas
-    url: http://nung.edu.ua/
-    location: Ukraine
-    logo: image/logo-ifntung.jpg
-  - courses:
-    - title: Oxford Cyber Security for Business Leaders
-      duration: Oct - Nov 2020 (6 weeks)
-    center: Saïd Business School, University of Oxford
-    url: https://www.sbs.ox.ac.uk/
-    location: UK
-    logo: image/logo-said.png
-  - courses:
-    - title: Blockchain, Cryptocurrencies, Smart Contracts and Ethereum
-      duration: Apr 2019 (1 week)
-    center: CEU IAM Institute for Advanced Management
-    url: https://www.uspceu.com/
-    location: Madrid
-    logo: image/logo-ceu.png
+achievementsList:
+  - project: Unified operational data store
+    logo: image/logo-icon.png
+    start:
+      - >
+        *Situation*: an **instant payments product** connects to **multiple
+        payment schemes** e. g. **SEPA**, **STEP1**, **STEP2**, **RT1**,
+        **TIPS**. *Before the change*: each payment scheme had its own
+        **scheme-specific payment processing view** (operational dashboard). A
+        payment operator **had to consult multiple systems** during a payment
+        investigation or a manual payment repair
+      - >
+        *Task*: provide a **unified view on payment processing** under different
+        payment schemes, allow **enrichment of standard payment messages** with
+        customer-specific data while being **compliant with ISO 20022**
+      - >
+        *Action*: design and implement a **generic relational data model** that
+        allows **arbitrary typed connections** between standard payment messages
+        including non-standard customer-specific data payloads
+      - >
+        *Result*: **improved customer satisfaction** with a **unified view on
+        payment processing** across multiple payment schemes, a scalable
+        **system-wide transaction log**, **single source of truth** for payments
+        operations, real-time payment monitoring, and payment analytics
 employmentList:
   - position: Senior Payments Architect
     contract: permanent
@@ -91,19 +77,18 @@ employmentList:
       sector
     industry: Instant payments industry (FinTech)
     logo: image/logo-icon.png
-    auxlogo:
     responsibilities:
       - >
-        Led the design and succesfully presented to the customer (tier 1 global
+        Led the design and successfully presented to the customer (tier 1 global
         bank headquartered in Zurich) **the global security architecture for
         their next-generation instant payment platform** operated in a hybrid
         cloud
       - >
-        Led the design and succesfully presented to the customer (one of the
+        Led the design and successfully presented to the customer (one of the
         biggest US banks) **the mission-critical settlement and reconciliation
         platform** for the PayPal digital wallet payouts
       - >
-        Successfully conducted the desing of the **generic, extensible, ISO
+        Successfully conducted the design of the **generic, extensible, ISO
         20022-compatible operational data store product** that powers billions
         of instant payment transactions in several leading global banking
         institutions
@@ -130,7 +115,7 @@ employmentList:
       - Design of settlement and reconciliation systems
       - Data modeling of instant payments data stores
       - Relational and document-oriented data modeling
-      - Asyncronous event-based payment data integration
+      - Asynchronous event-based payment data integration
       - Design of business-oriented microservices architectures
       - Distributed job scheduling, management and control
       - Application monitoring and benchmarking
@@ -143,7 +128,7 @@ employmentList:
       - {tech: FRP, desc: Functional Reactive Programming}
       - {tech: ISO 20022, desc: Payments messaging standard}
       - {tech: MFA, desc: Microservices Architecture}
-      - {tech: OAuth2, desc: Authorizaiton framework}
+      - {tech: OAuth2, desc: Authorization framework}
       - {tech: OpenID Connect, desc: Authentication protocol}
       - {tech: OpenSSL, desc: Cryptography library}
       - {tech: Azure, desc: Microsoft cloud service provider}
@@ -203,7 +188,7 @@ employmentList:
       - Design of foreign exchange integrations
       - KYC, digital identity management and verification
       - AML, fraud and payment risk assessment
-      - Design of standrard-compliant security architectures
+      - Design of standard-compliant security architectures
       - Design of integrations with Salesforce cloud services
     technologies:
       - {tech: DDD, desc: Domain-Driven Design}
@@ -212,7 +197,7 @@ employmentList:
       - {tech: GDPR, desc: General Data Protection Regulation}
       - {tech: Salesforce CRM, desc: Customer Relationships Management}
       - {tech: MFA, desc: Microservices Architecture}
-      - {tech: OAuth2, desc: Authorizaiton framework}
+      - {tech: OAuth2, desc: Authorization framework}
       - {tech: OpenID Connect, desc: Authentication protocol}
       - {tech: GCP, desc: Google Cloud Platform}
       - {tech: Kubernetes, desc: Container orchestration}
@@ -235,7 +220,6 @@ employmentList:
       Connecting people to the content they love
     industry: Content protection industry
     logo: image/logo-nagra.png
-    auxlogo:
     responsibilities:
       - >
         Led the brainstorming sessions on **the definition of product features
@@ -250,7 +234,7 @@ employmentList:
         transfer sessions** for the engineering and service delivery teams
       - >
         Led the organization of **strategical and tactical work planning**,
-        effort estimaitons, dependency management and work prioritization
+        effort estimations, dependency management and work prioritization
       - >
         Led **the technical coordination of the international, cross-functional
         and multi-cultural engineering team of 12-15 members** distributed
@@ -267,7 +251,7 @@ employmentList:
     skills:
       - Technical leadership and effective business communication
       - Strategical work planning and prioritization
-      - Analythical thinking and problem solving
+      - Analytical thinking and problem solving
       - Focus on results and attention to details
       - Knowledge sharing and clear technical communication
       - Cross-functional team building and soft skills
@@ -278,13 +262,13 @@ employmentList:
     technologies:
       - {tech: Scrum/Kanban/Lean, desc: Agile methodologies}
       - {tech: AWS, desc: Amazon Web Services}
-      - {tech: VPC, desc: Vitual Private Cloud}
+      - {tech: VPC, desc: Virtual Private Cloud}
       - {tech: IAM, desc: Identity and Access Management}
       - {tech: ELB, desc: Elastic Load Balancer}
       - {tech: API Gateway, desc: Web API delivery}
       - {tech: AWS Lambda, desc: AWS serverless computation}
       - {tech: REST, desc: Representation State Transfer}
-      - {tech: OAuth2, desc: Authorizaiton framework}
+      - {tech: OAuth2, desc: Authorization framework}
       - {tech: SQS, desc: Simple Queue Service}
       - {tech: RDS, desc: Relational Database Service}
       - {tech: S3, desc: Simple Storage Service}
@@ -305,7 +289,6 @@ employmentList:
       people, technology and business
     industry: IT consultancy
     logo: image/logo-atsistemas.png
-    auxlogo:
     responsibilities: []
     skills: []
     technologies: []
@@ -323,7 +306,6 @@ employmentList:
       Experience and innovation in credit cards
     industry: Credit cards industry
     logo: image/logo-dinersclub.jpg
-    auxlogo:
     responsibilities:
       - >
         Worked side-by-side with the client to **elaborate the detailed business
@@ -347,7 +329,7 @@ employmentList:
         cloud-ready credit card business core system
       - >
         Gracefully **conducted 10+ technical recruiting interviews** and
-        succesfully recruited 3 senior developers
+        successfully recruited 3 senior developers
     skills:
       - Technical leadership and effective communication
       - Design of credit card business core systems
@@ -361,7 +343,7 @@ employmentList:
       - {tech: Kotlin, desc: Programming language}
       - {tech: Spring, desc: Java application framework}
       - {tech: MS SQL Server, desc: Relational database}
-      - {tech: OAuth2, desc: Authorizaiton framework}
+      - {tech: OAuth2, desc: Authorization framework}
       - {tech: Keycloak, desc: Identity and Access Management}
   - position: Solution Architect
     contract: permanent
@@ -375,7 +357,6 @@ employmentList:
       Global leader in IT services, digital and business solutions
     industry: IT consultancy
     logo: image/logo-tcs.png
-    auxlogo:
     responsibilities: []
     skills: []
     technologies: []
@@ -392,15 +373,14 @@ employmentList:
       Leading airline between Europe and Latin America
     industry: Airline and travel industry
     logo: image/logo-iberia.png
-    auxlogo:
     responsibilities:
       - >
         Successfully conducted the translation of business requirements to the
         detailed technical solution design acting as **the effective bridge
         between the business stakeholders and the engineering team**
       - >
-        Successfully **led and coorditaned the cross-functional and
-        mulli-cultural engineering team** distributed between Spain and India
+        Successfully **led and coordinated the cross-functional and
+        multi-cultural engineering team** distributed between Spain and India
       - >
         Designed the **intelligent integration layer between the Iberia core
         business systems and the Salesforce CRM cloud services** as a set of 30+
@@ -417,7 +397,7 @@ employmentList:
       - {tech: REST, desc: Representation State Transfer}
       - {tech: Java, desc: Programming language}
       - {tech: Spring, desc: Java application framework}
-      - {tech: OAuth2, desc: Authorizaiton framework}
+      - {tech: OAuth2, desc: Authorization framework}
       - {tech: Keycloak, desc: Identity and Access Management}
       - {tech: ELK, desc: Elasticsearch Logstash Kibana}
   - position: Frontend Architect
@@ -432,7 +412,6 @@ employmentList:
       We transform organizations supported by agile principles
     industry: IT consultancy
     logo: image/logo-kairos.png
-    auxlogo:
     responsibilities: []
     skills: []
     technologies: []
@@ -450,19 +429,18 @@ employmentList:
       The best digital bank of the 21<sup>st</sup> century
     industry: Mobile banking industry
     logo: image/logo-bbva.png
-    auxlogo:
     responsibilities:
       - >
-        Actively participated and contribued to **the design of the quality
+        Actively participated and contributed to **the design of the quality
         enabling software lifecycle and testing strategies** for the global
         banking mobile application
       - >
         Implemented **the advanced testing tool for automated visual detection
         of regression errors in the application UI screenshots** between
-        sebsequent builds of global banking mobile applicaiton
+        sebsequent builds of global banking mobile application
     skills:
       - Software lifecycle management
-      - Design of testing strategies for mobile bankning applications
+      - Design of testing strategies for mobile banking applications
     technologies:
       - {tech: Polymer, desc: Web UI library}
       - {tech: HTML, desc: HyperText Markup Language}
@@ -477,17 +455,16 @@ employmentList:
     duration: Mar 2009 - Jan 2016 (6 years, 11 months)
     summary: >
       Worked as a Senior Software Engineer on **global flight reservation
-      services and travel agency backoffice business applications** for Amadeus,
+      services and travel agency back office business applications** for Amadeus,
       the major international IT provider for the global travel and tourism
       industry
     company: Amadeus IT Group
     url: http://www.amadeus.com/
     location: Madrid
     description: >
-      World’s leading IT provider for the global travel and tourism industry
+      World leading IT provider for the global travel and tourism industry
     industry: Travel and tourism industry
     logo: image/logo-amadeus.png
-    auxlogo:
     responsibilities:
       - >
         Designed and developed **the flight and hotel reservation and payment
@@ -495,14 +472,14 @@ employmentList:
         American Express payment provider
       - >
         Designed and developed **the massive flight itinerary PDF generation and
-        notificaiton system** for the leading international travel agency
+        notification system** for the leading international travel agency
       - >
         Designed and developed **the flight and fare change monitoring and
-        notificaiton system** on top of the Amadeus Global Distribution System
+        notification system** on top of the Amadeus Global Distribution System
         (GDS)
       - >
         Designed and developed **5+ flight booking and payment web applications
-        for travel agency backoffice** on top of the Amadeus Selling platform
+        for travel agency back office** on top of the Amadeus Selling platform
       - >
         Developed **5+ B2B integrations with the Amadeus Web Services**
       - >
@@ -510,14 +487,14 @@ employmentList:
         that exposes airline content as a cohesive set of microservices with the
         REST API
     skills:
-      - Design of flight/hotel resarvation and payment solutions
-      - Design of flight initirary PDF generation systems
+      - Design of flight/hotel reservation and payment solutions
+      - Design of flight itinerary PDF generation systems
       - Design of flight/fare change monitoring systems
-      - Desidn of travel management backoffice applications
+      - Design of travel management back office applications
       - Integration of payment providers
       - Relational data modeling
       - Web services system integration
-      - Fullstack development of web applications
+      - Full-stack development of web applications
     technologies:
       - {tech: Java, desc: Programming language}
       - {tech: Spring, desc: Java application framework}
@@ -526,3 +503,41 @@ employmentList:
       - {tech: MS SQL Server, desc: Relational database}
       - {tech: HTML, desc: HyperText Markup Language}
       - {tech: CSS, desc: Cascading Style Sheets}
+educationList:
+  - courses:
+    - title: Master of Business Administration, MBA
+      duration: Sep 2012 - Jul 2015 (3 years)
+    center: EAE Business School
+    url: http://www.eae.es/
+    location: Madrid
+    logo: image/logo-eae.jpg
+  - courses:
+    - title: Master of Informatics Engineering, MSc
+      duration: Sep 2010 - Jul 2011 (1 year)
+    center: Universidad Carlos III de Madrid
+    url: https://www.uc3m.es/
+    location: Madrid
+    logo: image/logo-uc3m.png
+  - courses:
+    - title: Master of Science in Computing Systems, MSc
+      duration: Sep 2007 - Jul 2008 (1 year). Homologated/certified in Spain
+    - title: Bachelor of Science in Computer Science, BSc
+      duration: Sep 2003 - Jul 2007 (4 years). Homologated/certified in Spain
+    center: National Technical University of Oil and Gas
+    url: http://nung.edu.ua/
+    location: Ukraine
+    logo: image/logo-ifntung.jpg
+  - courses:
+    - title: Oxford Cyber Security for Business Leaders
+      duration: Oct - Nov 2020 (6 weeks)
+    center: Saïd Business School, University of Oxford
+    url: https://www.sbs.ox.ac.uk/
+    location: UK
+    logo: image/logo-said.png
+  - courses:
+    - title: Blockchain, Cryptocurrencies, Smart Contracts and Ethereum
+      duration: Apr 2019 (1 week)
+    center: CEU IAM Institute for Advanced Management
+    url: https://www.uspceu.com/
+    location: Madrid
+    logo: image/logo-ceu.png

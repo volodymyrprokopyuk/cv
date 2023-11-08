@@ -118,6 +118,9 @@ img {
 .lmain {
   flex-basis: 60%;
 }
+.rmain {
+  flex-basis: 90%;
+}
 
 .fact.detail {
   display: none;
@@ -126,7 +129,7 @@ img {
 .fact.title {
   margin-top: 1.2em;
 }
-.main {
+.main, .rmain {
   margin: 0 1em;
 }
 .lmain {
@@ -141,6 +144,6 @@ img {
   border: thin solid gray;
 }
 
-/* .lside, .main, .rside, .lmain { */
+/* .lside, .main, .rside, .lmain, .rmain { */
 /*   border: thin solid black; */
 /* } */
