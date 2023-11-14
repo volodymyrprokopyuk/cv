@@ -35,6 +35,7 @@ keyCapabilities:
   - Effective mediation between business and engineering
   - Design and development of modern payment systems
   - Standard-compliant, cloud-native security solutions
+  - Definition of functional and non-functional requirements
 achievementsList:
   - project: Unified operational data store
     logo: image/logo-icon.png
