@@ -33,11 +33,11 @@ profiles:
 keyCapabilities:
   - Technical leadership and effective communication
   - Effective mediation between business and engineering
+  - Technical mentoring and coaching of engineering teams
   - Design and development of modern payment systems
-  - Standard-compliant, cloud-native security solutions
-  - Definition of functional and non-functional requirements
+  - Standards-compliant, cloud-native security solutions
 achievementsList:
-  - project: Unified operational data store
+  - project: Unified payment data store
     logo: image/logo-icon.png
     start:
       - >
@@ -58,7 +58,7 @@ achievementsList:
       - >
         *Result*: **improved customer satisfaction** with a **unified view on
         payment processing** across multiple payment schemes, a scalable
-        **system-wide transaction log**, **single source of truth** for payments
+        **system-wide transaction log**, **single source of truth** for payment
         operations, real-time payment monitoring, and payment analytics
   - project: Stable FX pricing and execution
     logo: image/logo-santander.png
@@ -145,8 +145,8 @@ employmentList:
         platform** for the PayPal digital wallet payouts
       - >
         Successfully conducted the design of the **generic, extensible, ISO
-        20022-compatible operational data store product** that powers billions
-        of instant payment transactions in several leading global banking
+        20022-compatible payment data store product** that powers billions of
+        instant payment transactions in several leading global banking
         institutions
       - >
         Led the design and implementation of **the platform-wide job scheduling
