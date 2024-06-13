@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env bun
 
 import { readFile, writeFile } from "fs/promises"
 import { load } from "js-yaml"
