@@ -1,4 +1,4 @@
-%YAML 1.2
+%YAML 1.1
 ---
 title: CV Vlad - Summary
 name: Volodymyr Prokopyuk (Vlad)
@@ -7,7 +7,7 @@ industries: Instant payments, cross-border payments
 email: volodymyrprokopyuk@gmail.com
 phone: +(34) 663 564 178
 location: Madrid, Spain
-url: https://volodymyrprokopyuk.github.io/cv/
+URL: https://volodymyrprokopyuk.github.io/cv/
 linkedin: https://www.linkedin.com/in/volodymyrprokopyuk/
 languages:
   - "**English** fluent"
@@ -26,20 +26,20 @@ summary: >
   structures
 profiles:
   - name: Personal profile discovery insights
-    url: asset/2022-09-vlad-personal-profile-maxima.pdf
+    URL: asset/2022-09-vlad-personal-profile-maxima.pdf
     producer: Maxima
-    producerUrl: https://www.maximatraining.com/
+    producerURL: https://www.maximatraining.com/
     date: Sep 2022
-keyCapabilities:
+capabilities:
   - Technical leadership and effective communication
   - Effective mediation between business and engineering
   - Technical mentoring and coaching of engineering teams
   - Design and development of modern payment systems
   - Standards-compliant, cloud-native security solutions
-achievementsList:
+achievements:
   - project: Unified payment data store
     logo: image/logo-icon.png
-    start:
+    STAR:
       - >
         *Situation*: an **instant payments product** connects to **multiple
         payment schemes** e. g. **SEPA**, **STEP1**, **STEP2**, **RT1**,
@@ -62,8 +62,8 @@ achievementsList:
         operations, real-time payment monitoring, and payment analytics
   - project: Stable FX pricing and execution
     logo: image/logo-santander.png
-    auxlogo: image/logo-pagofx.jpg
-    start:
+    auxLogo: image/logo-pagofx.jpg
+    STAR:
       - >
         *Situation*: a **cross-border payment service** provides **very
         competitive real-time FX rates** available to a big bank. However, FX
@@ -88,8 +88,8 @@ achievementsList:
         during a payment journey
   - project: Automated digital identity verification
     logo: image/logo-santander.png
-    auxlogo: image/logo-pagofx.jpg
-    start:
+    auxLogo: image/logo-pagofx.jpg
+    STAR:
       - >
         *Situation*: a **cross-border payment service** provides payment
         services to a big number of **customers in multiple countries** (UK,
@@ -116,7 +116,7 @@ achievementsList:
         **frictionless fully automated instant customer onboarding** through a
         digital identity verification as well as periodic checks of customer
         personal data
-employmentList:
+employment:
   - position: Senior Payments Architect
     contract: permanent
     duration: Apr 2021 - current
@@ -126,7 +126,7 @@ employmentList:
       of instant payments technology and mission-critical banking solutions for
       tier 1 global banks and payment service providers worldwide
     company: Icon Solutions
-    url: https://iconsolutions.com/
+    URL: https://iconsolutions.com/
     location: London
     description: >
       World class payments and enterprise solutions for the global financial
@@ -207,13 +207,13 @@ employmentList:
       for Santander, the multinational commercial bank and financial services
       company
     company: PagoFX by Santander
-    url: https://www.pagonxt.com/
+    URL: https://www.pagonxt.com/
     location: Madrid
     description: >
       A new way to send money abroad
     industry: Cross-border payments industry (FinTech)
     logo: image/logo-santander.png
-    auxlogo: image/logo-pagofx.jpg
+    auxLogo: image/logo-pagofx.jpg
     responsibilities:
       - >
         Designed **the cloud-native microservices architecture of the
@@ -270,7 +270,7 @@ employmentList:
       anti-piracy response platform** Armada for NAGRA, the global leader in
       digital security, conditional access, and convergent media solutions
     company: Nagravision Kudelski Group
-    url: https://www.nagra.com/
+    URL: https://www.nagra.com/
     location: Madrid
     description: >
       Connecting people to the content they love
@@ -338,7 +338,7 @@ employmentList:
     summary: >
       Worked as a Solution Architect for the leading Spanish IT consultancy
     company: atSistemas
-    url: https://www.atsistemas.com/
+    URL: https://www.atsistemas.com/
     location: Madrid
     description: >
       We hope to create a leading company in digital transformation by joining
@@ -356,7 +356,7 @@ employmentList:
       credit card business core system** for Diners Club Spain, the charge and
       credit card international company
     company: Diners Club Spain
-    url: https://www.dinersclub.es/
+    URL: https://www.dinersclub.es/
     location: Madrid
     description: >
       Experience and innovation in credit cards
@@ -407,7 +407,7 @@ employmentList:
     summary: >
       Worked as a Solution Architect for the leading international IT consultancy
     company: TATA Consultancy Services
-    url: https://www.tcs.com/
+    URL: https://www.tcs.com/
     location: Madrid
     description: >
       Global leader in IT services, digital and business solutions
@@ -423,7 +423,7 @@ employmentList:
       Worked as a Technical Lead on the **next generation Salesforce CRM
       intelligent integration** for Iberia, the flag carrier airline of Spain
     company: Iberia
-    url: http://www.iberia.com
+    URL: http://www.iberia.com
     location: Madrid
     description: >
       Leading airline between Europe and Latin America
@@ -462,7 +462,7 @@ employmentList:
     summary: >
       Worked as a Frontend Architect for the leading Spanish IT consultancy
     company: Kairos Digital Solutions
-    url: https://www.kairosds.com/
+    URL: https://www.kairosds.com/
     location: Madrid
     description: >
       We transform organizations supported by agile principles
@@ -479,7 +479,7 @@ employmentList:
       banking mobile application** for BBVA, the international Spanish banking
       group
     company: BBVA
-    url: https://www.bbva.com/
+    URL: https://www.bbva.com/
     location: Madrid
     description: >
       The best digital bank of the 21<sup>st</sup> century
@@ -515,7 +515,7 @@ employmentList:
       the major international IT provider for the global travel and tourism
       industry
     company: Amadeus IT Group
-    url: http://www.amadeus.com/
+    URL: http://www.amadeus.com/
     location: Madrid
     description: >
       World leading IT provider for the global travel and tourism industry
@@ -559,19 +559,19 @@ employmentList:
       - {tech: MS SQL Server, desc: Relational database}
       - {tech: HTML, desc: HyperText Markup Language}
       - {tech: CSS, desc: Cascading Style Sheets}
-educationList:
+education:
   - courses:
     - title: Master of Business Administration, MBA
       duration: Sep 2012 - Jul 2015 (3 years)
     center: EAE Business School
-    url: http://www.eae.es/
+    URL: http://www.eae.es/
     location: Madrid
     logo: image/logo-eae.jpg
   - courses:
     - title: Master of Informatics Engineering, MSc
       duration: Sep 2010 - Jul 2011 (1 year)
     center: Universidad Carlos III de Madrid
-    url: https://www.uc3m.es/
+    URL: https://www.uc3m.es/
     location: Madrid
     logo: image/logo-uc3m.png
   - courses:
@@ -580,20 +580,20 @@ educationList:
     - title: Bachelor of Science in Computer Science, BSc
       duration: Sep 2003 - Jul 2007 (4 years). Homologated/certified in Spain
     center: National Technical University of Oil and Gas
-    url: http://nung.edu.ua/
+    URL: http://nung.edu.ua/
     location: Ukraine
     logo: image/logo-ifntung.jpg
   - courses:
     - title: Oxford Cyber Security for Business Leaders
       duration: Oct - Nov 2020 (6 weeks)
     center: Saïd Business School, University of Oxford
-    url: https://www.sbs.ox.ac.uk/
+    URL: https://www.sbs.ox.ac.uk/
     location: UK
     logo: image/logo-said.png
   - courses:
     - title: Blockchain, Cryptocurrencies, Smart Contracts and Ethereum
       duration: Apr 2019 (1 week)
     center: CEU IAM Institute for Advanced Management
-    url: https://www.uspceu.com/
+    URL: https://www.uspceu.com/
     location: Madrid
     logo: image/logo-ceu.png
