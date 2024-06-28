@@ -1,9 +1,15 @@
 package main
 
 import (
+	// "bytes"
 	"fmt"
+	"html/template"
 	"os"
+	"regexp"
 
+	// "github.com/yuin/goldmark"
+	// "github.com/yuin/goldmark/parser"
+	// "github.com/yuin/goldmark/renderer/html"
 	"gopkg.in/yaml.v3"
 )
 
@@ -61,7 +67,7 @@ type cv struct {
   Title string `yaml:"title"`
   Name string `yaml:"name"`
   Role string `yaml:"role"`
-  Insudstries string `yaml:"insudstries"`
+  Industries string `yaml:"industries"`
   Email string `yaml:"email"`
   Phone string `yaml:"phone"`
   Location string `yaml:"location"`
@@ -77,19 +83,64 @@ type cv struct {
   Education []education `yaml:"education"`
 }
 
-func exitOnError(err error) {
+var tplFuncs = template.FuncMap{
+  "phone": func(phone string) string {
+    re := regexp.MustCompile(`[^\d\+]`)
+    return re.ReplaceAllString(phone, "")
+  },
+  "md": func(md string) string {
+    return md
+    // var htmlBuf bytes.Buffer
+    // gmark := goldmark.New(
+    //   // goldmark.WithParserOptions(parser.WithInlineParsers(bs ...util.PrioritizedValue))
+    //   goldmark.WithRenderer(r renderer.Renderer)
+    //   goldmark.WithRendererOptions(html.WithUnsafe())
+    // )
+    // err := gmark.Convert([]byte(md), &htmlBuf)
+    // if err != nil {
+    //   panic(err)
+    // }
+    // return htmlBuf.String()
+  },
+}
+
+func render() error {
+  file, err := os.Open("cv.yaml")
+  if err != nil {
+    return err
+  }
+  defer file.Close()
+  var cv cv
+  err = yaml.NewDecoder(file).Decode(&cv)
+  if err != nil {
+    return err
+  }
+  tpl := template.New("cv")
+  tpl.Funcs(tplFuncs)
+  _, err = tpl.ParseFiles("cv.html")
+  if err != nil {
+    return err
+  }
+  w, err := os.Create("index2.html")
+  if err != nil {
+    return err
+  }
+  defer w.Close()
+  return tpl.ExecuteTemplate(w, "cv.html", cv)
+}
+
+func main() {
+  err := render()
   if err != nil {
     fmt.Println(err)
     os.Exit(1)
   }
-}
 
-func main() {
-  file, err := os.Open("vlad.yaml")
-  exitOnError(err)
-  defer file.Close()
-  var cv cv
-  err = yaml.NewDecoder(file).Decode(&cv)
-  exitOnError(err)
-  fmt.Println(cv)
+  // var htmlBuf bytes.Buffer
+  // err := goldmark.Convert([]byte("one **two**"), &htmlBuf)
+  // if err != nil {
+  //   fmt.Println(err)
+  //   return
+  // }
+  // fmt.Println(htmlBuf.String())
 }

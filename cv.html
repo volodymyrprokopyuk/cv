@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ .Title }}</title>
+    <link href="cv.css" rel="stylesheet">
+    <script>
+      function showToggle() {
+        let
+          employment = document.getElementById("employment");
+          toggle = document.getElementById("toggle");
+        if ((employment.offsetTop - window.scrollY) > 0) {
+          toggle.style.display = "none";
+        } else {
+          toggle.style.display = "block";
+        }
+      }
+      window.addEventListener("scroll", showToggle)
+      function toggleDetails() {
+        // Toggle content
+        let details = document.getElementsByClassName("detail");
+        Array.from(details).forEach(detail => detail.style.display =
+          detail.style.display === "flex" ? "none" : "flex");
+        let toggle = document.getElementById("toggle");
+        // Toggle button text
+        toggle.textContent =
+          toggle.textContent === "More details"
+            ? "Less details" : "More details";
+        // Toggle page title
+        document.title =
+          document.title === "CV Vlad - Summary"
+            ? "CV Vlad - Details" : "CV Vlad - Summary"
+      }
+    </script>
+  </head>
+  <body>
+    <button id="toggle" onclick="toggleDetails()">More details</button>
+    <main id="cv">
+      {{ template "summary" . }}
+      {{ template "achievements" .Achievements }}
+      {{ template "employment" .Employment }}
+      {{ template "education" .Education }}
+    </main>
+  </body>
+</html>
+
+{{ define "summary" }}
+<section id="summary">
+  <div class="fact title">
+    <div class="lside selfie">
+      <img src="{{ .Selfie }}">
+    </div>
+    <div class="main">
+      <h1>{{ .Name }}</h1>
+      <h2>{{ .Role }}</h2>
+      <div class="industry">{{ .Industries }}</div>
+      <div class="email"><a href="mailto:{{ .Email }}">{{ .Email }}</a></div>
+      <div class="phone">
+        <a href="tel:{{ .Phone | phone }}">{{ .Phone }}</a><span class="location">,
+          {{ .Location }}</span>
+      </div>
+      <div class="url">
+        <a href="{{ .URL }}">{{ .URL }}</a>
+      </div>
+      <div class="url">
+        <a href="{{ .LinkedIn }}" target="_blank">{{ .LinkedIn }}</a>
+      </div>
+    </div>
+    <div class="rside">
+      <h3>Languages</h3>
+      <ul class="languages">
+        {{ range .Languages }}<li>{{ . | md }}</li>{{ end }}
+      </ul>
+    </div>
+  </div>
+  <div class="fact summary">
+    <div class="lmain">
+      <p class="summary">{{ .Summary | md }}</p>
+    </div>
+    <div class="rside">
+      <h3>Key capabilities</h3>
+      <ul class="capabilities">
+        {{ range .Capabilities }}<li>{{ . }}</li>{{ end }}
+      </ul>
+    </div>
+  </div>
+  <div class="fact profiles">
+    <div class="lmain">
+      <ul>
+        {{ range .Profiles }}
+          <li>
+            <a href="{{ .URL }}">{{ .Name }}</a>
+            by
+            <a href="{{ .ProducerURL }}" target="_blank">{{ .Producer }}</a>,
+            <span class="duration">{{ .Date }}</span>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "achievements" }}
+<section id="achievements">
+  <h1>Achievements</h1>
+  {{ range . }}
+    <div class="fact title">
+      <div class="lside logo">
+        <img src={{ .Logo }}>
+        {{ if .AuxLogo }}<img src="{{ .AuxLogo }}">{{ end }}
+      </div>
+      <div class="rmain">
+        <h2>{{ .Project }}</h2>
+          <ul class="achievements">
+            {{ range .STAR }}<li>{{ . | md }}</li>{{ end }}
+          </ul>
+      </div>
+    </div>
+  {{ end }}
+</section>
+{{ end }}
+
+{{ define "employment" }}
+<section id="employment">
+  <h1>Employment</h1>
+  {{ range . }}
+    <div class="fact title">
+      <div class="lside logo">
+        <img src="{{ .Logo }}">
+        {{ if .AuxLogo }}<img src="{{ .AuxLogo }}">{{ end }}
+      </div>
+      <div class="main">
+        <h2>{{ .Position }}</h2><span class="contract">({{ .Contract }})</span>
+        <div class="duration">{{ .Duration }}</div>
+        <p class="summary">{{ .Summary | md }}</p>
+      </div>
+      <div class="rside">
+        <div class="url">
+          <a href="{{ .URL }}"  target="_blank">
+            {{ .Company }}</a><span class="location">, {{ .Location }}</span>
+        </div>
+        <div class="description">{{ .Description }}</div>
+        <div class="industry">{{ .Industry }}</div>
+      </div>
+    </div>
+    <div class="fact detail">
+      <div class="lside"></div>
+      <div class="main">
+        <h3>Main responsibilities. Key projects and achievements</h3>
+        <ul class="responsibilities">
+          {{ range .Responsibilities }}<li>{{ . | md }}</li>{{ end }}
+        </ul>
+      </div>
+      <div class="rside">
+        <h3>Skills and competencies</h3>
+        <ul class="skills">
+          {{ range .Skills }}<li>{{ . }}</li>{{ end }}
+        </ul>
+        <h3>Technologies</h3>
+        {{ range .Technologies }}
+          <span class="tech" title="{{ .Desc }}">{{ .Tech }}</span>
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+</section>
+{{ end }}
+
+{{ define "education" }}
+<section id="education">
+  <h1>Education</h1>
+  {{ range . }}
+    <div class="fact title">
+      <div class="lside logo">
+        <img src="{{ .Logo }}">
+      </div>
+      <div class="main">
+        {{ range .Courses }}
+          <h2>{{ .Title }}</h2>
+          <div class="duration">{{ .Duration }}</div>
+        {{ end }}
+      </div>
+      <div class="rside url">
+        <a href="{{ .URL }}" target="_blank">
+          {{ .Center }}</a><span class="location">, {{ .Location }}</span>
+      </div>
+    </div>
+  {{ end }}
+</section>
+{{ end }}

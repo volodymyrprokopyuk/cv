@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>CV Vlad - Summary</title>
+    <link href="cv.css" rel="stylesheet">
+    <script>
+      function showToggle() {
+        let
+          employment = document.getElementById("employment");
+          toggle = document.getElementById("toggle");
+        if ((employment.offsetTop - window.scrollY) > 0) {
+          toggle.style.display = "none";
+        } else {
+          toggle.style.display = "block";
+        }
+      }
+      window.addEventListener("scroll", showToggle)
+      function toggleDetails() {
+        
+        let details = document.getElementsByClassName("detail");
+        Array.from(details).forEach(detail => detail.style.display =
+          detail.style.display === "flex" ? "none" : "flex");
+        let toggle = document.getElementById("toggle");
+        
+        toggle.textContent =
+          toggle.textContent === "More details"
+            ? "Less details" : "More details";
+        
+        document.title =
+          document.title === "CV Vlad - Summary"
+            ? "CV Vlad - Details" : "CV Vlad - Summary"
+      }
+    </script>
+  </head>
+  <body>
+    <button id="toggle" onclick="toggleDetails()">More details</button>
+    <main id="cv">
+      
+<section id="summary">
+  <div class="fact title">
+    <div class="lside selfie">
+      <img src="image/selfie.jpg">
+    </div>
+    <div class="main">
+      <h1>Volodymyr Prokopyuk (Vlad)</h1>
+      <h2>Payments Architect, Solution Architect</h2>
+      <div class="industry">Instant payments, cross-border payments</div>
+      <div class="email"><a href="mailto:volodymyrprokopyuk@gmail.com">volodymyrprokopyuk@gmail.com</a></div>
+      <div class="phone">
+        <a href="tel:&#43;34663564178">&#43;(34) 663 564 178</a><span class="location">,
+          Madrid, Spain</span>
+      </div>
+      <div class="url">
+        <a href="https://volodymyrprokopyuk.github.io/cv/">https://volodymyrprokopyuk.github.io/cv/</a>
+      </div>
+      <div class="url">
+        <a href="https://www.linkedin.com/in/volodymyrprokopyuk/" target="_blank">https://www.linkedin.com/in/volodymyrprokopyuk/</a>
+      </div>
+    </div>
+    <div class="rside">
+      <h3>Languages</h3>
+      <ul class="languages">
+        <li>**English** fluent</li><li>**Spanish** fluent</li><li>**Ukrainian** mother tongue</li><li>**Russian** native</li>
+      </ul>
+    </div>
+  </div>
+  <div class="fact summary">
+    <div class="lmain">
+      <p class="summary">I&#39;m an enthusiastic IT professional with business focus and 15 years of contrasted experience in design and development of **modern payment systems** with proven track in **technical leadership of engineering teams**. I enjoy pragmatic approach to software development, **effective communication** and **fruitful collaboration** with people on challenging projects. I&#39;m interested in modern payments systems, distributed systems, cybersecurity, blockchain technologies, DeFi solutions, modern web technologies, algorithms and data structures
+</p>
+    </div>
+    <div class="rside">
+      <h3>Key capabilities</h3>
+      <ul class="capabilities">
+        <li>Technical leadership and effective communication</li><li>Effective mediation between business and engineering</li><li>Technical mentoring and coaching of engineering teams</li><li>Design and development of modern payment systems</li><li>Standards-compliant, cloud-native security solutions</li>
+      </ul>
+    </div>
+  </div>
+  <div class="fact profiles">
+    <div class="lmain">
+      <ul>
+        
+          <li>
+            <a href="asset/2022-09-vlad-personal-profile-maxima.pdf">Personal profile discovery insights</a>
+            by
+            <a href="https://www.maximatraining.com/" target="_blank">Maxima</a>,
+            <span class="duration">Sep 2022</span>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</section>
+
+      
+<section id="achievements">
+  <h1>Achievements</h1>
+  
+    <div class="fact title">
+      <div class="lside logo">
+        <img src=image/logo-icon.png>
+        
+      </div>
+      <div class="rmain">
+        <h2>Unified payment data store</h2>
+          <ul class="achievements">
+            <li>*Situation*: an **instant payments product** connects to **multiple payment schemes** e. g. **SEPA**, **STEP1**, **STEP2**, **RT1**, **TIPS**. *Before the change*: each payment scheme had its own **scheme-specific payment processing view** (operational dashboard). A payment operator **had to consult multiple systems** during a payment investigation or a manual payment repair
+</li><li>*Task*: provide a **unified view on payment processing** under different payment schemes, allow **enrichment of standard payment messages** with customer-specific data while being **compliant with ISO 20022**
+</li><li>*Action*: design and implement a **generic relational data model** that allows **arbitrary typed connections** between standard payment messages including non-standard customer-specific data payloads
+</li><li>*Result*: **improved customer satisfaction** with a **unified view on payment processing** across multiple payment schemes, a scalable **system-wide transaction log**, **single source of truth** for payment operations, real-time payment monitoring, and payment analytics
+</li>
+          </ul>
+      </div>
+    </div>
+  
+    <div class="fact title">
+      <div class="lside logo">
+        <img src=image/logo-santander.png>
+        <img src="image/logo-pagofx.jpg">
+      </div>
+      <div class="rmain">
+        <h2>Stable FX pricing and execution</h2>
+          <ul class="achievements">
+            <li>*Situation*: a **cross-border payment service** provides **very competitive real-time FX rates** available to a big bank. However, FX rates are quite volatile and **change frequently**. *Before the change*: a real-time FX rate was provided for an initial quote, then an **updated real-time FX rate was silently applied** to an instructed payment which was totally unexpected to customers. This quickly transformed into a **negative feedback** and an **increased abandonment rate**
+</li><li>*Task*: offer to customers a **stable FX pricing** for the duration (15 mins) of their payment journey from the initial quoting and payment funding through the beneficiary screening and risk assessment to the payment routing and payment execution. The **company absorbed FX loss or gain** due to volatility of FX pricing
+</li><li>*Action*: design and implement a **stable FX pricing for 15 mins** with a **notification** of a customer about a **new FX quote** after 15 mins if a payment was not yet instructed
+</li><li>*Result*: **improved customer satisfaction** and **higher usage of the payment service** due to elimination of unexpected changes of FX pricing during a payment journey
+</li>
+          </ul>
+      </div>
+    </div>
+  
+    <div class="fact title">
+      <div class="lside logo">
+        <img src=image/logo-santander.png>
+        <img src="image/logo-pagofx.jpg">
+      </div>
+      <div class="rmain">
+        <h2>Automated digital identity verification</h2>
+          <ul class="achievements">
+            <li>*Situation*: a **cross-border payment service** provides payment services to a big number of **customers in multiple countries** (UK, Spain, Belgium). *Before the change*: a **semi-manual process for customer onboarding** with manual validation of every new customer. A customer onboarding was finished and the **account activated only after a manual check**. **Periodic check was not feasible** for manual processing given a big number of customers
+</li><li>*Task*: design a **seamless and instant customer onboarding**, **automatically collect and verify customer personal data**, enough to support AML and fraud checks from the KYC perspective. Ensure **seamless periodic checks of customer personal data** to stay compliant with regulations
+</li><li>*Action*: design and implement **integrations with country-specific providers of digital identity verification** (capture of a national ID or a driver license, matching a selfie with the ID card, a liveness probe) to support a **fully automated instant onboarding of low risk customer profiles**
+</li><li>*Result*: **improved customer satisfaction**, **increased a lead-to-customer conversion**, **decreased abandonment rate** due to a **frictionless fully automated instant customer onboarding** through a digital identity verification as well as periodic checks of customer personal data
+</li>
+          </ul>
+      </div>
+    </div>
+  
+</section>
+
+      
+<section id="employment">
+  <h1>Employment</h1>
+  
+    <div class="fact title">
+      <div class="lside logo">
+        <img src="image/logo-icon.png">
+        
+      </div>
+      <div class="main">
+        <h2>Senior Payments Architect</h2><span class="contract">(permanent)</span>
+        <div class="duration">Apr 2021 - current</div>
+        <p class="summary">Worked as a Senior Payments Architect on the **next generation instant payments framework** IPF for Icon Solutions, the leading global provider of instant payments technology and mission-critical banking solutions for tier 1 global banks and payment service providers worldwide
+</p>
+      </div>
+      <div class="rside">
+        <div class="url">
+          <a href="https://iconsolutions.com/"  target="_blank">
+            Icon Solutions</a><span class="location">, London</span>
+        </div>
+        <div class="description">World class payments and enterprise solutions for the global financial sector
+</div>
+        <div class="industry">Instant payments industry (FinTech)</div>
+      </div>
+    </div>
+    <div class="fact detail">
+      <div class="lside"></div>
+      <div class="main">
+        <h3>Main responsibilities. Key projects and achievements</h3>
+        <ul class="responsibilities">
+          <li>Led the design and successfully presented to the customer (tier 1 global bank headquartered in Zurich) **the global security architecture for their next-generation instant payment platform** operated in a hybrid cloud
+</li><li>Led the design and successfully presented to the customer (one of the biggest US banks) **the mission-critical settlement and reconciliation platform** for the PayPal digital wallet payouts
+</li><li>Successfully conducted the design of the **generic, extensible, ISO 20022-compatible payment data store product** that powers billions of instant payment transactions in several leading global banking institutions
+</li><li>Led the design and implementation of **the platform-wide job scheduling and management service for the Icon&#39;s instant payments framework** (IPF) that schedules, orchestrates and controls billions of instant payment transactions worldwide
+</li><li>Successfully architected the fully automated monitoring and benchmarking suite that **measures and analyzes the performance of key business functions of the Icon&#39;s instant payments platform** (IPF) with insightful monitoring and benchmarking data analysis and visualization
+</li><li>Led the design and implementation of **zero downtime rolling upgrades for the Icon&#39;s instant payments framework** (IPF) with strong data consistency and system resilience guarantees in handling in-flight transactions
+</li>
+        </ul>
+      </div>
+      <div class="rside">
+        <h3>Skills and competencies</h3>
+        <ul class="skills">
+          <li>Security design of instant payments platforms</li><li>Authentication and identity management</li><li>Authorization and permission management</li><li>Application security in cloud environments</li><li>Design of settlement and reconciliation systems</li><li>Data modeling of instant payments data stores</li><li>Relational and document-oriented data modeling</li><li>Asynchronous event-based payment data integration</li><li>Design of business-oriented microservices architectures</li><li>Distributed job scheduling, management and control</li><li>Application monitoring and benchmarking</li><li>Statistical data analysis and visualization</li><li>Time series data analysis and visualization</li>
+        </ul>
+        <h3>Technologies</h3>
+        
+          <span class="tech" title="Domain-Driven Design">DDD</span>
+        
+          <span class="tech" title="Event-Driven Architecture">EDA</span>
+        
+          <span class="tech" title="Complex Event Processing">CEP</span>
+        
+          <span class="tech" title="Functional Reactive Programming">FRP</span>
+        
+          <span class="tech" title="Payments messaging standard">ISO 20022</span>
+        
+          <span class="tech" title="Microservices Architecture">MFA</span>
+        
+          <span class="tech" title="Authorization framework">OAuth2</span>
+        
+          <span class="tech" title="Authentication protocol">OpenID Connect</span>
+        
+          <span class="tech" title="Cryptography library">OpenSSL</span>
+        
+          <span class="tech" title="Microsoft cloud service provider">Azure</span>
+        
+          <span class="tech" title="Container orchestration">Kubernetes</span>
+        
+          <span class="tech" title="Container management">Docker</span>
+        
+          <span class="tech" title="Programming language">Java</span>
+        
+          <span class="tech" title="Relational database">PostgreSQL</span>
+        
+          <span class="tech" title="Distributed event store">Kafka</span>
+        
+          <span class="tech" title="Application monitoring and alerting">Prometheus</span>
+        
+          <span class="tech" title="Metrics analytics and visualization">Grafana</span>
+        
+          <span class="tech" title="Time series database">TimescaleDB</span>
+        
+          <span class="tech" title="Modern web app library">Svelte</span>
+        
+          <span class="tech" title="Graphing and plotting library">Plotly.js</span>
+        
+      </div>
+    </div>
+  
+    <div class="fact title">
+      <div class="lside logo">
+        <img src="image/logo-santander.png">
+        <img src="image/logo-pagofx.jpg">
+      </div>
+      <div class="main">
+        <h2>Cross-border Payments Platform Architect</h2><span class="contract">(permanent)</span>
+        <div class="duration">Nov 2019 - Mar 2021 (1 year, 4 months)</div>
+        <p class="summary">Worked as a Cross-border Payments Platform Architect on the **next generation cross-border payments and foreign exchange platform** PagoFX for Santander, the multinational commercial bank and financial services company
+</p>
+      </div>
+      <div class="rside">
+        <div class="url">
+          <a href="https://www.pagonxt.com/"  target="_blank">
+            PagoFX by Santander</a><span class="location">, Madrid</span>
+        </div>
+        <div class="description">A new way to send money abroad
+</div>
+        <div class="industry">Cross-border payments industry (FinTech)</div>
+      </div>
+    </div>
+    <div class="fact detail">
+      <div class="lside"></div>
+      <div class="main">
+        <h3>Main responsibilities. Key projects and achievements</h3>
+        <ul class="responsibilities">
+          <li>Designed **the cloud-native microservices architecture of the cross-border payments and foreign exchange platform**
+</li><li>Architected the key platform components to support the credit card and bank account **payment funding**, **AML and fraud checking**, **cross-border payments routing and execution**, **FX pricing and execution**, **digital wallet management**, **accounting ledger** and **reconciliation processing**
+</li><li>Designed **the customer onboarding** (KYC) and **identity management platform** including **the digital identity verification**, customer, beneficiary and **payment screening** (AML), customer profile and **payment risk assessment**
+</li><li>Designed **the effective security architecture for the cross-border payments and foreign exchange platform** compliant with the GDPR, PSD2 and EBA guidelines
+</li><li>Led the design of **the bidirectional, real-time integration** of the cross-border payments platform with **the Salesforce Servicing Cloud** (CRM and case management) and **the Salesforce Marketing Cloud** (lead generation and marketing communication)
+</li>
+        </ul>
+      </div>
+      <div class="rside">
+        <h3>Skills and competencies</h3>
+        <ul class="skills">
+          <li>Design of cloud-native microservices architectures</li><li>Design of cross-border payment systems</li><li>Design of foreign exchange integrations</li><li>KYC, digital identity management and verification</li><li>AML, fraud and payment risk assessment</li><li>Design of standard-compliant security architectures</li><li>Design of integrations with Salesforce cloud services</li>
+        </ul>
+        <h3>Technologies</h3>
+        
+          <span class="tech" title="Domain-Driven Design">DDD</span>
+        
+          <span class="tech" title="Know Your Customer">KYC</span>
+        
+          <span class="tech" title="Anti-Money Laundering">AML</span>
+        
+          <span class="tech" title="General Data Protection Regulation">GDPR</span>
+        
+          <span class="tech" title="Customer Relationships Management">Salesforce CRM</span>
+        
+          <span class="tech" title="Microservices Architecture">MFA</span>
+        
+          <span class="tech" title="Authorization framework">OAuth2</span>
+        
+          <span class="tech" title="Authentication protocol">OpenID Connect</span>
+        
+          <span class="tech" title="Google Cloud Platform">GCP</span>
+        
+          <span class="tech" title="Container orchestration">Kubernetes</span>
+        
+          <span class="tech" title="Container management">Docker</span>
+        
+          <span class="tech" title="JavaScript runtime">Node.js</span>
+        
+          <span class="tech" title="Programming language">TypeScript</span>
+        
+          <span class="tech" title="Programming language">JavaScript</span>
+        
+          <span class="tech" title="Relational database">PostgreSQL</span>
+        
+      </div>
+    </div>
+  
+    <div class="fact title">
+      <div class="lside logo">
+        <img src="image/logo-nagra.png">
+        
+      </div>
+      <div class="main">
+        <h2>Team Lead, Security Architect</h2><span class="contract">(permanent)</span>
+        <div class="duration">Aug 2018 - Oct 2019 (1 year, 3 months)</div>
+        <p class="summary">Worked as a Team Lead and a Security Architect on the **content protection anti-piracy response platform** Armada for NAGRA, the global leader in digital security, conditional access, and convergent media solutions
+</p>
+      </div>
+      <div class="rside">
+        <div class="url">
+          <a href="https://www.nagra.com/"  target="_blank">
+            Nagravision Kudelski Group</a><span class="location">, Madrid</span>
+        </div>
+        <div class="description">Connecting people to the content they love
+</div>
+        <div class="industry">Content protection industry</div>
+      </div>
+    </div>
+    <div class="fact detail">
+      <div class="lside"></div>
+      <div class="main">
+        <h3>Main responsibilities. Key projects and achievements</h3>
+        <ul class="responsibilities">
+          <li>Led the brainstorming sessions on **the definition of product features for the content protection anti-piracy response platform** with program managers and business representatives
+</li><li>Successfully conducted **the technical leadership on the design and implementation of the anti-piracy response platform** distributed, scalable serverless system deployed to AWS
+</li><li>Became **the technical coach** and organized 20&#43; **technical knowledge transfer sessions** for the engineering and service delivery teams
+</li><li>Led the organization of **strategical and tactical work planning**, effort estimations, dependency management and work prioritization
+</li><li>Led **the technical coordination of the international, cross-functional and multi-cultural engineering team of 12-15 members** distributed across Spain, Switzerland and India
+</li><li>Built the highly cohesive, **cross-functional and empowered team of engineers** that enjoy **advanced agile and lean methodologies** and deliver quality products on time. Made people feel comfortable about what they do, actively participate in the process and have the feeling of achievement
+</li><li>Gracefully **conducted 30&#43; technical recruiting interviews** and succesfully recruited 5 senior software architects and engineers
+</li>
+        </ul>
+      </div>
+      <div class="rside">
+        <h3>Skills and competencies</h3>
+        <ul class="skills">
+          <li>Technical leadership and effective business communication</li><li>Strategical work planning and prioritization</li><li>Analytical thinking and problem solving</li><li>Focus on results and attention to details</li><li>Knowledge sharing and clear technical communication</li><li>Cross-functional team building and soft skills</li><li>Technical interviewing and recruitment</li><li>Design of scalable, serverless solutions on AWS</li><li>Relational data modeling</li><li>Software lifecycle management</li>
+        </ul>
+        <h3>Technologies</h3>
+        
+          <span class="tech" title="Agile methodologies">Scrum/Kanban/Lean</span>
+        
+          <span class="tech" title="Amazon Web Services">AWS</span>
+        
+          <span class="tech" title="Virtual Private Cloud">VPC</span>
+        
+          <span class="tech" title="Identity and Access Management">IAM</span>
+        
+          <span class="tech" title="Elastic Load Balancer">ELB</span>
+        
+          <span class="tech" title="Web API delivery">API Gateway</span>
+        
+          <span class="tech" title="AWS serverless computation">AWS Lambda</span>
+        
+          <span class="tech" title="Representation State Transfer">REST</span>
+        
+          <span class="tech" title="Authorization framework">OAuth2</span>
+        
+          <span class="tech" title="Simple Queue Service">SQS</span>
+        
+          <span class="tech" title="Relational Database Service">RDS</span>
+        
+          <span class="tech" title="Simple Storage Service">S3</span>
+        
+          <span class="tech" title="Observability of AWS resources">CloudWatch</span>
+        
+          <span class="tech" title="AWS infrastructure provisioning">CloudFormation</span>
+        
+          <span class="tech" title="Programming language">Python</span>
+        
+          <span class="tech" title="Relational database">MySQL</span>
+        
+      </div>
+    </div>
+  
+    <div class="fact title">
+      <div class="lside logo">
+        <img src="image/logo-atsistemas.png">
+        
+      </div>
+      <div class="main">
+        <h2>Solution Architect</h2><span class="contract">(permanent)</span>
+        <div class="duration">Feb 2018 - Jul 2018 (6 months)</div>
+        <p class="summary">Worked as a Solution Architect for the leading Spanish IT consultancy
+</p>
+      </div>
+      <div class="rside">
+        <div class="url">
+          <a href="https://www.atsistemas.com/"  target="_blank">
+            atSistemas</a><span class="location">, Madrid</span>
+        </div>
+        <div class="description">We hope to create a leading company in digital transformation by joining people, technology and business
+</div>
+        <div class="industry">IT consultancy</div>
+      </div>
+    </div>
+    <div class="fact detail">
+      <div class="lside"></div>
+      <div class="main">
+        <h3>Main responsibilities. Key projects and achievements</h3>
+        <ul class="responsibilities">
+          
+        </ul>
+      </div>
+      <div class="rside">
+        <h3>Skills and competencies</h3>
+        <ul class="skills">
+          
+        </ul>
+        <h3>Technologies</h3>
+        
+      </div>
+    </div>
+  
+    <div class="fact title">
+      <div class="lside logo">
+        <img src="image/logo-dinersclub.jpg">
+        
+      </div>
+      <div class="main">
+        <h2>Solution Architect</h2><span class="contract">(contractor)</span>
+        <div class="duration">Feb 2018 - Jul 2018 (6 months)</div>
+        <p class="summary">Worked as a Solution Architect on the **full digital transformation of the credit card business core system** for Diners Club Spain, the charge and credit card international company
+</p>
+      </div>
+      <div class="rside">
+        <div class="url">
+          <a href="https://www.dinersclub.es/"  target="_blank">
+            Diners Club Spain</a><span class="location">, Madrid</span>
+        </div>
+        <div class="description">Experience and innovation in credit cards
+</div>
+        <div class="industry">Credit cards industry</div>
+      </div>
+    </div>
+    <div class="fact detail">
+      <div class="lside"></div>
+      <div class="main">
+        <h3>Main responsibilities. Key projects and achievements</h3>
+        <ul class="responsibilities">
+          <li>Worked side-by-side with the client to **elaborate the detailed business requirements**, **define the well-architected technical solution** and select the most appropriate technological stack
+</li><li>Completely **redesigned the credit card business core system** from the monolithic legacy mainframe application to the cloud-ready, modular and scalable system using modern technological stack
+</li><li>Let the development and testing of the **online credit card transaction authorization**, **core credit card batch processing** and **transaction inquiry and investigation operational portal** with the microservices backed
+</li><li>Successfully designed **the credit card business core system to be compliant with the PCI DSS and the GDPR**
+</li><li>Successfully conducted **the technical leadership of a remote engineering team of 10-12 members** to rebuild from scratch the cloud-ready credit card business core system
+</li><li>Gracefully **conducted 10&#43; technical recruiting interviews** and successfully recruited 3 senior developers
+</li>
+        </ul>
+      </div>
+      <div class="rside">
+        <h3>Skills and competencies</h3>
+        <ul class="skills">
+          <li>Technical leadership and effective communication</li><li>Design of credit card business core systems</li><li>Design of cloud-ready microservices architectures</li><li>Security and compliance with PCI DSS and GDPR</li><li>Technical interviewing and recruitment</li>
+        </ul>
+        <h3>Technologies</h3>
+        
+          <span class="tech" title="Payment Card Industry Data Security Standard">PCI DSS</span>
+        
+          <span class="tech" title="General Data Protection Regulation">GDPR</span>
+        
+          <span class="tech" title="Programming language">Java</span>
+        
+          <span class="tech" title="Programming language">Kotlin</span>
+        
+          <span class="tech" title="Java application framework">Spring</span>
+        
+          <span class="tech" title="Relational database">MS SQL Server</span>
+        
+          <span class="tech" title="Authorization framework">OAuth2</span>
+        
+          <span class="tech" title="Identity and Access Management">Keycloak</span>
+        
+      </div>
+    </div>
+  
+    <div class="fact title">
+      <div class="lside logo">
+        <img src="image/logo-tcs.png">
+        
+      </div>
+      <div class="main">
+        <h2>Solution Architect</h2><span class="contract">(permanent)</span>
+        <div class="duration">Nov 2016 - Jan 2018 (1 year, 3 months)</div>
+        <p class="summary">Worked as a Solution Architect for the leading international IT consultancy
+</p>
+      </div>
+      <div class="rside">
+        <div class="url">
+          <a href="https://www.tcs.com/"  target="_blank">
+            TATA Consultancy Services</a><span class="location">, Madrid</span>
+        </div>
+        <div class="description">Global leader in IT services, digital and business solutions
+</div>
+        <div class="industry">IT consultancy</div>
+      </div>
+    </div>
+    <div class="fact detail">
+      <div class="lside"></div>
+      <div class="main">
+        <h3>Main responsibilities. Key projects and achievements</h3>
+        <ul class="responsibilities">
+          
+        </ul>
+      </div>
+      <div class="rside">
+        <h3>Skills and competencies</h3>
+        <ul class="skills">
+          
+        </ul>
+        <h3>Technologies</h3>
+        
+      </div>
+    </div>
+  
+    <div class="fact title">
+      <div class="lside logo">
+        <img src="image/logo-iberia.png">
+        
+      </div>
+      <div class="main">
+        <h2>Technical Lead</h2><span class="contract">(contractor)</span>
+        <div class="duration">Nov 2016 - Jan 2018 (1 year, 3 months)</div>
+        <p class="summary">Worked as a Technical Lead on the **next generation Salesforce CRM intelligent integration** for Iberia, the flag carrier airline of Spain
+</p>
+      </div>
+      <div class="rside">
+        <div class="url">
+          <a href="http://www.iberia.com"  target="_blank">
+            Iberia</a><span class="location">, Madrid</span>
+        </div>
+        <div class="description">Leading airline between Europe and Latin America
+</div>
+        <div class="industry">Airline and travel industry</div>
+      </div>
+    </div>
+    <div class="fact detail">
+      <div class="lside"></div>
+      <div class="main">
+        <h3>Main responsibilities. Key projects and achievements</h3>
+        <ul class="responsibilities">
+          <li>Successfully conducted the translation of business requirements to the detailed technical solution design acting as **the effective bridge between the business stakeholders and the engineering team**
+</li><li>Successfully **led and coordinated the cross-functional and multi-cultural engineering team** distributed between Spain and India
+</li><li>Designed the **intelligent integration layer between the Iberia core business systems and the Salesforce CRM cloud services** as a set of 30&#43; reliable and secure microservices deployed to AWS
+</li>
+        </ul>
+      </div>
+      <div class="rside">
+        <h3>Skills and competencies</h3>
+        <ul class="skills">
+          <li>Effective mediation between business and engineering</li><li>Technical leadership of distributed engineering teams</li><li>Design of in-cloud integration microservices</li><li>Security of integration services</li>
+        </ul>
+        <h3>Technologies</h3>
+        
+          <span class="tech" title="Amazon Web Services">AWS</span>
+        
+          <span class="tech" title="Elastic Compute Cloud">EC2</span>
+        
+          <span class="tech" title="Elastic Load Balancer">ELB</span>
+        
+          <span class="tech" title="Representation State Transfer">REST</span>
+        
+          <span class="tech" title="Programming language">Java</span>
+        
+          <span class="tech" title="Java application framework">Spring</span>
+        
+          <span class="tech" title="Authorization framework">OAuth2</span>
+        
+          <span class="tech" title="Identity and Access Management">Keycloak</span>
+        
+          <span class="tech" title="Elasticsearch Logstash Kibana">ELK</span>
+        
+      </div>
+    </div>
+  
+    <div class="fact title">
+      <div class="lside logo">
+        <img src="image/logo-kairos.png">
+        
+      </div>
+      <div class="main">
+        <h2>Frontend Architect</h2><span class="contract">(permanent)</span>
+        <div class="duration">Feb 2016 - Oct 2016 (9 months)</div>
+        <p class="summary">Worked as a Frontend Architect for the leading Spanish IT consultancy
+</p>
+      </div>
+      <div class="rside">
+        <div class="url">
+          <a href="https://www.kairosds.com/"  target="_blank">
+            Kairos Digital Solutions</a><span class="location">, Madrid</span>
+        </div>
+        <div class="description">We transform organizations supported by agile principles
+</div>
+        <div class="industry">IT consultancy</div>
+      </div>
+    </div>
+    <div class="fact detail">
+      <div class="lside"></div>
+      <div class="main">
+        <h3>Main responsibilities. Key projects and achievements</h3>
+        <ul class="responsibilities">
+          
+        </ul>
+      </div>
+      <div class="rside">
+        <h3>Skills and competencies</h3>
+        <ul class="skills">
+          
+        </ul>
+        <h3>Technologies</h3>
+        
+      </div>
+    </div>
+  
+    <div class="fact title">
+      <div class="lside logo">
+        <img src="image/logo-bbva.png">
+        
+      </div>
+      <div class="main">
+        <h2>Frontend Quality Architect</h2><span class="contract">(contractor)</span>
+        <div class="duration">Feb 2016 - Oct 2016 (9 months)</div>
+        <p class="summary">Worked as a Forntend Quality Architect on the **next generation global banking mobile application** for BBVA, the international Spanish banking group
+</p>
+      </div>
+      <div class="rside">
+        <div class="url">
+          <a href="https://www.bbva.com/"  target="_blank">
+            BBVA</a><span class="location">, Madrid</span>
+        </div>
+        <div class="description">The best digital bank of the 21&lt;sup&gt;st&lt;/sup&gt; century
+</div>
+        <div class="industry">Mobile banking industry</div>
+      </div>
+    </div>
+    <div class="fact detail">
+      <div class="lside"></div>
+      <div class="main">
+        <h3>Main responsibilities. Key projects and achievements</h3>
+        <ul class="responsibilities">
+          <li>Actively participated and contributed to **the design of the quality enabling software lifecycle and testing strategies** for the global banking mobile application
+</li><li>Implemented **the advanced testing tool for automated visual detection of regression errors in the application UI screenshots** between sebsequent builds of global banking mobile application
+</li>
+        </ul>
+      </div>
+      <div class="rside">
+        <h3>Skills and competencies</h3>
+        <ul class="skills">
+          <li>Software lifecycle management</li><li>Design of testing strategies for mobile banking applications</li>
+        </ul>
+        <h3>Technologies</h3>
+        
+          <span class="tech" title="Web UI library">Polymer</span>
+        
+          <span class="tech" title="HyperText Markup Language">HTML</span>
+        
+          <span class="tech" title="Cascading Style Sheets">CSS</span>
+        
+          <span class="tech" title="Programming language">JavaScript</span>
+        
+          <span class="tech" title="JavaScript runtime">Node.js</span>
+        
+          <span class="tech" title="Test-Driven Development">TDD</span>
+        
+          <span class="tech" title="Behavior-Driven Development">BDD</span>
+        
+          <span class="tech" title="Continuous Integration/Continuous Deployment">CI/CD</span>
+        
+      </div>
+    </div>
+  
+    <div class="fact title">
+      <div class="lside logo">
+        <img src="image/logo-amadeus.png">
+        
+      </div>
+      <div class="main">
+        <h2>Senior Software Engineer</h2><span class="contract">(permanent)</span>
+        <div class="duration">Mar 2009 - Jan 2016 (6 years, 11 months)</div>
+        <p class="summary">Worked as a Senior Software Engineer on **global flight reservation services and travel agency back office business applications** for Amadeus, the major international IT provider for the global travel and tourism industry
+</p>
+      </div>
+      <div class="rside">
+        <div class="url">
+          <a href="http://www.amadeus.com/"  target="_blank">
+            Amadeus IT Group</a><span class="location">, Madrid</span>
+        </div>
+        <div class="description">World leading IT provider for the global travel and tourism industry
+</div>
+        <div class="industry">Travel and tourism industry</div>
+      </div>
+    </div>
+    <div class="fact detail">
+      <div class="lside"></div>
+      <div class="main">
+        <h3>Main responsibilities. Key projects and achievements</h3>
+        <ul class="responsibilities">
+          <li>Designed and developed **the flight and hotel reservation and payment solution** that integrates the Amadeus Selling Platform with the American Express payment provider
+</li><li>Designed and developed **the massive flight itinerary PDF generation and notification system** for the leading international travel agency
+</li><li>Designed and developed **the flight and fare change monitoring and notification system** on top of the Amadeus Global Distribution System (GDS)
+</li><li>Designed and developed **5&#43; flight booking and payment web applications for travel agency back office** on top of the Amadeus Selling platform
+</li><li>Developed **5&#43; B2B integrations with the Amadeus Web Services**
+</li><li>Designed and developed **the Amadeus GDS mainframe integration library** that exposes airline content as a cohesive set of microservices with the REST API
+</li>
+        </ul>
+      </div>
+      <div class="rside">
+        <h3>Skills and competencies</h3>
+        <ul class="skills">
+          <li>Design of flight/hotel reservation and payment solutions</li><li>Design of flight itinerary PDF generation systems</li><li>Design of flight/fare change monitoring systems</li><li>Design of travel management back office applications</li><li>Integration of payment providers</li><li>Relational data modeling</li><li>Web services system integration</li><li>Full-stack development of web applications</li>
+        </ul>
+        <h3>Technologies</h3>
+        
+          <span class="tech" title="Programming language">Java</span>
+        
+          <span class="tech" title="Java application framework">Spring</span>
+        
+          <span class="tech" title="Programming language">JavaScript</span>
+        
+          <span class="tech" title="JavaScript runtime">Node.js</span>
+        
+          <span class="tech" title="Relational database">MS SQL Server</span>
+        
+          <span class="tech" title="HyperText Markup Language">HTML</span>
+        
+          <span class="tech" title="Cascading Style Sheets">CSS</span>
+        
+      </div>
+    </div>
+  
+</section>
+
+      
+<section id="education">
+  <h1>Education</h1>
+  
+    <div class="fact title">
+      <div class="lside logo">
+        <img src="image/logo-eae.jpg">
+      </div>
+      <div class="main">
+        
+          <h2>Master of Business Administration, MBA</h2>
+          <div class="duration">Sep 2012 - Jul 2015 (3 years)</div>
+        
+      </div>
+      <div class="rside url">
+        <a href="http://www.eae.es/" target="_blank">
+          EAE Business School</a><span class="location">, Madrid</span>
+      </div>
+    </div>
+  
+    <div class="fact title">
+      <div class="lside logo">
+        <img src="image/logo-uc3m.png">
+      </div>
+      <div class="main">
+        
+          <h2>Master of Informatics Engineering, MSc</h2>
+          <div class="duration">Sep 2010 - Jul 2011 (1 year)</div>
+        
+      </div>
+      <div class="rside url">
+        <a href="https://www.uc3m.es/" target="_blank">
+          Universidad Carlos III de Madrid</a><span class="location">, Madrid</span>
+      </div>
+    </div>
+  
+    <div class="fact title">
+      <div class="lside logo">
+        <img src="image/logo-ifntung.jpg">
+      </div>
+      <div class="main">
+        
+          <h2>Master of Science in Computing Systems, MSc</h2>
+          <div class="duration">Sep 2007 - Jul 2008 (1 year). Homologated/certified in Spain</div>
+        
+          <h2>Bachelor of Science in Computer Science, BSc</h2>
+          <div class="duration">Sep 2003 - Jul 2007 (4 years). Homologated/certified in Spain</div>
+        
+      </div>
+      <div class="rside url">
+        <a href="http://nung.edu.ua/" target="_blank">
+          National Technical University of Oil and Gas</a><span class="location">, Ukraine</span>
+      </div>
+    </div>
+  
+    <div class="fact title">
+      <div class="lside logo">
+        <img src="image/logo-said.png">
+      </div>
+      <div class="main">
+        
+          <h2>Oxford Cyber Security for Business Leaders</h2>
+          <div class="duration">Oct - Nov 2020 (6 weeks)</div>
+        
+      </div>
+      <div class="rside url">
+        <a href="https://www.sbs.ox.ac.uk/" target="_blank">
+          Saïd Business School, University of Oxford</a><span class="location">, UK</span>
+      </div>
+    </div>
+  
+    <div class="fact title">
+      <div class="lside logo">
+        <img src="image/logo-ceu.png">
+      </div>
+      <div class="main">
+        
+          <h2>Blockchain, Cryptocurrencies, Smart Contracts and Ethereum</h2>
+          <div class="duration">Apr 2019 (1 week)</div>
+        
+      </div>
+      <div class="rside url">
+        <a href="https://www.uspceu.com/" target="_blank">
+          CEU IAM Institute for Advanced Management</a><span class="location">, Madrid</span>
+      </div>
+    </div>
+  
+</section>
+
+    </main>
+  </body>
+</html>
+
+
+
+
+
+
+
+
