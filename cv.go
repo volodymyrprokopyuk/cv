@@ -1,15 +1,13 @@
 package main
 
 import (
-	// "bytes"
+	"bytes"
 	"fmt"
-	"html/template"
 	"os"
 	"regexp"
+	"text/template"
 
-	// "github.com/yuin/goldmark"
-	// "github.com/yuin/goldmark/parser"
-	// "github.com/yuin/goldmark/renderer/html"
+	"github.com/yuin/goldmark"
 	"gopkg.in/yaml.v3"
 )
 
@@ -83,24 +81,20 @@ type cv struct {
   Education []education `yaml:"education"`
 }
 
+var reCleanPhone = regexp.MustCompile(`[^\d\+]`)
+var reRemovePar = regexp.MustCompile(`<p>|</p>`)
+
 var tplFuncs = template.FuncMap{
   "phone": func(phone string) string {
-    re := regexp.MustCompile(`[^\d\+]`)
-    return re.ReplaceAllString(phone, "")
+    return reCleanPhone.ReplaceAllString(phone, "")
   },
   "md": func(md string) string {
-    return md
-    // var htmlBuf bytes.Buffer
-    // gmark := goldmark.New(
-    //   // goldmark.WithParserOptions(parser.WithInlineParsers(bs ...util.PrioritizedValue))
-    //   goldmark.WithRenderer(r renderer.Renderer)
-    //   goldmark.WithRendererOptions(html.WithUnsafe())
-    // )
-    // err := gmark.Convert([]byte(md), &htmlBuf)
-    // if err != nil {
-    //   panic(err)
-    // }
-    // return htmlBuf.String()
+    var htmlBuf bytes.Buffer
+    err := goldmark.Convert([]byte(md), &htmlBuf)
+    if err != nil {
+      panic(err)
+    }
+    return reRemovePar.ReplaceAllString(htmlBuf.String(), "")
   },
 }
 
@@ -121,7 +115,7 @@ func render() error {
   if err != nil {
     return err
   }
-  w, err := os.Create("index2.html")
+  w, err := os.Create("index.html")
   if err != nil {
     return err
   }
@@ -135,12 +129,4 @@ func main() {
     fmt.Println(err)
     os.Exit(1)
   }
-
-  // var htmlBuf bytes.Buffer
-  // err := goldmark.Convert([]byte("one **two**"), &htmlBuf)
-  // if err != nil {
-  //   fmt.Println(err)
-  //   return
-  // }
-  // fmt.Println(htmlBuf.String())
 }

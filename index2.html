@@ -17,16 +17,16 @@
       }
       window.addEventListener("scroll", showToggle)
       function toggleDetails() {
-        
+        // Toggle content
         let details = document.getElementsByClassName("detail");
         Array.from(details).forEach(detail => detail.style.display =
           detail.style.display === "flex" ? "none" : "flex");
         let toggle = document.getElementById("toggle");
-        
+        // Toggle button text
         toggle.textContent =
           toggle.textContent === "More details"
             ? "Less details" : "More details";
-        
+        // Toggle page title
         document.title =
           document.title === "CV Vlad - Summary"
             ? "CV Vlad - Details" : "CV Vlad - Summary"
@@ -48,7 +48,7 @@
       <div class="industry">Instant payments, cross-border payments</div>
       <div class="email"><a href="mailto:volodymyrprokopyuk@gmail.com">volodymyrprokopyuk@gmail.com</a></div>
       <div class="phone">
-        <a href="tel:&#43;34663564178">&#43;(34) 663 564 178</a><span class="location">,
+        <a href="tel:+34663564178">+(34) 663 564 178</a><span class="location">,
           Madrid, Spain</span>
       </div>
       <div class="url">
@@ -61,13 +61,17 @@
     <div class="rside">
       <h3>Languages</h3>
       <ul class="languages">
-        <li>**English** fluent</li><li>**Spanish** fluent</li><li>**Ukrainian** mother tongue</li><li>**Russian** native</li>
+        <li><strong>English</strong> fluent
+</li><li><strong>Spanish</strong> fluent
+</li><li><strong>Ukrainian</strong> mother tongue
+</li><li><strong>Russian</strong> native
+</li>
       </ul>
     </div>
   </div>
   <div class="fact summary">
     <div class="lmain">
-      <p class="summary">I&#39;m an enthusiastic IT professional with business focus and 15 years of contrasted experience in design and development of **modern payment systems** with proven track in **technical leadership of engineering teams**. I enjoy pragmatic approach to software development, **effective communication** and **fruitful collaboration** with people on challenging projects. I&#39;m interested in modern payments systems, distributed systems, cybersecurity, blockchain technologies, DeFi solutions, modern web technologies, algorithms and data structures
+      <p class="summary">I'm an enthusiastic IT professional with business focus and 15 years of contrasted experience in design and development of <strong>modern payment systems</strong> with proven track in <strong>technical leadership of engineering teams</strong>. I enjoy pragmatic approach to software development, <strong>effective communication</strong> and <strong>fruitful collaboration</strong> with people on challenging projects. I'm interested in modern payments systems, distributed systems, cybersecurity, blockchain technologies, DeFi solutions, modern web technologies, algorithms and data structures
 </p>
     </div>
     <div class="rside">
@@ -105,10 +109,10 @@
       <div class="rmain">
         <h2>Unified payment data store</h2>
           <ul class="achievements">
-            <li>*Situation*: an **instant payments product** connects to **multiple payment schemes** e. g. **SEPA**, **STEP1**, **STEP2**, **RT1**, **TIPS**. *Before the change*: each payment scheme had its own **scheme-specific payment processing view** (operational dashboard). A payment operator **had to consult multiple systems** during a payment investigation or a manual payment repair
-</li><li>*Task*: provide a **unified view on payment processing** under different payment schemes, allow **enrichment of standard payment messages** with customer-specific data while being **compliant with ISO 20022**
-</li><li>*Action*: design and implement a **generic relational data model** that allows **arbitrary typed connections** between standard payment messages including non-standard customer-specific data payloads
-</li><li>*Result*: **improved customer satisfaction** with a **unified view on payment processing** across multiple payment schemes, a scalable **system-wide transaction log**, **single source of truth** for payment operations, real-time payment monitoring, and payment analytics
+            <li><em>Situation</em>: an <strong>instant payments product</strong> connects to <strong>multiple payment schemes</strong> e. g. <strong>SEPA</strong>, <strong>STEP1</strong>, <strong>STEP2</strong>, <strong>RT1</strong>, <strong>TIPS</strong>. <em>Before the change</em>: each payment scheme had its own <strong>scheme-specific payment processing view</strong> (operational dashboard). A payment operator <strong>had to consult multiple systems</strong> during a payment investigation or a manual payment repair
+</li><li><em>Task</em>: provide a <strong>unified view on payment processing</strong> under different payment schemes, allow <strong>enrichment of standard payment messages</strong> with customer-specific data while being <strong>compliant with ISO 20022</strong>
+</li><li><em>Action</em>: design and implement a <strong>generic relational data model</strong> that allows <strong>arbitrary typed connections</strong> between standard payment messages including non-standard customer-specific data payloads
+</li><li><em>Result</em>: <strong>improved customer satisfaction</strong> with a <strong>unified view on payment processing</strong> across multiple payment schemes, a scalable <strong>system-wide transaction log</strong>, <strong>single source of truth</strong> for payment operations, real-time payment monitoring, and payment analytics
 </li>
           </ul>
       </div>
@@ -122,10 +126,10 @@
       <div class="rmain">
         <h2>Stable FX pricing and execution</h2>
           <ul class="achievements">
-            <li>*Situation*: a **cross-border payment service** provides **very competitive real-time FX rates** available to a big bank. However, FX rates are quite volatile and **change frequently**. *Before the change*: a real-time FX rate was provided for an initial quote, then an **updated real-time FX rate was silently applied** to an instructed payment which was totally unexpected to customers. This quickly transformed into a **negative feedback** and an **increased abandonment rate**
-</li><li>*Task*: offer to customers a **stable FX pricing** for the duration (15 mins) of their payment journey from the initial quoting and payment funding through the beneficiary screening and risk assessment to the payment routing and payment execution. The **company absorbed FX loss or gain** due to volatility of FX pricing
-</li><li>*Action*: design and implement a **stable FX pricing for 15 mins** with a **notification** of a customer about a **new FX quote** after 15 mins if a payment was not yet instructed
-</li><li>*Result*: **improved customer satisfaction** and **higher usage of the payment service** due to elimination of unexpected changes of FX pricing during a payment journey
+            <li><em>Situation</em>: a <strong>cross-border payment service</strong> provides <strong>very competitive real-time FX rates</strong> available to a big bank. However, FX rates are quite volatile and <strong>change frequently</strong>. <em>Before the change</em>: a real-time FX rate was provided for an initial quote, then an <strong>updated real-time FX rate was silently applied</strong> to an instructed payment which was totally unexpected to customers. This quickly transformed into a <strong>negative feedback</strong> and an <strong>increased abandonment rate</strong>
+</li><li><em>Task</em>: offer to customers a <strong>stable FX pricing</strong> for the duration (15 mins) of their payment journey from the initial quoting and payment funding through the beneficiary screening and risk assessment to the payment routing and payment execution. The <strong>company absorbed FX loss or gain</strong> due to volatility of FX pricing
+</li><li><em>Action</em>: design and implement a <strong>stable FX pricing for 15 mins</strong> with a <strong>notification</strong> of a customer about a <strong>new FX quote</strong> after 15 mins if a payment was not yet instructed
+</li><li><em>Result</em>: <strong>improved customer satisfaction</strong> and <strong>higher usage of the payment service</strong> due to elimination of unexpected changes of FX pricing during a payment journey
 </li>
           </ul>
       </div>
@@ -139,10 +143,10 @@
       <div class="rmain">
         <h2>Automated digital identity verification</h2>
           <ul class="achievements">
-            <li>*Situation*: a **cross-border payment service** provides payment services to a big number of **customers in multiple countries** (UK, Spain, Belgium). *Before the change*: a **semi-manual process for customer onboarding** with manual validation of every new customer. A customer onboarding was finished and the **account activated only after a manual check**. **Periodic check was not feasible** for manual processing given a big number of customers
-</li><li>*Task*: design a **seamless and instant customer onboarding**, **automatically collect and verify customer personal data**, enough to support AML and fraud checks from the KYC perspective. Ensure **seamless periodic checks of customer personal data** to stay compliant with regulations
-</li><li>*Action*: design and implement **integrations with country-specific providers of digital identity verification** (capture of a national ID or a driver license, matching a selfie with the ID card, a liveness probe) to support a **fully automated instant onboarding of low risk customer profiles**
-</li><li>*Result*: **improved customer satisfaction**, **increased a lead-to-customer conversion**, **decreased abandonment rate** due to a **frictionless fully automated instant customer onboarding** through a digital identity verification as well as periodic checks of customer personal data
+            <li><em>Situation</em>: a <strong>cross-border payment service</strong> provides payment services to a big number of <strong>customers in multiple countries</strong> (UK, Spain, Belgium). <em>Before the change</em>: a <strong>semi-manual process for customer onboarding</strong> with manual validation of every new customer. A customer onboarding was finished and the <strong>account activated only after a manual check</strong>. <strong>Periodic check was not feasible</strong> for manual processing given a big number of customers
+</li><li><em>Task</em>: design a <strong>seamless and instant customer onboarding</strong>, <strong>automatically collect and verify customer personal data</strong>, enough to support AML and fraud checks from the KYC perspective. Ensure <strong>seamless periodic checks of customer personal data</strong> to stay compliant with regulations
+</li><li><em>Action</em>: design and implement <strong>integrations with country-specific providers of digital identity verification</strong> (capture of a national ID or a driver license, matching a selfie with the ID card, a liveness probe) to support a <strong>fully automated instant onboarding of low risk customer profiles</strong>
+</li><li><em>Result</em>: <strong>improved customer satisfaction</strong>, <strong>increased a lead-to-customer conversion</strong>, <strong>decreased abandonment rate</strong> due to a <strong>frictionless fully automated instant customer onboarding</strong> through a digital identity verification as well as periodic checks of customer personal data
 </li>
           </ul>
       </div>
@@ -162,7 +166,7 @@
       <div class="main">
         <h2>Senior Payments Architect</h2><span class="contract">(permanent)</span>
         <div class="duration">Apr 2021 - current</div>
-        <p class="summary">Worked as a Senior Payments Architect on the **next generation instant payments framework** IPF for Icon Solutions, the leading global provider of instant payments technology and mission-critical banking solutions for tier 1 global banks and payment service providers worldwide
+        <p class="summary">Worked as a Senior Payments Architect on the <strong>next generation instant payments framework</strong> IPF for Icon Solutions, the leading global provider of instant payments technology and mission-critical banking solutions for tier 1 global banks and payment service providers worldwide
 </p>
       </div>
       <div class="rside">
@@ -180,12 +184,12 @@
       <div class="main">
         <h3>Main responsibilities. Key projects and achievements</h3>
         <ul class="responsibilities">
-          <li>Led the design and successfully presented to the customer (tier 1 global bank headquartered in Zurich) **the global security architecture for their next-generation instant payment platform** operated in a hybrid cloud
-</li><li>Led the design and successfully presented to the customer (one of the biggest US banks) **the mission-critical settlement and reconciliation platform** for the PayPal digital wallet payouts
-</li><li>Successfully conducted the design of the **generic, extensible, ISO 20022-compatible payment data store product** that powers billions of instant payment transactions in several leading global banking institutions
-</li><li>Led the design and implementation of **the platform-wide job scheduling and management service for the Icon&#39;s instant payments framework** (IPF) that schedules, orchestrates and controls billions of instant payment transactions worldwide
-</li><li>Successfully architected the fully automated monitoring and benchmarking suite that **measures and analyzes the performance of key business functions of the Icon&#39;s instant payments platform** (IPF) with insightful monitoring and benchmarking data analysis and visualization
-</li><li>Led the design and implementation of **zero downtime rolling upgrades for the Icon&#39;s instant payments framework** (IPF) with strong data consistency and system resilience guarantees in handling in-flight transactions
+          <li>Led the design and successfully presented to the customer (tier 1 global bank headquartered in Zurich) <strong>the global security architecture for their next-generation instant payment platform</strong> operated in a hybrid cloud
+</li><li>Led the design and successfully presented to the customer (one of the biggest US banks) <strong>the mission-critical settlement and reconciliation platform</strong> for the PayPal digital wallet payouts
+</li><li>Successfully conducted the design of the <strong>generic, extensible, ISO 20022-compatible payment data store product</strong> that powers billions of instant payment transactions in several leading global banking institutions
+</li><li>Led the design and implementation of <strong>the platform-wide job scheduling and management service for the Icon's instant payments framework</strong> (IPF) that schedules, orchestrates and controls billions of instant payment transactions worldwide
+</li><li>Successfully architected the fully automated monitoring and benchmarking suite that <strong>measures and analyzes the performance of key business functions of the Icon's instant payments platform</strong> (IPF) with insightful monitoring and benchmarking data analysis and visualization
+</li><li>Led the design and implementation of <strong>zero downtime rolling upgrades for the Icon's instant payments framework</strong> (IPF) with strong data consistency and system resilience guarantees in handling in-flight transactions
 </li>
         </ul>
       </div>
@@ -247,7 +251,7 @@
       <div class="main">
         <h2>Cross-border Payments Platform Architect</h2><span class="contract">(permanent)</span>
         <div class="duration">Nov 2019 - Mar 2021 (1 year, 4 months)</div>
-        <p class="summary">Worked as a Cross-border Payments Platform Architect on the **next generation cross-border payments and foreign exchange platform** PagoFX for Santander, the multinational commercial bank and financial services company
+        <p class="summary">Worked as a Cross-border Payments Platform Architect on the <strong>next generation cross-border payments and foreign exchange platform</strong> PagoFX for Santander, the multinational commercial bank and financial services company
 </p>
       </div>
       <div class="rside">
@@ -265,11 +269,11 @@
       <div class="main">
         <h3>Main responsibilities. Key projects and achievements</h3>
         <ul class="responsibilities">
-          <li>Designed **the cloud-native microservices architecture of the cross-border payments and foreign exchange platform**
-</li><li>Architected the key platform components to support the credit card and bank account **payment funding**, **AML and fraud checking**, **cross-border payments routing and execution**, **FX pricing and execution**, **digital wallet management**, **accounting ledger** and **reconciliation processing**
-</li><li>Designed **the customer onboarding** (KYC) and **identity management platform** including **the digital identity verification**, customer, beneficiary and **payment screening** (AML), customer profile and **payment risk assessment**
-</li><li>Designed **the effective security architecture for the cross-border payments and foreign exchange platform** compliant with the GDPR, PSD2 and EBA guidelines
-</li><li>Led the design of **the bidirectional, real-time integration** of the cross-border payments platform with **the Salesforce Servicing Cloud** (CRM and case management) and **the Salesforce Marketing Cloud** (lead generation and marketing communication)
+          <li>Designed <strong>the cloud-native microservices architecture of the cross-border payments and foreign exchange platform</strong>
+</li><li>Architected the key platform components to support the credit card and bank account <strong>payment funding</strong>, <strong>AML and fraud checking</strong>, <strong>cross-border payments routing and execution</strong>, <strong>FX pricing and execution</strong>, <strong>digital wallet management</strong>, <strong>accounting ledger</strong> and <strong>reconciliation processing</strong>
+</li><li>Designed <strong>the customer onboarding</strong> (KYC) and <strong>identity management platform</strong> including <strong>the digital identity verification</strong>, customer, beneficiary and <strong>payment screening</strong> (AML), customer profile and <strong>payment risk assessment</strong>
+</li><li>Designed <strong>the effective security architecture for the cross-border payments and foreign exchange platform</strong> compliant with the GDPR, PSD2 and EBA guidelines
+</li><li>Led the design of <strong>the bidirectional, real-time integration</strong> of the cross-border payments platform with <strong>the Salesforce Servicing Cloud</strong> (CRM and case management) and <strong>the Salesforce Marketing Cloud</strong> (lead generation and marketing communication)
 </li>
         </ul>
       </div>
@@ -321,7 +325,7 @@
       <div class="main">
         <h2>Team Lead, Security Architect</h2><span class="contract">(permanent)</span>
         <div class="duration">Aug 2018 - Oct 2019 (1 year, 3 months)</div>
-        <p class="summary">Worked as a Team Lead and a Security Architect on the **content protection anti-piracy response platform** Armada for NAGRA, the global leader in digital security, conditional access, and convergent media solutions
+        <p class="summary">Worked as a Team Lead and a Security Architect on the <strong>content protection anti-piracy response platform</strong> Armada for NAGRA, the global leader in digital security, conditional access, and convergent media solutions
 </p>
       </div>
       <div class="rside">
@@ -339,13 +343,13 @@
       <div class="main">
         <h3>Main responsibilities. Key projects and achievements</h3>
         <ul class="responsibilities">
-          <li>Led the brainstorming sessions on **the definition of product features for the content protection anti-piracy response platform** with program managers and business representatives
-</li><li>Successfully conducted **the technical leadership on the design and implementation of the anti-piracy response platform** distributed, scalable serverless system deployed to AWS
-</li><li>Became **the technical coach** and organized 20&#43; **technical knowledge transfer sessions** for the engineering and service delivery teams
-</li><li>Led the organization of **strategical and tactical work planning**, effort estimations, dependency management and work prioritization
-</li><li>Led **the technical coordination of the international, cross-functional and multi-cultural engineering team of 12-15 members** distributed across Spain, Switzerland and India
-</li><li>Built the highly cohesive, **cross-functional and empowered team of engineers** that enjoy **advanced agile and lean methodologies** and deliver quality products on time. Made people feel comfortable about what they do, actively participate in the process and have the feeling of achievement
-</li><li>Gracefully **conducted 30&#43; technical recruiting interviews** and succesfully recruited 5 senior software architects and engineers
+          <li>Led the brainstorming sessions on <strong>the definition of product features for the content protection anti-piracy response platform</strong> with program managers and business representatives
+</li><li>Successfully conducted <strong>the technical leadership on the design and implementation of the anti-piracy response platform</strong> distributed, scalable serverless system deployed to AWS
+</li><li>Became <strong>the technical coach</strong> and organized 20+ <strong>technical knowledge transfer sessions</strong> for the engineering and service delivery teams
+</li><li>Led the organization of <strong>strategical and tactical work planning</strong>, effort estimations, dependency management and work prioritization
+</li><li>Led <strong>the technical coordination of the international, cross-functional and multi-cultural engineering team of 12-15 members</strong> distributed across Spain, Switzerland and India
+</li><li>Built the highly cohesive, <strong>cross-functional and empowered team of engineers</strong> that enjoy <strong>advanced agile and lean methodologies</strong> and deliver quality products on time. Made people feel comfortable about what they do, actively participate in the process and have the feeling of achievement
+</li><li>Gracefully <strong>conducted 30+ technical recruiting interviews</strong> and succesfully recruited 5 senior software architects and engineers
 </li>
         </ul>
       </div>
@@ -438,7 +442,7 @@
       <div class="main">
         <h2>Solution Architect</h2><span class="contract">(contractor)</span>
         <div class="duration">Feb 2018 - Jul 2018 (6 months)</div>
-        <p class="summary">Worked as a Solution Architect on the **full digital transformation of the credit card business core system** for Diners Club Spain, the charge and credit card international company
+        <p class="summary">Worked as a Solution Architect on the <strong>full digital transformation of the credit card business core system</strong> for Diners Club Spain, the charge and credit card international company
 </p>
       </div>
       <div class="rside">
@@ -456,12 +460,12 @@
       <div class="main">
         <h3>Main responsibilities. Key projects and achievements</h3>
         <ul class="responsibilities">
-          <li>Worked side-by-side with the client to **elaborate the detailed business requirements**, **define the well-architected technical solution** and select the most appropriate technological stack
-</li><li>Completely **redesigned the credit card business core system** from the monolithic legacy mainframe application to the cloud-ready, modular and scalable system using modern technological stack
-</li><li>Let the development and testing of the **online credit card transaction authorization**, **core credit card batch processing** and **transaction inquiry and investigation operational portal** with the microservices backed
-</li><li>Successfully designed **the credit card business core system to be compliant with the PCI DSS and the GDPR**
-</li><li>Successfully conducted **the technical leadership of a remote engineering team of 10-12 members** to rebuild from scratch the cloud-ready credit card business core system
-</li><li>Gracefully **conducted 10&#43; technical recruiting interviews** and successfully recruited 3 senior developers
+          <li>Worked side-by-side with the client to <strong>elaborate the detailed business requirements</strong>, <strong>define the well-architected technical solution</strong> and select the most appropriate technological stack
+</li><li>Completely <strong>redesigned the credit card business core system</strong> from the monolithic legacy mainframe application to the cloud-ready, modular and scalable system using modern technological stack
+</li><li>Let the development and testing of the <strong>online credit card transaction authorization</strong>, <strong>core credit card batch processing</strong> and <strong>transaction inquiry and investigation operational portal</strong> with the microservices backed
+</li><li>Successfully designed <strong>the credit card business core system to be compliant with the PCI DSS and the GDPR</strong>
+</li><li>Successfully conducted <strong>the technical leadership of a remote engineering team of 10-12 members</strong> to rebuild from scratch the cloud-ready credit card business core system
+</li><li>Gracefully <strong>conducted 10+ technical recruiting interviews</strong> and successfully recruited 3 senior developers
 </li>
         </ul>
       </div>
@@ -538,7 +542,7 @@
       <div class="main">
         <h2>Technical Lead</h2><span class="contract">(contractor)</span>
         <div class="duration">Nov 2016 - Jan 2018 (1 year, 3 months)</div>
-        <p class="summary">Worked as a Technical Lead on the **next generation Salesforce CRM intelligent integration** for Iberia, the flag carrier airline of Spain
+        <p class="summary">Worked as a Technical Lead on the <strong>next generation Salesforce CRM intelligent integration</strong> for Iberia, the flag carrier airline of Spain
 </p>
       </div>
       <div class="rside">
@@ -556,9 +560,9 @@
       <div class="main">
         <h3>Main responsibilities. Key projects and achievements</h3>
         <ul class="responsibilities">
-          <li>Successfully conducted the translation of business requirements to the detailed technical solution design acting as **the effective bridge between the business stakeholders and the engineering team**
-</li><li>Successfully **led and coordinated the cross-functional and multi-cultural engineering team** distributed between Spain and India
-</li><li>Designed the **intelligent integration layer between the Iberia core business systems and the Salesforce CRM cloud services** as a set of 30&#43; reliable and secure microservices deployed to AWS
+          <li>Successfully conducted the translation of business requirements to the detailed technical solution design acting as <strong>the effective bridge between the business stakeholders and the engineering team</strong>
+</li><li>Successfully <strong>led and coordinated the cross-functional and multi-cultural engineering team</strong> distributed between Spain and India
+</li><li>Designed the <strong>intelligent integration layer between the Iberia core business systems and the Salesforce CRM cloud services</strong> as a set of 30+ reliable and secure microservices deployed to AWS
 </li>
         </ul>
       </div>
@@ -637,7 +641,7 @@
       <div class="main">
         <h2>Frontend Quality Architect</h2><span class="contract">(contractor)</span>
         <div class="duration">Feb 2016 - Oct 2016 (9 months)</div>
-        <p class="summary">Worked as a Forntend Quality Architect on the **next generation global banking mobile application** for BBVA, the international Spanish banking group
+        <p class="summary">Worked as a Forntend Quality Architect on the <strong>next generation global banking mobile application</strong> for BBVA, the international Spanish banking group
 </p>
       </div>
       <div class="rside">
@@ -645,7 +649,7 @@
           <a href="https://www.bbva.com/"  target="_blank">
             BBVA</a><span class="location">, Madrid</span>
         </div>
-        <div class="description">The best digital bank of the 21&lt;sup&gt;st&lt;/sup&gt; century
+        <div class="description">The best digital bank of the 21<sup>st</sup> century
 </div>
         <div class="industry">Mobile banking industry</div>
       </div>
@@ -655,8 +659,8 @@
       <div class="main">
         <h3>Main responsibilities. Key projects and achievements</h3>
         <ul class="responsibilities">
-          <li>Actively participated and contributed to **the design of the quality enabling software lifecycle and testing strategies** for the global banking mobile application
-</li><li>Implemented **the advanced testing tool for automated visual detection of regression errors in the application UI screenshots** between sebsequent builds of global banking mobile application
+          <li>Actively participated and contributed to <strong>the design of the quality enabling software lifecycle and testing strategies</strong> for the global banking mobile application
+</li><li>Implemented <strong>the advanced testing tool for automated visual detection of regression errors in the application UI screenshots</strong> between sebsequent builds of global banking mobile application
 </li>
         </ul>
       </div>
@@ -694,7 +698,7 @@
       <div class="main">
         <h2>Senior Software Engineer</h2><span class="contract">(permanent)</span>
         <div class="duration">Mar 2009 - Jan 2016 (6 years, 11 months)</div>
-        <p class="summary">Worked as a Senior Software Engineer on **global flight reservation services and travel agency back office business applications** for Amadeus, the major international IT provider for the global travel and tourism industry
+        <p class="summary">Worked as a Senior Software Engineer on <strong>global flight reservation services and travel agency back office business applications</strong> for Amadeus, the major international IT provider for the global travel and tourism industry
 </p>
       </div>
       <div class="rside">
@@ -712,12 +716,12 @@
       <div class="main">
         <h3>Main responsibilities. Key projects and achievements</h3>
         <ul class="responsibilities">
-          <li>Designed and developed **the flight and hotel reservation and payment solution** that integrates the Amadeus Selling Platform with the American Express payment provider
-</li><li>Designed and developed **the massive flight itinerary PDF generation and notification system** for the leading international travel agency
-</li><li>Designed and developed **the flight and fare change monitoring and notification system** on top of the Amadeus Global Distribution System (GDS)
-</li><li>Designed and developed **5&#43; flight booking and payment web applications for travel agency back office** on top of the Amadeus Selling platform
-</li><li>Developed **5&#43; B2B integrations with the Amadeus Web Services**
-</li><li>Designed and developed **the Amadeus GDS mainframe integration library** that exposes airline content as a cohesive set of microservices with the REST API
+          <li>Designed and developed <strong>the flight and hotel reservation and payment solution</strong> that integrates the Amadeus Selling Platform with the American Express payment provider
+</li><li>Designed and developed <strong>the massive flight itinerary PDF generation and notification system</strong> for the leading international travel agency
+</li><li>Designed and developed <strong>the flight and fare change monitoring and notification system</strong> on top of the Amadeus Global Distribution System (GDS)
+</li><li>Designed and developed <strong>5+ flight booking and payment web applications for travel agency back office</strong> on top of the Amadeus Selling platform
+</li><li>Developed <strong>5+ B2B integrations with the Amadeus Web Services</strong>
+</li><li>Designed and developed <strong>the Amadeus GDS mainframe integration library</strong> that exposes airline content as a cohesive set of microservices with the REST API
 </li>
         </ul>
       </div>
