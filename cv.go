@@ -132,10 +132,11 @@ func render() error {
   if err != nil {
     return err
   }
-  minCmd := exec.Command("minify-html", "index2.html", "tw.css")
-  minCmd.Stdout = os.Stdout
-  minCmd.Stderr = os.Stderr
-  return minCmd.Run()
+  // minCmd := exec.Command("minify-html", "index2.html", "tw.css")
+  // minCmd.Stdout = os.Stdout
+  // minCmd.Stderr = os.Stderr
+  // return minCmd.Run()
+  return nil
 }
 
 func main() {

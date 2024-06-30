@@ -7,7 +7,7 @@
     <link href="tw.css" rel="stylesheet">
   </head>
   <body>
-    <main id="cv">
+    <main>
       {{ template "summary" . }}
       {{ template "achievements" .Achievements }}
       {{ template "employment" .Employment }}
@@ -18,53 +18,48 @@
 
 {{ define "summary" }}
 <section id="summary">
-  <div class="fact title">
-    <div class="lside selfie">
-      <img src="{{ .Selfie }}">
+  <div class="flex flex-row">
+    <div class="basis-1/12">
+      <img src="{{ .Selfie }}" alt="Volodymyr Prokopyuk">
     </div>
-    <div class="main">
+    <div class="basis-7/12">
       <h1>{{ .Name }}</h1>
       <h2>{{ .Role }}</h2>
-      <div class="industry">{{ .Industries }}</div>
-      <div class="email"><a href="mailto:{{ .Email }}">{{ .Email }}</a></div>
-      <div class="phone">
-        <a href="tel:{{ .Phone | phone }}">{{ .Phone }}</a><span class="location">,
-          {{ .Location }}</span>
-      </div>
-      <div class="url">
-        <a href="{{ .URL }}">{{ .URL }}</a>
-      </div>
-      <div class="url">
-        <a href="{{ .LinkedIn }}" target="_blank">{{ .LinkedIn }}</a>
-      </div>
+      <h3>{{ .Industries }}</h3>
+      <ul>
+        <li><a href="mailto:{{ .Email }}">{{ .Email }}</a></li>
+        <li>
+          <a href="tel:{{ .Phone | phone }}">{{ .Phone }}</a><span>, {{ .Location }}</span>
+        </li>
+        <li><a href="{{ .URL }}">{{ .URL }}</a></li>
+        <li><a href="{{ .LinkedIn }}" target="_blank">{{ .LinkedIn }}</a></li>
+      </ul>
     </div>
-    <div class="rside">
+    <div class="basis-4/12">
       <h3>Languages</h3>
-      <ul class="languages">
-        {{ range .Languages }}<li>{{ . | md }}</li>{{ end }}
-      </ul>
+      <ul>{{ range .Languages }}<li>{{ . | md }}</li>{{ end }}</ul>
     </div>
   </div>
-  <div class="fact summary">
-    <div class="lmain">
-      <p class="summary">{{ .Summary | md }}</p>
+
+  <div class="flex flex-row">
+    <div class="basis-8/12">
+      <p>{{ .Summary | md }}</p>
     </div>
-    <div class="rside">
+    <div class="basis-4/12">
       <h3>Key capabilities</h3>
-      <ul class="capabilities">
-        {{ range .Capabilities }}<li>{{ . }}</li>{{ end }}
-      </ul>
+      <ul>{{ range .Capabilities }}<li>{{ . }}</li>{{ end }}</ul>
     </div>
   </div>
-  <div class="fact profiles">
-    <div class="lmain">
+
+  <div class="flex flex-row">
+    <div class="basis-8/12">
       <ul>
         {{ range .Profiles }}
           <li>
             <a href="{{ .URL }}">{{ .Name }}</a>
             by
             <a href="{{ .ProducerURL }}" target="_blank">{{ .Producer }}</a>,
-            <span class="duration">{{ .Date }}</span>
+            <span>{{ .Date }}</span>
           </li>
         {{ end }}
       </ul>
@@ -77,16 +72,13 @@
 <section id="achievements">
   <h1>Achievements</h1>
   {{ range . }}
-    <div class="fact title">
-      <div class="lside logo">
-        <img src={{ .Logo }}>
-        {{ if .AuxLogo }}<img src="{{ .AuxLogo }}">{{ end }}
+    <div class="flex flex-row">
+      <div class="basis-1/12">
+        <img src={{ .Logo }}>{{ if .AuxLogo }}<img src="{{ .AuxLogo }}">{{ end }}
       </div>
-      <div class="rmain">
+      <div class="basis-11/12">
         <h2>{{ .Project }}</h2>
-          <ul class="achievements">
-            {{ range .STAR }}<li>{{ . | md }}</li>{{ end }}
-          </ul>
+        <ul>{{ range .STAR }}<li>{{ . | md }}</li>{{ end }}</ul>
       </div>
     </div>
   {{ end }}
