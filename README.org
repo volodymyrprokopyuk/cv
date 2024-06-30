@@ -1,0 +1,8 @@
+* CV
+
+** Dependencies
+
+#+BEGIN_SRC fish
+# install TailwindCSS
+bun install --no-save tailwindcss
+#+END_SRC

@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"fmt"
 	"os"
+	"os/exec"
 	"regexp"
 	"text/template"
 
@@ -111,16 +112,23 @@ func render() error {
   }
   tpl := template.New("cv")
   tpl.Funcs(tplFuncs)
-  _, err = tpl.ParseFiles("cv.html")
+  _, err = tpl.ParseFiles("cv2.html")
   if err != nil {
     return err
   }
-  w, err := os.Create("index.html")
+  w, err := os.Create("index2.html")
   if err != nil {
     return err
   }
   defer w.Close()
-  return tpl.ExecuteTemplate(w, "cv.html", cv)
+  err = tpl.ExecuteTemplate(w, "cv2.html", cv)
+  if err != nil {
+    return err
+  }
+  twCmd := exec.Command("bunx", "tailwindcss", "--output", "tw.css", "--minify")
+  twCmd.Stdout = os.Stdout
+  twCmd.Stderr = os.Stderr
+  return twCmd.Run()
 }
 
 func main() {
