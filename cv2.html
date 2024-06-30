@@ -29,7 +29,8 @@
       <ul>
         <li><a href="mailto:{{ .Email }}">{{ .Email }}</a></li>
         <li>
-          <a href="tel:{{ .Phone | phone }}">{{ .Phone }}</a><span>, {{ .Location }}</span>
+          <a href="tel:{{ .Phone | phone }}">
+            {{ .Phone }}</a><span>, {{ .Location }}</span>
         </li>
         <li><a href="{{ .URL }}">{{ .URL }}</a></li>
         <li><a href="{{ .LinkedIn }}" target="_blank">{{ .LinkedIn }}</a></li>
@@ -56,14 +57,14 @@
       <ul>
         {{ range .Profiles }}
           <li>
-            <a href="{{ .URL }}">{{ .Name }}</a>
-            by
+            <a href="{{ .URL }}">{{ .Name }}</a> by
             <a href="{{ .ProducerURL }}" target="_blank">{{ .Producer }}</a>,
             <span>{{ .Date }}</span>
           </li>
         {{ end }}
       </ul>
     </div>
+    <div class="basis-4/12"></div>
   </div>
 </section>
 {{ end }}
@@ -74,7 +75,8 @@
   {{ range . }}
     <div class="flex flex-row">
       <div class="basis-1/12">
-        <img src={{ .Logo }}>{{ if .AuxLogo }}<img src="{{ .AuxLogo }}">{{ end }}
+        <img src={{ .Logo }}>
+        {{ if .AuxLogo }}<img src="{{ .AuxLogo }}">{{ end }}
       </div>
       <div class="basis-11/12">
         <h2>{{ .Project }}</h2>
@@ -89,41 +91,38 @@
 <section id="employment">
   <h1>Employment</h1>
   {{ range . }}
-    <div class="fact title">
-      <div class="lside logo">
+    <div class="flex flex-row">
+      <div class="basis-1/12">
         <img src="{{ .Logo }}">
         {{ if .AuxLogo }}<img src="{{ .AuxLogo }}">{{ end }}
       </div>
-      <div class="main">
-        <h2>{{ .Position }}</h2><span class="contract">({{ .Contract }})</span>
-        <div class="duration">{{ .Duration }}</div>
-        <p class="summary">{{ .Summary | md }}</p>
+      <div class="basis-7/12">
+        <h2>{{ .Position }}</h2><span>({{ .Contract }})</span>
+        <div>{{ .Duration }}</div>
+        <p>{{ .Summary | md }}</p>
       </div>
-      <div class="rside">
-        <div class="url">
+      <div class="basis-4/12">
+        <div>
           <a href="{{ .URL }}"  target="_blank">
-            {{ .Company }}</a><span class="location">, {{ .Location }}</span>
+            {{ .Company }}</a><span>, {{ .Location }}</span>
         </div>
-        <div class="description">{{ .Description }}</div>
-        <div class="industry">{{ .Industry }}</div>
+        <div>{{ .Description }}</div>
+        <div>{{ .Industry }}</div>
       </div>
     </div>
-    <div class="fact detail">
-      <div class="lside"></div>
-      <div class="main">
+
+    <div class="flex flex-row">
+      <div class="basis-1/12"></div>
+      <div class="basis-7/12">
         <h3>Main responsibilities. Key projects and achievements</h3>
-        <ul class="responsibilities">
-          {{ range .Responsibilities }}<li>{{ . | md }}</li>{{ end }}
-        </ul>
+        <ul>{{ range .Responsibilities }}<li>{{ . | md }}</li>{{ end }}</ul>
       </div>
-      <div class="rside">
+      <div class="basis-4/12">
         <h3>Skills and competencies</h3>
-        <ul class="skills">
-          {{ range .Skills }}<li>{{ . }}</li>{{ end }}
-        </ul>
+        <ul>{{ range .Skills }}<li>{{ . }}</li>{{ end }}</ul>
         <h3>Technologies</h3>
         {{ range .Technologies }}
-          <span class="tech" title="{{ .Desc }}">{{ .Tech }}</span>
+          <span title="{{ .Desc }}">{{ .Tech }}</span>
         {{ end }}
       </div>
     </div>
@@ -135,19 +134,19 @@
 <section id="education">
   <h1>Education</h1>
   {{ range . }}
-    <div class="fact title">
-      <div class="lside logo">
+    <div class="flex flex-row">
+      <div class="basis-1/12">
         <img src="{{ .Logo }}">
       </div>
-      <div class="main">
+      <div class="basis-7/12">
         {{ range .Courses }}
           <h2>{{ .Title }}</h2>
-          <div class="duration">{{ .Duration }}</div>
+          <div>{{ .Duration }}</div>
         {{ end }}
       </div>
-      <div class="rside url">
+      <div class="basis-4/12">
         <a href="{{ .URL }}" target="_blank">
-          {{ .Center }}</a><span class="location">, {{ .Location }}</span>
+          {{ .Center }}</a><span>, {{ .Location }}</span>
       </div>
     </div>
   {{ end }}
