@@ -5,4 +5,6 @@
 #+BEGIN_SRC fish
 # install TailwindCSS
 bun install --no-save tailwindcss
+# Install HTML/CSS minifier
+yay -S minify-html-bin
 #+END_SRC

@@ -125,10 +125,17 @@ func render() error {
   if err != nil {
     return err
   }
-  twCmd := exec.Command("bunx", "tailwindcss", "--output", "tw.css", "--minify")
+  twCmd := exec.Command("bunx", "tailwindcss", "--output", "tw.css")
   twCmd.Stdout = os.Stdout
   twCmd.Stderr = os.Stderr
-  return twCmd.Run()
+  err = twCmd.Run()
+  if err != nil {
+    return err
+  }
+  minCmd := exec.Command("minify-html", "index2.html", "tw.css")
+  minCmd.Stdout = os.Stdout
+  minCmd.Stderr = os.Stderr
+  return minCmd.Run()
 }
 
 func main() {
