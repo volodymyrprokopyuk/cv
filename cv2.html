@@ -18,13 +18,13 @@
 
 {{ define "summary" }}
 <section id="summary">
-  <div class="flex flex-row flex-wrap">
+  <div class="flex flex-row flex-wrap gap-y-2">
 
-    <div id="selfie" class="basis-1/4 lg:basis-1/12 lg:order-1">
+    <div id="selfie" class="border-2 basis-1/4 lg:basis-1/12 lg:order-1">
       <img src="{{ .Selfie }}" alt="Volodymyr Prokopyuk">
     </div>
 
-    <div id="contacts" class="basis-3/4 lg:basis-7/12 lg:order-2">
+    <div id="contacts" class="border-2 basis-3/4 lg:basis-7/12 lg:order-2 px-4">
       <h1>{{ .Name }}</h1>
       <h2>{{ .Role }}</h2>
       <h3 class="hidden lg:block">{{ .Industries }}</h3>
@@ -39,21 +39,23 @@
       </ul>
     </div>
 
-    <div id="capabilities" class="basis-full lg:basis-4/12 lg:order-5">
+    <div id="capabilities" class="border-2 basis-full lg:basis-4/12 lg:order-6 px-4">
       <h3>Key capabilities</h3>
       <ul>{{ range .Capabilities }}<li>{{ . }}</li>{{ end }}</ul>
     </div>
 
-    <div id="introduction" class="hidden lg:block lg:basis-8/12 lg:order-4">
+    <div class="border-2 hidden lg:block lg:basis-1/12 lg:order-4"></div>
+    <div id="introduction" class="border-2 hidden lg:block lg:basis-7/12 lg:order-5 px-4">
       <p>{{ .Summary | md }}</p>
     </div>
 
-    <div id="langauges" class="hidden lg:block bases-4/12 lg:basis-4/12 lg:order-3">
+    <div id="langauges" class="border-2 hidden lg:block basis-4/12 lg:basis-4/12 lg:order-3 px-4">
       <h3>Languages</h3>
       <ul>{{ range .Languages }}<li>{{ . | md }}</li>{{ end }}</ul>
     </div>
 
-    <div id="profiles" class="hidden lg:block lg:basis-8/12 lg:order-6">
+    <div class="border-2 hidden lg:block lg:basis-1/12 lg:order-7"></div>
+    <div id="profiles" class="border-2 hidden lg:block lg:basis-7/12 lg:order-8 px-4">
       <ul>
         {{ range .Profiles }}
           <li>
@@ -72,15 +74,17 @@
 {{ define "achievements" }}
 <section id="achievements">
   <h1>Achievements</h1>
-    <div class="flex flex-row flex-wrap">
+    <div class="flex flex-row flex-wrap gap-y-4">
       {{ range . }}
 
-        <div class="basis-full lg:basis-1/12">
-          <img src={{ .Logo }}>
-          {{ if .AuxLogo }}<img src="{{ .AuxLogo }}">{{ end }}
+        <div class="border-2 basis-full lg:basis-1/12 max-lg:flex max-lg:justify-center">
+          <div class="max-lg:w-2/5">
+            <img src={{ .Logo }}>
+            {{ if .AuxLogo }}<img src="{{ .AuxLogo }}">{{ end }}
+          </div>
         </div>
 
-        <div class="basis-full lg:basis-11/12">
+        <div class="border-2 basis-full lg:basis-11/12 px-4">
           <h2>{{ .Project }}</h2>
           <ul>{{ range .STAR }}<li>{{ . | md }}</li>{{ end }}</ul>
         </div>
@@ -93,21 +97,23 @@
 {{ define "employment" }}
 <section id="employment">
   <h1>Employment</h1>
-  <div class="flex flex-row flex-wrap">
+  <div class="flex flex-row flex-wrap gap-y-4">
     {{ range . }}
 
-      <div class="basis-full lg:basis-1/12">
-        <img src="{{ .Logo }}">
-        {{ if .AuxLogo }}<img src="{{ .AuxLogo }}">{{ end }}
+      <div class="border-2 basis-full lg:basis-1/12 max-lg:flex max-lg:justify-center">
+        <div class="max-lg:w-2/5">
+          <img src="{{ .Logo }}">
+          {{ if .AuxLogo }}<img src="{{ .AuxLogo }}">{{ end }}
+        </div>
       </div>
 
-      <div class="basis-full lg:basis-7/12">
+      <div class="border-2 basis-full lg:basis-7/12 px-4">
         <h2>{{ .Position }}</h2><span>({{ .Contract }})</span>
         <div>{{ .Duration }}</div>
         <p>{{ .Summary | md }}</p>
       </div>
 
-      <div class="hidden lg:block lg:basis-4/12">
+      <div class="hidden lg:block lg:basis-4/12 px-4">
         <div>
           <a href="{{ .URL }}"  target="_blank">
             {{ .Company }}</a><span>, {{ .Location }}</span>
@@ -116,14 +122,14 @@
         <div>{{ .Industry }}</div>
       </div>
 
-      <div class="hidden lg:block lg:basis-1/12"></div>
+      <div class="border-2 hidden lg:block lg:basis-1/12"></div>
 
-      <div class="hidden lg:block lg:basis-7/12">
+      <div class="border-2 hidden lg:block lg:basis-7/12 px-4">
         <h3>Main responsibilities. Key projects and achievements</h3>
         <ul>{{ range .Responsibilities }}<li>{{ . | md }}</li>{{ end }}</ul>
       </div>
 
-      <div class="hidden lg:block lg:basis-4/12">
+      <div class="border-2 hidden lg:block lg:basis-4/12 px-4">
         <h3>Skills and competencies</h3>
         <ul>{{ range .Skills }}<li>{{ . }}</li>{{ end }}</ul>
         <h3>Technologies</h3>
@@ -140,21 +146,23 @@
 {{ define "education" }}
 <section id="education">
   <h1>Education</h1>
-  <div class="flex flex-row flex-wrap">
+  <div class="flex flex-row flex-wrap gap-y-4">
     {{ range . }}
 
-      <div class="basis-full lg:basis-1/12">
-        <img src="{{ .Logo }}">
+      <div class="border-2 basis-full lg:basis-1/12 max-lg:flex max-lg:justify-center">
+        <div class="max-lg:w-2/5">
+          <img src="{{ .Logo }}">
+        </div>
       </div>
 
-      <div class="bases-full lg:basis-7/12">
+      <div class="border-2 basis-full lg:basis-7/12 px-4">
         {{ range .Courses }}
           <h2>{{ .Title }}</h2>
           <div>{{ .Duration }}</div>
         {{ end }}
       </div>
 
-      <div class="hidden lg:block lg:basis-4/12">
+      <div class="border-2 hidden lg:block lg:basis-4/12 px-4">
         <a href="{{ .URL }}" target="_blank">
           {{ .Center }}</a><span>, {{ .Location }}</span>
       </div>
