@@ -125,7 +125,9 @@ func render() error {
   if err != nil {
     return err
   }
-  twCmd := exec.Command("bunx", "tailwindcss", "--output", "tw.css")
+  twCmd := exec.Command(
+    "bunx", "tailwindcss", "--input", "cv2.css", "--output", "tw.css",
+  )
   twCmd.Stdout = os.Stdout
   twCmd.Stderr = os.Stderr
   err = twCmd.Run()

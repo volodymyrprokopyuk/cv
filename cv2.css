@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Noto Sans", sans-serif;
+  }
+}
+
+@layer components {
+  .head1 {
+    @apply text-xl font-semibold
+  }
+  .head2 {
+    @apply text-lg font-medium
+  }
+  .head3 {
+    @apply text-base font-medium
+  }
+  .link {
+    @apply text-blue-600
+  }
+  .list {
+    @apply list-disc list-outside ml-4
+  }
+  .duration {
+    @apply italic text-neutral-600
+  }
+  .separator {
+    @apply pb-4 border-b-2
+  }
+}
