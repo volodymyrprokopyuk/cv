@@ -21,8 +21,10 @@
   <div class="flex flex-row flex-wrap gap-y-2">
 
     <div class="basis-full max-lg:flex max-lg:justify-center lg:basis-1/12">
-      <img src="{{ .Selfie }}" alt="Volodymyr Prokopyuk"
-           class="max-lg:w-1/2 max-lg:rounded-full">
+      <a href="/">
+        <img src="{{ .Selfie }}" alt="Volodymyr Prokopyuk"
+             class="max-lg:w-1/2 max-lg:rounded-full">
+      </a>
     </div>
 
     <div class="basis-full lg:basis-6/12 lg:pl-4">
@@ -50,7 +52,7 @@
 
     <div class="hidden lg:block lg:basis-2/12 print:hidden">
       {{ if .Details }}
-        <a href="index.html" class="details">Summary</a>
+        <a href="/" class="details">Summary</a>
       {{ else }}
         <a href="details.html" class="details">Details</a>
       {{ end }}
