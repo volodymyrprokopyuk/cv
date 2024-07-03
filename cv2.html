@@ -20,13 +20,12 @@
 <section id="summary">
   <div class="flex flex-row flex-wrap gap-y-2">
 
-    <div id="selfie" class="basis-full max-lg:flex max-lg:justify-center
-             lg:basis-1/12">
+    <div class="basis-full max-lg:flex max-lg:justify-center lg:basis-1/12">
       <img src="{{ .Selfie }}" alt="Volodymyr Prokopyuk"
            class="max-lg:w-1/2 max-lg:rounded-full">
     </div>
 
-    <div id="contacts" class="basis-full lg:basis-6/12 lg:pl-4">
+    <div class="basis-full lg:basis-6/12 lg:pl-4">
       <h1 class="head1">{{ .Name }}</h1>
       <h2 class="head2">{{ .Role }}</h2>
       <h3 class="hidden lg:block lg:font-normal">{{ .Industries }}</h3>
@@ -44,23 +43,33 @@
       </ul>
     </div>
 
-    <div id="langauges" class="hidden lg:block lg:basis-5/12 lg:basis-4/12 lg:pl-4">
+    <div class="hidden lg:block lg:basis-3/12 lg:pl-4">
       <h3 class="head3">Languages</h3>
       <ul class="list">{{ range .Languages }}<li>{{ . | md }}</li>{{ end }}</ul>
     </div>
 
+    <div class="hidden lg:block lg:basis-2/12">
+      {{ if .Details }}
+        <a href="index2.html" class="font-normal px-2 py-1 rounded-lg
+                 border border-rose-600 bg-yellow-100 ">Summary</a>
+      {{ else }}
+        <a href="details.html" class="font-normal px-2 py-1 rounded-lg
+                 border border-rose-600 bg-yellow-100 ">Details</a>
+      {{ end }}
+    </div>
+
     <div class="hidden lg:block lg:basis-1/12"></div>
-    <div id="introduction" class="hidden lg:block lg:basis-6/12 lg:pl-4">
+    <div class="hidden lg:block lg:basis-6/12 lg:pl-4">
       <p>{{ .Summary | md }}</p>
     </div>
 
-    <div id="capabilities" class="basis-full lg:basis-5/12 lg:pl-4">
+    <div class="basis-full lg:basis-5/12 lg:pl-4">
       <h3 class="head3">Key capabilities</h3>
       <ul class="list">{{ range .Capabilities }}<li>{{ . }}</li>{{ end }} </ul>
     </div>
 
     <div class="hidden lg:block lg:basis-1/12"></div>
-    <div id="profiles" class="hidden lg:block lg:basis-6/12 lg:pl-4">
+    <div class="hidden lg:block lg:basis-6/12 lg:pl-4">
       <ul class="list">
         {{ range .Profiles }}
           <li>
@@ -127,20 +136,20 @@
         <div class="font-normal">{{ .Industry }}</div>
       </div>
 
-      {{ if $.Details }}
+      {{ if and $.Details .Responsibilities }}
         <div class="hidden lg:block lg:basis-1/12"></div>
 
-        <div class="hidden lg:block lg:basis-6/12" lg:pl-4>
-          <h3>Main responsibilities. Key projects and achievements</h3>
+        <div class="hidden lg:block lg:basis-6/12 lg:pl-4">
+          <h3 class="head3">Main responsibilities. Key projects and achievements</h3>
           <ul class="list">
             {{ range .Responsibilities }}<li>{{ . | md }}</li>{{ end }}
           </ul>
         </div>
 
-        <div class="hidden lg:block lg:basis-5/12" lg:pl-4>
-          <h3>Skills and competencies</h3>
-          <ul class="list">{{ range .Skills }}<li>{{ . }}</li>{{ end }}</ul>
-          <h3>Technologies</h3>
+        <div class="hidden lg:block lg:basis-5/12 lg:pl-4">
+          <h3 class="head3">Skills and competencies</h3>
+          <ul class="list mb-2">{{ range .Skills }}<li>{{ . }}</li>{{ end }}</ul>
+          <h3 class="head3">Technologies</h3>
           {{ range .Technologies }}
             <span title="{{ .Desc }}">{{ .Tech }}</span>
           {{ end }}

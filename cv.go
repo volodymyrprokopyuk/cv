@@ -101,6 +101,7 @@ var tplFuncs = template.FuncMap{
 }
 
 func render() error {
+  // decode YAML
   file, err := os.Open("cv.yaml")
   if err != nil {
     return err
@@ -111,12 +112,14 @@ func render() error {
   if err != nil {
     return err
   }
+  // read template
   tpl := template.New("cv")
   tpl.Funcs(tplFuncs)
   _, err = tpl.ParseFiles("cv2.html")
   if err != nil {
     return err
   }
+  // write index.html
   w, err := os.Create("index2.html")
   if err != nil {
     return err
@@ -126,6 +129,18 @@ func render() error {
   if err != nil {
     return err
   }
+  // write details.html
+  cv.Details = true
+  w, err = os.Create("details.html")
+  if err != nil {
+    return err
+  }
+  defer w.Close()
+  err = tpl.ExecuteTemplate(w, "cv2.html", cv)
+  if err != nil {
+    return err
+  }
+  // generate CSS
   twCmd := exec.Command(
     "bunx", "tailwindcss", "--input", "cv2.css", "--output", "tw.css",
   )
@@ -135,7 +150,8 @@ func render() error {
   if err != nil {
     return err
   }
-  // minCmd := exec.Command("minify-html", "index2.html", "tw.css")
+  // optimize HTML/CSS
+  // minCmd := exec.Command("minify-html", "index2.html", "details.html", "tw.css")
   // minCmd.Stdout = os.Stdout
   // minCmd.Stderr = os.Stderr
   // return minCmd.Run()
