@@ -36,6 +36,17 @@ capabilities:
   - Technical mentoring and coaching of engineering teams
   - Design and development of modern payment systems
   - Standards-compliant, cloud-native security solutions
+technologies:
+  - { tech: Go, desc: Programming language, logo: image/logo-go.png }
+  - { tech: Node.js, desc: JavaScript runtime, logo: image/logo-nodejs.png }
+  - { tech: CockroachDB, desc: Distributed database, logo: image/logo-cockroachdb.png }
+  - { tech: PostgreSQL, desc: Relational database, logo: image/logo-postgresql.png }
+  - { tech: Redpanda, desc: Distributed streaming, logo: image/logo-redpanda.png }
+  - { tech: Kafka, desc: Distributed streaming, logo: image/logo-kafka.png }
+  - { tech: AWS, desc: Cloud computing, logo: image/logo-aws.png }
+  - { tech: Terraform, desc: Infrastructure management, logo: image/logo-terraform.png }
+  - { tech: Kubernetes, desc: Container orchestration, logo: image/logo-kubernetes.png }
+  - { tech: Docker, desc: Containeraized applications, logo: image/logo-docker.png }
 achievements:
   - project: Unified payment data store
     logo: image/logo-icon.png

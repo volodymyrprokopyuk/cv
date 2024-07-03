@@ -27,9 +27,10 @@ type achievement struct {
   STAR []string `yaml:"STAR"`
 }
 
-type tech struct {
+type technology struct {
   Tech string `yaml:"tech"`
   Desc string `yaml:"desc"`
+  Logo string `yaml:"logo"`
 }
 
 type employment struct {
@@ -46,7 +47,7 @@ type employment struct {
   AuxLogo string `yaml:"auxLogo"`
   Responsibilities []string `yaml:"responsibilities"`
   Skills []string `yaml:"skills"`
-  Technologies []tech `yaml:"technologies"`
+  Technologies []technology `yaml:"technologies"`
 }
 
 type course struct {
@@ -77,6 +78,7 @@ type cv struct {
   Summary string `yaml:"summary"`
   Profiles []profile `yaml:"profiles"`
   Capabilities []string `yaml:"capabilities"`
+  technologies []technology `yaml:"technologies"`
   Achievements []achievement `yaml:"achievements"`
   Employment []employment `yaml:"employment"`
   Education []education `yaml:"education"`
