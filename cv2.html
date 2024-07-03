@@ -6,12 +6,12 @@
     <title>{{ .Title }}</title>
     <link href="tw.css" rel="stylesheet">
   </head>
-  <body class="text-sm font-light lg:text-base">
-    <main>
+  <body class="text-base font-light lg:text-base">
+    <main class="mx-2 mt-2 lg:mx-[10%] lg:mt-4">
       {{ template "summary" . }}
-      {{ template "achievements" .Achievements }}
-      {{ template "employment" .Employment }}
-      {{ template "education" .Education }}
+      {{ template "achievements" . }}
+      {{ template "employment" . }}
+      {{ template "education" . }}
     </main>
   </body>
 </html>
@@ -20,14 +20,16 @@
 <section id="summary">
   <div class="flex flex-row flex-wrap gap-y-2">
 
-    <div id="selfie" class="basis-1/4 pt-1 pl-1 lg:basis-1/12 lg:order-1">
-      <img src="{{ .Selfie }}" alt="Volodymyr Prokopyuk">
+    <div id="selfie" class="basis-full max-lg:flex max-lg:justify-center
+             lg:basis-1/12">
+      <img src="{{ .Selfie }}" alt="Volodymyr Prokopyuk"
+           class="max-lg:w-1/2 max-lg:rounded-full">
     </div>
 
-    <div id="contacts" class="basis-3/4 px-2 lg:basis-7/12 lg:order-2">
+    <div id="contacts" class="basis-full lg:basis-6/12 lg:pl-4">
       <h1 class="head1">{{ .Name }}</h1>
       <h2 class="head2">{{ .Role }}</h2>
-      <h3 class="hidden lg:block">{{ .Industries }}</h3>
+      <h3 class="hidden lg:block lg:font-normal">{{ .Industries }}</h3>
       <ul class="list">
         <li><a href="mailto:{{ .Email }}" class="link">{{ .Email }}</a></li>
         <li>
@@ -42,25 +44,23 @@
       </ul>
     </div>
 
-    <div id="capabilities" class="basis-full px-2 lg:basis-4/12 lg:order-6">
+    <div id="langauges" class="hidden lg:block lg:basis-5/12 lg:basis-4/12 lg:pl-4">
+      <h3 class="head3">Languages</h3>
+      <ul class="list">{{ range .Languages }}<li>{{ . | md }}</li>{{ end }}</ul>
+    </div>
+
+    <div class="hidden lg:block lg:basis-1/12"></div>
+    <div id="introduction" class="hidden lg:block lg:basis-6/12 lg:pl-4">
+      <p>{{ .Summary | md }}</p>
+    </div>
+
+    <div id="capabilities" class="basis-full lg:basis-5/12 lg:pl-4">
       <h3 class="head3">Key capabilities</h3>
       <ul class="list">{{ range .Capabilities }}<li>{{ . }}</li>{{ end }} </ul>
     </div>
 
-    <div class="hidden lg:block lg:basis-1/12 lg:order-4"></div>
-    <div id="introduction" class="hidden px-2
-             lg:block lg:basis-7/12 lg:order-5">
-      <p>{{ .Summary | md }}</p>
-    </div>
-
-    <div id="langauges" class="hidden px-2
-             lg:block basis-4/12 lg:basis-4/12 lg:order-3">
-      <h3>Languages</h3>
-      <ul class="list">{{ range .Languages }}<li>{{ . | md }}</li>{{ end }}</ul>
-    </div>
-
-    <div class="hidden lg:block lg:basis-1/12 lg:order-7"></div>
-    <div id="profiles" class="hidden px-2 lg:block lg:basis-7/12 lg:order-8">
+    <div class="hidden lg:block lg:basis-1/12"></div>
+    <div id="profiles" class="hidden lg:block lg:basis-6/12 lg:pl-4">
       <ul class="list">
         {{ range .Profiles }}
           <li>
@@ -78,9 +78,9 @@
 
 {{ define "achievements" }}
 <section id="achievements">
-  <h1 class="head1 mt-4 mb-2 pl-2">Achievements</h1>
+  <h1 class="head1 mt-4 mb-2">Achievements</h1>
     <div class="flex flex-row flex-wrap gap-y-4">
-      {{ range . }}
+      {{ range .Achievements }}
 
         <div class="basis-full max-lg:flex max-lg:justify-center lg:basis-1/12">
           <div class="max-lg:w-2/5">
@@ -89,7 +89,7 @@
           </div>
         </div>
 
-        <div class="basis-full px-2 separator lg:basis-11/12">
+        <div class="basis-full max-lg:separator lg:basis-11/12 lg:pl-4">
           <h2 class="head2">{{ .Project }}</h2>
           <ul class="list">{{ range .STAR }}<li>{{ . | md }}</li>{{ end }}</ul>
         </div>
@@ -101,9 +101,9 @@
 
 {{ define "employment" }}
 <section id="employment">
-  <h1 class="head1 mt-4 mb-2 pl-2">Employment</h1>
+  <h1 class="head1 mt-4 mb-2">Employment</h1>
   <div class="flex flex-row flex-wrap gap-y-4">
-    {{ range . }}
+    {{ range .Employment }}
 
       <div class="basis-full max-lg:flex max-lg:justify-center lg:basis-1/12">
         <div class="max-lg:w-2/5">
@@ -112,37 +112,40 @@
         </div>
       </div>
 
-      <div class="basis-full px-2 separator lg:basis-7/12">
+      <div class="basis-full max-lg:separator lg:basis-6/12 lg:pl-4">
         <h2 class="head2">{{ .Position }}</h2>
-        <span class="hidden lg:block">({{ .Contract }})</span>
-        <div class="duration">{{ .Duration }}</div>
+        <div class="subhead">{{ .Duration }}, {{ .Contract }}</div>
         <p>{{ .Summary | md }}</p>
       </div>
 
-      <div class="hidden lg:block px-2 lg:basis-4/12">
+      <div class="hidden lg:block lg:basis-5/12 lg:pl-4">
         <div>
-          <a href="{{ .URL }}"  target="_blank">
+          <a href="{{ .URL }}"  target="_blank" class="company">
             {{ .Company }}</a><span>, {{ .Location }}</span>
         </div>
-        <div>{{ .Description }}</div>
-        <div>{{ .Industry }}</div>
+        <div class="subhead">{{ .Description }}</div>
+        <div class="font-normal">{{ .Industry }}</div>
       </div>
 
-      <div class="hidden lg:block lg:basis-1/12"></div>
+      {{ if $.Details }}
+        <div class="hidden lg:block lg:basis-1/12"></div>
 
-      <div class="hidden px-2 lg:block lg:basis-7/12">
-        <h3>Main responsibilities. Key projects and achievements</h3>
-        <ul class="list">{{ range .Responsibilities }}<li>{{ . | md }}</li>{{ end }}</ul>
-      </div>
+        <div class="hidden lg:block lg:basis-6/12" lg:pl-4>
+          <h3>Main responsibilities. Key projects and achievements</h3>
+          <ul class="list">
+            {{ range .Responsibilities }}<li>{{ . | md }}</li>{{ end }}
+          </ul>
+        </div>
 
-      <div class="hidden px-2 lg:block lg:basis-4/12">
-        <h3>Skills and competencies</h3>
-        <ul class="list">{{ range .Skills }}<li>{{ . }}</li>{{ end }}</ul>
-        <h3>Technologies</h3>
-        {{ range .Technologies }}
-          <span title="{{ .Desc }}">{{ .Tech }}</span>
-        {{ end }}
-      </div>
+        <div class="hidden lg:block lg:basis-5/12" lg:pl-4>
+          <h3>Skills and competencies</h3>
+          <ul class="list">{{ range .Skills }}<li>{{ . }}</li>{{ end }}</ul>
+          <h3>Technologies</h3>
+          {{ range .Technologies }}
+            <span title="{{ .Desc }}">{{ .Tech }}</span>
+          {{ end }}
+        </div>
+      {{ end }}
 
     {{ end }}
   </div>
@@ -151,9 +154,9 @@
 
 {{ define "education" }}
 <section id="education">
-  <h1 class="head1 mt-4 mb-2 pl-2">Education</h1>
+  <h1 class="head1 mt-4 mb-2">Education</h1>
   <div class="flex flex-row flex-wrap gap-y-4">
-    {{ range . }}
+    {{ range .Education }}
 
       <div class="basis-full max-lg:flex max-lg:justify-center lg:basis-1/12">
         <div class="max-lg:w-2/5">
@@ -161,15 +164,15 @@
         </div>
       </div>
 
-      <div class="basis-full px-2 separator lg:basis-7/12">
+      <div class="basis-full max-lg:separator lg:basis-6/12 lg:pl-4">
         {{ range .Courses }}
           <h2 class="head2">{{ .Title }}</h2>
-          <div class="duration">{{ .Duration }}</div>
+          <div class="subhead">{{ .Duration }}</div>
         {{ end }}
       </div>
 
-      <div class="hidden px-2 lg:block lg:basis-4/12">
-        <a href="{{ .URL }}" target="_blank">
+      <div class="hidden lg:block lg:basis-5/12 lg:pl-4">
+        <a href="{{ .URL }}" target="_blank" class="company">
           {{ .Center }}</a><span>, {{ .Location }}</span>
       </div>
 

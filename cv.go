@@ -80,6 +80,7 @@ type cv struct {
   Achievements []achievement `yaml:"achievements"`
   Employment []employment `yaml:"employment"`
   Education []education `yaml:"education"`
+  Details bool
 }
 
 var reCleanPhone = regexp.MustCompile(`[^\d\+]`)
