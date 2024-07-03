@@ -115,34 +115,35 @@ func render() error {
   // read template
   tpl := template.New("cv")
   tpl.Funcs(tplFuncs)
-  _, err = tpl.ParseFiles("cv2.html")
+  _, err = tpl.ParseFiles("cv.html")
   if err != nil {
     return err
   }
   // write index.html
-  w, err := os.Create("index2.html")
+  w, err := os.Create("index.html")
   if err != nil {
     return err
   }
   defer w.Close()
-  err = tpl.ExecuteTemplate(w, "cv2.html", cv)
+  err = tpl.ExecuteTemplate(w, "cv.html", cv)
   if err != nil {
     return err
   }
   // write details.html
   cv.Details = true
+  cv.Title = "CV Vlad - Details"
   w, err = os.Create("details.html")
   if err != nil {
     return err
   }
   defer w.Close()
-  err = tpl.ExecuteTemplate(w, "cv2.html", cv)
+  err = tpl.ExecuteTemplate(w, "cv.html", cv)
   if err != nil {
     return err
   }
   // generate CSS
   twCmd := exec.Command(
-    "bunx", "tailwindcss", "--input", "cv2.css", "--output", "tw.css",
+    "bunx", "tailwindcss", "--input", "cv.css", "--output", "tw.css",
   )
   twCmd.Stdout = os.Stdout
   twCmd.Stderr = os.Stderr
@@ -151,11 +152,10 @@ func render() error {
     return err
   }
   // optimize HTML/CSS
-  // minCmd := exec.Command("minify-html", "index2.html", "details.html", "tw.css")
-  // minCmd.Stdout = os.Stdout
-  // minCmd.Stderr = os.Stderr
-  // return minCmd.Run()
-  return nil
+  minCmd := exec.Command("minify-html", "index.html", "details.html", "tw.css")
+  minCmd.Stdout = os.Stdout
+  minCmd.Stderr = os.Stderr
+  return minCmd.Run()
 }
 
 func main() {

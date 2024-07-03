@@ -1,146 +1,39 @@
-@import "style/modern-normalize.min.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,500;0,600;1,300;1,500&display=swap');
-
-body {
-  font-family: "Noto Sans", sans-serif;
-  font-size: 1.10em;
-  line-height: 1.35em;
-  font-weight: 300;
-}
-
-h1 {
-  font-size: 1.50em;
-  font-weight: 600;
-  margin: 0.6em auto;
-}
-h2 {
-  font-size: 1.35em;
-  font-weight: 600;
-  margin: 0.4em auto;
-  display: inline;
-}
-h3{
-  font-size: 1.20em;
-  font-weight: 600;
-  margin: 0.6em auto 0.2em;
-}
-
-a {
-  text-decoration: none;
-}
-.rside a {
-  font-size: 1.15em;
-  font-weight: 500;
-}
-
-p {
-  margin: 0.3em auto;
-}
-ul {
-  margin: 0.3em auto;
-  padding-left: 1em;
-}
-.duration, .description {
-  font-weight: 500;
-  font-style: italic;
-  color: gray;
-}
-.industry {
-  font-weight: 500;
-  font-style: italic;
-}
-.rside {
-  text-align: right;
-}
-#summary .fact .rside,
-#employment .fact.detail .rside {
-  text-align: left;
-}
-#summary .lside img {
-  filter: drop-shadow(0.5rem 0.5rem 0.5rem gray);
-}
-#toggle {
-  display: none;
-  position: sticky;
-  top: 0;
-  left: 0;
-  width: calc(10% - 1em);
-  padding: 1em;
-  border: none;
-  border-radius: 0.5em;
-  background-color: aquamarine;
-  font-weight: 300;
-}
-
-@media screen {
-  main {
-    width: 80%;
-    margin: auto;
+@layer base {
+  html {
+    font-family: "Noto Sans", sans-serif;
   }
 }
 
-@media print {
-  body {
-    font-size: 0.6em;
+@layer components {
+  .head1 {
+    @apply text-2xl font-semibold
   }
-  #toggle {
-    display: none !important;
+  .head2 {
+    @apply text-xl font-medium
   }
-  div {
-    break-inside: avoid;
+  .head3 {
+    @apply text-lg font-medium
+  }
+  .link {
+    @apply text-blue-700
+  }
+  .list {
+    @apply list-disc list-outside ml-4
+  }
+  .subhead {
+    @apply italic text-neutral-600
+  }
+  .separator {
+    @apply pb-2 border-b-2 border-neutral-300
+  }
+  .company {
+    @apply link text-lg font-normal
+  }
+  .details {
+    @apply font-normal px-2 py-1 rounded-lg border border-rose-600 bg-yellow-100
   }
 }
-
-span {
-  white-space: nowrap;
-}
-
-img {
-  width: 8vw;
-}
-
-.fact {
-  display: flex;
-}
-.lside {
-  flex-basis: 10%;
-}
-.main {
-  flex-basis: 50%;
-}
-.rside {
-  flex-basis: 40%;
-}
-.lmain {
-  flex-basis: 60%;
-}
-.rmain {
-  flex-basis: 90%;
-}
-
-.fact.detail {
-  display: none;
-  margin: 0.2em 0;
-}
-.fact.title {
-  margin-top: 1.2em;
-}
-.main, .rmain {
-  margin: 0 1em;
-}
-.lmain {
-  margin-right: 2em;
-}
-.tech {
-  line-height: 2em;
-  margin-right: 0.2em;
-  padding: 0 0.2em;
-  background: blanchedalmond;
-  border-radius: 0.2em;
-  border: thin solid gray;
-}
-
-/* .lside, .main, .rside, .lmain, .rmain { */
-/*   border: thin solid black; */
-/* } */
