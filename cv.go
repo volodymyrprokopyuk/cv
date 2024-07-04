@@ -134,7 +134,7 @@ func render() error {
   // write details.html
   cv.Details = true
   cv.Title = "CV Vlad - Details"
-  w, err = os.Create("details")
+  w, err = os.Create("details.html")
   if err != nil {
     return err
   }
@@ -154,7 +154,7 @@ func render() error {
     return err
   }
   // optimize HTML/CSS
-  minCmd := exec.Command("minify-html", "index.html", "details", "tw.css")
+  minCmd := exec.Command("minify-html", "index.html", "details.html", "tw.css")
   minCmd.Stdout = os.Stdout
   minCmd.Stderr = os.Stderr
   return minCmd.Run()
