@@ -9,6 +9,7 @@
   <body class="text-base font-light">
     <main class="mx-2 mt-2 lg:mx-[10%] lg:mt-4 print:mx-0">
       {{ template "summary" . }}
+      {{ template "technologies" . }}
       {{ template "achievements" . }}
       {{ template "employment" . }}
       {{ template "education" . }}
@@ -79,6 +80,26 @@
       </ul>
     </div>
 
+  </div>
+</section>
+{{ end }}
+
+{{ define "technologies" }}
+<section id="technologies">
+  <h1 class="head1 mt-4 mb-2">Technologies</h1>
+  <div class="flex flex-row flex-wrap gap-y-4">
+    {{ range .Technologies }}
+
+      <div class="flex flex-col justify-between basis-1/2 break-inside-avoid
+                  md:basis-4/12 lg:basis-3/12">
+        <img src="{{ .Logo }}" class="m-auto w-3/5 max-h-28 lg:w-1/2 lg:max-h-32">
+        <div>
+        <h3 class="head3 text-center">{{ .Tech }}</h3>
+        <p class="text-center">{{ .Desc }}</p>
+        </div>
+      </div>
+
+    {{ end }}
   </div>
 </section>
 {{ end }}

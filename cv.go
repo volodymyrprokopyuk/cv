@@ -78,7 +78,7 @@ type cv struct {
   Summary string `yaml:"summary"`
   Profiles []profile `yaml:"profiles"`
   Capabilities []string `yaml:"capabilities"`
-  technologies []technology `yaml:"technologies"`
+  Technologies []technology `yaml:"technologies"`
   Achievements []achievement `yaml:"achievements"`
   Employment []employment `yaml:"employment"`
   Education []education `yaml:"education"`
