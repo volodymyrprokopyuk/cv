@@ -145,7 +145,7 @@ func render() error {
   }
   // generate CSS
   twCmd := exec.Command(
-    "bunx", "tailwindcss", "--input", "cv.css", "--output", "tw.css",
+    "bunx", "tailwindcss", "--input", "cv.css", "--output", "tw.css", "--minify",
   )
   twCmd.Stdout = os.Stdout
   twCmd.Stderr = os.Stderr
@@ -154,7 +154,7 @@ func render() error {
     return err
   }
   // optimize HTML/CSS
-  minCmd := exec.Command("minify-html", "index.html", "details.html", "tw.css")
+  minCmd := exec.Command("minify-html", "index.html", "details.html")
   minCmd.Stdout = os.Stdout
   minCmd.Stderr = os.Stderr
   return minCmd.Run()
