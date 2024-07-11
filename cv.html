@@ -22,7 +22,7 @@
   <div class="flex flex-row flex-wrap gap-y-2">
 
     <div class="basis-full max-lg:flex max-lg:justify-center lg:basis-1/12">
-      <img src="{{ .Selfie }}" alt="Volodymyr Prokopyuk"
+      <img src="/cv/{{ .Selfie }}" alt="Volodymyr Prokopyuk"
            class="max-lg:w-1/2 max-lg:rounded-full">
     </div>
 
@@ -38,8 +38,7 @@
         </li>
         <li><a href="{{ .URL }}" class="link">{{ .URL }}</a></li>
         <li>
-          <a href="{{ .LinkedIn }}" target="_blank" class="link">
-            {{ .LinkedIn }}</a>
+          <a href="{{ .LinkedIn }}" target="_blank" class="link">{{ .LinkedIn }}</a>
         </li>
       </ul>
     </div>
@@ -51,10 +50,8 @@
 
     <div class="hidden lg:block lg:basis-2/12 print:hidden">
       {{ if .Details }}
-      <!-- <a href="index.html" class="details">Summary</a> -->
         <a href="/cv" class="details">Summary</a>
       {{ else }}
-        <!-- <a href="details.html" class="details">Details</a> -->
         <a href="/cv/details" class="details">Details</a>
       {{ end }}
     </div>
@@ -74,8 +71,9 @@
       <ul class="list">
         {{ range .Profiles }}
           <li>
-            <a href="{{ .URL }}">{{ .Name }}</a> by
-            <a href="{{ .ProducerURL }}" target="_blank">{{ .Producer }}</a>,
+            <a href="/cv/{{ .URL }}" class="link">{{ .Name }}</a> by
+            <a href="{{ .ProducerURL }}" target="_blank" class="link">
+              {{ .Producer }}</a>,
             <span>{{ .Date }}</span>
           </li>
         {{ end }}
@@ -94,7 +92,7 @@
 
       <div class="flex flex-col justify-between basis-1/2 break-inside-avoid
                   md:basis-4/12 lg:basis-3/12">
-        <img src="{{ .Logo }}" class="m-auto w-3/5 max-h-28 lg:w-1/2 lg:max-h-32">
+        <img src="/cv/{{ .Logo }}" class="m-auto w-3/5 max-h-28 lg:w-1/2 lg:max-h-32">
         <div>
           <h3 class="head3 text-center">{{ .Tech }}</h3>
           <p class="text-center">{{ .Desc }}</p>
@@ -115,8 +113,8 @@
         <div class="basis-full max-lg:flex max-lg:justify-center lg:basis-1/12
                     break-inside-avoid">
           <div class="max-lg:w-2/5">
-            <img src={{ .Logo }}>
-            {{ if .AuxLogo }}<img src="{{ .AuxLogo }}">{{ end }}
+            <img src="/cv/{{ .Logo }}">
+            {{ if .AuxLogo }}<img src="/cv/{{ .AuxLogo }}">{{ end }}
           </div>
         </div>
 
@@ -139,8 +137,8 @@
       <div class="basis-full max-lg:flex max-lg:justify-center lg:basis-1/12
                   break-inside-avoid">
         <div class="max-lg:w-2/5">
-          <img src="{{ .Logo }}">
-          {{ if .AuxLogo }}<img src="{{ .AuxLogo }}">{{ end }}
+          <img src="/cv/{{ .Logo }}">
+          {{ if .AuxLogo }}<img src="/cv/{{ .AuxLogo }}">{{ end }}
         </div>
       </div>
 
@@ -196,7 +194,7 @@
       <div class="basis-full max-lg:flex max-lg:justify-center lg:basis-1/12
                   break-inside-avoid">
         <div class="max-lg:w-2/5">
-          <img src="{{ .Logo }}">
+          <img src="/cv/{{ .Logo }}">
         </div>
       </div>
 
