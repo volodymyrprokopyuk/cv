@@ -131,10 +131,10 @@ func render() error {
   if err != nil {
     return err
   }
-  // write details.html
+  // write details/index.html
   cv.Details = true
   cv.Title = "CV Vlad - Details"
-  w, err = os.Create("details.html")
+  w, err = os.Create("details/index.html")
   if err != nil {
     return err
   }
@@ -149,15 +149,7 @@ func render() error {
   )
   twCmd.Stdout = os.Stdout
   twCmd.Stderr = os.Stderr
-  err = twCmd.Run()
-  if err != nil {
-    return err
-  }
-  // optimize HTML/CSS
-  minCmd := exec.Command("minify-html", "index.html", "details.html")
-  minCmd.Stdout = os.Stdout
-  minCmd.Stderr = os.Stderr
-  return minCmd.Run()
+  return twCmd.Run()
 }
 
 func main() {

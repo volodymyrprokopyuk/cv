@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Title }}</title>
-    <link href="tw.css" rel="stylesheet">
+    <link href="/cv/tw.css" rel="stylesheet">
   </head>
   <body class="text-base font-light">
     <main class="mx-2 my-2 lg:mx-[10%] lg:mt-4 print:mx-0">
@@ -51,9 +51,11 @@
 
     <div class="hidden lg:block lg:basis-2/12 print:hidden">
       {{ if .Details }}
-        <a href="index.html" class="details">Summary</a>
+      <!-- <a href="index.html" class="details">Summary</a> -->
+        <a href="/cv" class="details">Summary</a>
       {{ else }}
-        <a href="details.html" class="details">Details</a>
+        <!-- <a href="details.html" class="details">Details</a> -->
+        <a href="/cv/details" class="details">Details</a>
       {{ end }}
     </div>
 
