@@ -36,4 +36,8 @@
   .details {
     @apply font-normal px-2 py-1 rounded-lg border border-rose-600 bg-yellow-100
   }
+  .tag {
+    @apply inline-block mr-1 mt-2 px-1 rounded-md
+      border border-neutral-400 bg-yellow-100
+  }
 }

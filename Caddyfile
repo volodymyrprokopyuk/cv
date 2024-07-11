@@ -1,0 +1,12 @@
+# -*- mode: conf -*-
+# caddy run --config Caddyfile
+:1984 {
+  handle_path /cv/* {
+    root .
+  }
+  root .
+  file_server
+  handle_errors {
+    respond "{err.status_code} {err.status_text}"
+  }
+}
