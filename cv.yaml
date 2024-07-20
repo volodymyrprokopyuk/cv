@@ -16,13 +16,16 @@ languages:
   - "**Russian** native"
 selfie: image/selfie.jpg
 summary: >
-  I'm an enthusiastic IT professional with business focus and 16 years of
-  contrasted experience in design and development of **modern payment systems**
-  with proven track in **technical leadership of engineering teams**. I enjoy
-  pragmatic approach to software development, **effective communication** and
-  **fruitful collaboration** with people on challenging projects. I'm interested
-  in modern payments systems, distributed systems, cybersecurity, blockchain
-  technologies, DeFi solutions, modern web technologies, algorithms and data
+  I'm a self-motivated **solution architect** with business focus, learning
+  mindset, and 16 years of contrasted experience in design and development of
+  **modern payment systems** with proven track in **technical leadership of
+  engineering teams**. I always apply **critical thinking** and **continuous
+  innovation** to system design and application development. I enjoy **working
+  remotely** with efficient **time and task management** applying **emotional
+  intelligence** to facilitate **effective communication**, boost **productive
+  collaboration** and feeling of achievement for the whole team. I'm interested
+  in distributed system design, distributed databases and streaming, cloud
+  computing, cybersecurity, modern web technologies, algorithms and data
   structures
 profiles:
   - name: Personal profile discovery insights
@@ -36,6 +39,8 @@ capabilities:
   - Technical mentoring and coaching of engineering teams
   - Design and development of modern payment systems
   - Standards-compliant, cloud-native security solutions
+  - Self-motivation, learning mindset, continuous innovation
+  - Efficient time management and focus on results
 technologies:
   - { tech: Go, desc: Programming language, logo: image/logo-go.png }
   - { tech: Node.js, desc: JavaScript runtime, logo: image/logo-nodejs.png }
@@ -129,7 +134,7 @@ achievements:
         personal data
 employment:
   - position: Senior Payments Architect
-    contract: permanent
+    contract: permanent, fully remote
     duration: Apr 2021 - current
     summary: >
       Worked as a Senior Payments Architect on the **next generation instant
