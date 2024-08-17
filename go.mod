@@ -1,6 +1,6 @@
 module github.com/volodymyrprokopyuk/cv
 
-go 1.22.4
+go 1.23.0
 
 require (
 	github.com/yuin/goldmark v1.7.4

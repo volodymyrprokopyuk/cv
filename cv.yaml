@@ -39,6 +39,7 @@ capabilities:
   - Technical mentoring and coaching of engineering teams
   - Design and development of modern payment systems
   - Standards-compliant, cloud-native security solutions
+  - DevSecOps-focused design and development of IAM solutions
   - Self-motivation, learning mindset, continuous innovation
   - Efficient time management and focus on results
 technologies:
@@ -53,6 +54,40 @@ technologies:
   - { tech: Kubernetes, desc: Container orchestration, logo: image/logo-kubernetes.png }
   - { tech: Docker, desc: Containeraized applications, logo: image/logo-docker.png }
 achievements:
+  - project: Federated IAM for instant payment processing
+    logo: image/logo-icon.png
+    STAR:
+      - >
+        *Situation*: an **instant payments product** provides reliable and
+        efficient **connectors to different payment schemes** along with a
+        **unified payment data store** that is the single source of truth for
+        all payment processing. *Before the change*: all access to the payment
+        connectors and the payment data store was managed through **manually
+        provisioned generic accounts** reused by client bank operators and bank
+        systems
+      - >
+        *Task*: design and implement a **federated IAM solution** that securely
+        manages access of client bank operators and bank systems to applications
+        and APIs of the instant payments product. The IAM solution should
+        support **federated identity management** and provide **fine-grained
+        access control mechanisms** with corresponding **security monitoring and
+        access audit functions** for client bank administrators
+      - >
+        *Action*: a standard-compliant, reliable, and scalable IAM solution
+        **delegates the initial authentication** of principals to the bank
+        federated identity provider, as well as supports the **adaptive
+        authentication** by requesting additional authentication factors before
+        granting access to sensitive payment information and critical
+        operations. The IAM solution features **dynamic, flexible, and
+        fine-grained PBAC** fully managed by client bank administrators
+      - >
+        *Result*: the standard-compliant IAM solution provides **secure and
+        compliant access** of client bank operators and bank systems to the
+        instant payment product applications and APIs. The IAM solution directly
+        contributes to **faster time-to-market**, **reduced operational cost**,
+        and **increased customer trust** by seamless integration with the
+        bank-managed federated identity provider and flexible access policies
+        fully controlled by the client bank administrators
   - project: Unified payment data store
     logo: image/logo-icon.png
     STAR:
@@ -491,7 +526,7 @@ employment:
     contract: contractor
     duration: Feb 2016 - Oct 2016 (9 months)
     summary: >
-      Worked as a Forntend Quality Architect on the **next generation global
+      Worked as a Frontend Quality Architect on the **next generation global
       banking mobile application** for BBVA, the international Spanish banking
       group
     company: BBVA
