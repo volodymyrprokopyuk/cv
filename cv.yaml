@@ -53,6 +53,7 @@ technologies:
   - { tech: Terraform, desc: Infrastructure management, logo: image/logo-terraform.png }
   - { tech: Kubernetes, desc: Container orchestration, logo: image/logo-kubernetes.png }
   - { tech: Docker, desc: Containeraized applications, logo: image/logo-docker.png }
+  - { tech: gRPC, desc: Bi-directional communication, logo: image/logo-grpc.png }
 achievements:
   - project: Federated IAM for instant payment processing
     logo: image/logo-icon.png
