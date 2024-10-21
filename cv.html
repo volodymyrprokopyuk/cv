@@ -91,12 +91,12 @@
   <div class="flex flex-row flex-wrap gap-y-4">
     {{ range .Technologies }}
 
-      <div class="flex flex-col justify-between basis-4/12 break-inside-avoid
-                  md:basis-3/12 lg:basis-2/12">
+      <div class="flex flex-col justify-between basis-3/12 break-inside-avoid
+                  md:basis-2/12 lg:basis-2/12">
         <img src="/cv/{{ .Logo }}" class="m-auto w-3/5 max-h-28 lg:w-1/2 lg:max-h-32">
         <div>
-          <h3 class="head3 text-center">{{ .Tech }}</h3>
-          <p class="text-center">{{ .Desc }}</p>
+          <h3 class="font-medium text-center">{{ .Tech }}</h3>
+          <p class="text-sm text-center">{{ .Desc }}</p>
         </div>
       </div>
 

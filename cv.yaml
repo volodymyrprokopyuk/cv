@@ -45,15 +45,16 @@ capabilities:
 technologies:
   - { tech: Go, desc: Programming language, logo: image/logo-go.png }
   - { tech: Node.js, desc: JavaScript runtime, logo: image/logo-nodejs.png }
-  - { tech: CockroachDB, desc: Distributed database, logo: image/logo-cockroachdb.png }
+  - { tech: Bun, desc: JavaScript runtime, logo: image/logo-bun.png }
   - { tech: PostgreSQL, desc: Relational database, logo: image/logo-postgresql.png }
-  - { tech: Redpanda, desc: Distributed streaming, logo: image/logo-redpanda.png }
+  - { tech: CockroachDB, desc: Distributed database, logo: image/logo-cockroachdb.png }
   - { tech: Kafka, desc: Distributed streaming, logo: image/logo-kafka.png }
+  - { tech: Redpanda, desc: Distributed streaming, logo: image/logo-redpanda.png }
+  - { tech: gRPC, desc: Bi-directional communication, logo: image/logo-grpc.png }
   - { tech: AWS, desc: Cloud computing, logo: image/logo-aws.png }
   - { tech: Terraform, desc: Infrastructure management, logo: image/logo-terraform.png }
   - { tech: Kubernetes, desc: Container orchestration, logo: image/logo-kubernetes.png }
   - { tech: Docker, desc: Containeraized applications, logo: image/logo-docker.png }
-  - { tech: gRPC, desc: Bi-directional communication, logo: image/logo-grpc.png }
 achievements:
   - project: Federated IAM for instant payment processing
     logo: image/logo-icon.png
