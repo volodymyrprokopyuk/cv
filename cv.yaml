@@ -39,7 +39,7 @@ capabilities:
   - Technical leadership and effective communication
   - Effective mediation between business and engineering
   - Technical mentoring and coaching of engineering teams
-  - Blockchain desing and development of smart contracts
+  - Blockchain design and development of smart contracts
   - Design and development of modern payment systems
   - Standards-compliant, cloud-native security solutions
   - DevSecOps design and development of IAM solutions
@@ -65,6 +65,11 @@ achievements:
   - project: Blockchain from scratch in Go with gRPC
     logo: image/logo-blockchain.png
     STAR:
+      - >
+        Guided blockchain from scratch in Go
+        <a href="https://github.com/volodymyrprokopyuk/go-blockchain"
+        target="_blank" class="link font-medium">
+        https://github.com/volodymyrprokopyuk/go-blockchain</a>
       - >
         Designed, implemented, tested, and documented a **complete blockchain
         from scratch in Go using gRPC** as the inter-node communication

@@ -9,6 +9,7 @@ import (
 	"text/template"
 
 	"github.com/yuin/goldmark"
+	"github.com/yuin/goldmark/renderer/html"
 	"gopkg.in/yaml.v3"
 )
 
@@ -93,8 +94,9 @@ var tplFuncs = template.FuncMap{
     return reCleanPhone.ReplaceAllString(phone, "")
   },
   "md": func(md string) string {
+    gm := goldmark.New(goldmark.WithRendererOptions(html.WithUnsafe()))
     var htmlBuf bytes.Buffer
-    err := goldmark.Convert([]byte(md), &htmlBuf)
+    err := gm.Convert([]byte(md), &htmlBuf)
     if err != nil {
       panic(err)
     }
