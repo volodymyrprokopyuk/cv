@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -93,7 +93,8 @@
 
       <div class="flex flex-col justify-between basis-4/12 break-inside-avoid
                   md:basis-3/12 lg:basis-2/12">
-        <img src="/cv/{{ .Logo }}" class="m-auto w-3/5 max-h-28 lg:w-1/2 lg:max-h-32">
+        <img src="/cv/{{ .Logo }}" alt="Technology logo"
+             class="m-auto w-3/5 max-h-28 lg:w-1/2 lg:max-h-32">
         <div>
           <h3 class="font-medium text-center">{{ .Tech }}</h3>
           <p class="text-sm text-center">{{ .Desc }}</p>
@@ -114,8 +115,10 @@
         <div class="basis-full max-lg:flex max-lg:justify-center lg:basis-1/12
                     break-inside-avoid">
           <div class="max-lg:w-2/5">
-            <img src="/cv/{{ .Logo }}">
-            {{ if .AuxLogo }}<img src="/cv/{{ .AuxLogo }}">{{ end }}
+            <img src="/cv/{{ .Logo }}" alt="Achievement logo">
+            {{ if .AuxLogo }}
+              <img src="/cv/{{ .AuxLogo }}" alt="Achievement auxiliary logo">
+            {{ end }}
           </div>
         </div>
 
@@ -138,8 +141,10 @@
       <div class="basis-full max-lg:flex max-lg:justify-center lg:basis-1/12
                   break-inside-avoid">
         <div class="max-lg:w-2/5">
-          <img src="/cv/{{ .Logo }}">
-          {{ if .AuxLogo }}<img src="/cv/{{ .AuxLogo }}">{{ end }}
+          <img src="/cv/{{ .Logo }}" alt="Employment logo">
+          {{ if .AuxLogo }}
+            <img src="/cv/{{ .AuxLogo }}" alt="Employment auxiliary logo">
+          {{ end }}
         </div>
       </div>
 
@@ -192,7 +197,7 @@
       <div class="basis-full max-lg:flex max-lg:justify-center lg:basis-1/12
                   break-inside-avoid">
         <div class="max-lg:w-2/5">
-          <img src="/cv/{{ .Logo }}">
+          <img src="/cv/{{ .Logo }}" alt="Education logo">
         </div>
       </div>
 

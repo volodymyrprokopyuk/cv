@@ -1,0 +1,13 @@
+{
+  "root": true,
+  "extends": ["html-validate:recommended"],
+  "elements": ["html5"],
+  "rules": {
+    "doctype-style": "off",
+    "void-style": "off",
+    "prefer-tbody": "off",
+    "close-order": "off",
+    "no-trailing-whitespace": "off",
+    "tel-non-breaking": "off"
+  }
+}

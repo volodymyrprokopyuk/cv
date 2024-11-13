@@ -16,17 +16,19 @@ languages:
   - "**Russian** native"
 selfie: image/selfie.jpg
 summary: >
-  I'm a self-motivated **solution architect** with business focus, learning
-  mindset, and **16 years** of contrasted experience in design and development
-  of **modern payment systems** with proven track in **technical leadership of
+  I'm a self-motivated **solution architect**, a **blockchain enthusiast**, and
+  a **technical leader** with the business focus, the learning mindset, and **16
+  years** of contrasted experience in the design and development of the **modern
+  payment systems**, with a proven track record in the **technical leadership of
   engineering teams**. I always apply **critical thinking** and **continuous
   innovation** to system design and application development. I enjoy **working
-  remotely** with efficient **time and task management** applying **emotional
-  intelligence** to facilitate **effective communication**, boost **productive
-  collaboration** and feeling of achievement for the whole team. I'm interested
-  in distributed system design, distributed databases and data streaming, cloud
-  computing, cybersecurity, modern web technologies, algorithms and data
-  structures
+  remotely** with efficient **time and task management**, applying the
+  **emotional intelligence** to facilitate **effective communication**, boost
+  the **productive collaboration** and the feeling of achievement for the whole
+  team. I'm interested in the distributed system design, the blockchain
+  technology, the development of smart contracts, the distributed databases and
+  the data streaming, the cloud computing, the cybersecurity, the web3
+  technology, the algorithms and data structures
 profiles:
   - name: Personal profile discovery insights
     URL: asset/2022-09-vlad-personal-profile-maxima.pdf
@@ -37,12 +39,16 @@ capabilities:
   - Technical leadership and effective communication
   - Effective mediation between business and engineering
   - Technical mentoring and coaching of engineering teams
+  - Blockchain desing and development of smart contracts
   - Design and development of modern payment systems
   - Standards-compliant, cloud-native security solutions
-  - DevSecOps-focused design and development of IAM solutions
+  - DevSecOps design and development of IAM solutions
   - Self-motivation, learning mindset, continuous innovation
   - Efficient time management and focus on results
 technologies:
+  - { tech: Ethereum, desc: Smart contracts platform, logo: image/logo-ethereum.png }
+  - { tech: Solidity, desc: Smart contracts language, logo: image/logo-solidity.png }
+  - { tech: Foundry, desc: Smart contracts development, logo: image/logo-foundry.png }
   - { tech: Go, desc: Programming language, logo: image/logo-go.png }
   - { tech: Node.js, desc: JavaScript runtime, logo: image/logo-nodejs.png }
   - { tech: Bun, desc: JavaScript runtime, logo: image/logo-bun.png }
@@ -56,6 +62,38 @@ technologies:
   - { tech: Kubernetes, desc: Container orchestration, logo: image/logo-kubernetes.png }
   - { tech: Docker, desc: Containeraized applications, logo: image/logo-docker.png }
 achievements:
+  - project: Blockchain from scratch in Go with gRPC
+    logo: image/logo-blockchain.png
+    STAR:
+      - >
+        Designed, implemented, tested, and documented a **complete blockchain
+        from scratch in Go using gRPC** as the inter-node communication
+        protocol. The blockchain manages accounts using the **Secp256k1 elliptic
+        curve key pairs** and the **AES-GCM encryption** with the **Argon2
+        KDF**. The blockchain verifies transactions and creates blocks using the
+        **ECDSA Secp256k1 digital signatures** and the **Keccak256 hash
+        function**. The blockchain state manages the life cycle of transactions
+        and blocks in the concurrency safe way using the **Go mutexes and
+        channels**. The blockchain employs the **Merkle proof** to prove the
+        inclusion of transactions into blocks, and verify the integrity of
+        transactions on the blockchain. The blockchain implements the
+        **concurrency safe peer discovery** mechanism in the **peer-to-peer
+        blockchain network**. The **concurrency safe transaction relay** and the
+        **block relay mechanisms** ensure the resilient propagation of
+        transactions through the peer-to-peer network, and the synchronization
+        of the blockchain state on each node using the **Go channel composition
+        and multiplexing**, and the **gRPC server and client streaming**. The
+        blockchain implements the **Proof of Authority consensus**. The
+        **concurrency safe blockchain node event streaming** concurrently
+        delivers blockchain domain events in real-time to subscribed clients
+        using the **Go concurrency primitives** and the **gRPC server
+        streaming**. The blockchain provides the **CLI over the gRPC** to have
+        complete control of the blockchain from the command line. The **140-page
+        guide** fully documents the blockchain design and implementation. The
+        guide explains the theoretical foundations, and provides the practical
+        testing and usage examples, invaluable for **effective learning of the
+        blockchain concepts**, and **progressive building of the blockchain from
+        scratch in Go**
   - project: Federated IAM for instant payment processing
     logo: image/logo-icon.png
     STAR:

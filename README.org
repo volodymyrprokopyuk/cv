@@ -3,6 +3,9 @@
 ** Dependencies
 
 #+BEGIN_SRC fish
-# install TailwindCSS
-bun install --no-save tailwindcss
+# Style the CV with TailwindCSS
+bun install tailwindcss
+# Validate the CV HTML locally with html-validate
+bun install html-validate
+bunx html-validate --formatter codeframe index.html details/index.html
 #+END_SRC
