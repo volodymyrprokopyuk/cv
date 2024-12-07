@@ -49,6 +49,7 @@ technologies:
   - { tech: Ethereum, desc: Smart contracts platform, logo: image/logo-ethereum.png }
   - { tech: Solidity, desc: Smart contracts language, logo: image/logo-solidity.png }
   - { tech: Foundry, desc: Smart contracts development, logo: image/logo-foundry.png }
+  - { tech: Uniswap, desc: Decentralized exchange, logo: image/logo-uniswap.png }
   - { tech: Go, desc: Programming language, logo: image/logo-go.png }
   - { tech: Node.js, desc: JavaScript runtime, logo: image/logo-nodejs.png }
   - { tech: Bun, desc: JavaScript runtime, logo: image/logo-bun.png }
