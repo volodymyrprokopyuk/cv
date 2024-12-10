@@ -78,9 +78,7 @@ achievements:
         curve key pairs** and the **AES-GCM encryption** with the **Argon2
         KDF**. The blockchain verifies transactions and creates blocks using the
         **ECDSA Secp256k1 digital signatures** and the **Keccak256 hash
-        function**. The blockchain state manages the life cycle of transactions
-        and blocks in the concurrency safe way using the **Go mutexes and
-        channels**. The blockchain employs the **Merkle proof** to prove the
+        function**. The blockchain employs the **Merkle proof** to prove the
         inclusion of transactions into blocks, and verify the integrity of
         transactions on the blockchain. The blockchain implements the
         **concurrency safe peer discovery** mechanism in the **peer-to-peer
@@ -89,6 +87,8 @@ achievements:
         transactions through the peer-to-peer network, and the synchronization
         of the blockchain state on each node using the **Go channel composition
         and multiplexing**, and the **gRPC server and client streaming**. The
+        **blockchain state** manages the lifecycle of transactions and blocks in
+        the concurrency safe way using the **Go mutexes and channels**. The
         blockchain implements the **Proof of Authority consensus**. The
         **concurrency safe blockchain node event streaming** concurrently
         delivers blockchain domain events in real-time to subscribed clients
@@ -122,18 +122,18 @@ achievements:
         *Action*: a standard-compliant, reliable, and scalable IAM solution
         **delegates the initial authentication** of principals to the bank
         federated identity provider, as well as supports the **adaptive
-        authentication** by requesting additional authentication factors before
-        granting access to sensitive payment information and critical
-        operations. The IAM solution features **dynamic, flexible, and
+        authentication with MFA** by requesting additional authentication
+        factors before granting access to sensitive payment information and
+        critical operations. The IAM solution features **dynamic, flexible, and
         fine-grained PBAC** fully managed by client bank administrators
       - >
         *Result*: the standard-compliant IAM solution provides **secure and
         compliant access** of client bank operators and bank systems to the
         instant payment product applications and APIs. The IAM solution directly
-        contributes to **faster time-to-value**, **reduced operational cost**,
+        contributes to **faster time-to-value**, **reduced operational costs**,
         and **increased customer trust** by seamless integration with the
-        bank-managed federated identity provider and flexible access policies
-        fully controlled by the client bank administrators
+        **bank-managed federated identity provider**, and **dynamic and flexible
+        access policies** fully controlled by the client bank administrators
   - project: Unified payment data store
     logo: image/logo-icon.png
     STAR:
@@ -153,10 +153,10 @@ achievements:
         allows **arbitrary typed connections** between standard payment messages
         including non-standard customer-specific data payloads
       - >
-        *Result*: **improved customer satisfaction** with a **unified view on
-        payment processing** across multiple payment schemes, a scalable
-        **system-wide transaction log**, **single source of truth** for payment
-        operations, real-time payment monitoring, and payment analytics
+        *Result*: **increased customer satisfaction** with the **unified view on
+        payment processing** across multiple payment schemes, the scalable
+        **system-wide transaction log**, the **single source of truth** for
+        payment operations, real-time payment monitoring, and payment analytics
   - project: Stable FX pricing and execution
     logo: image/logo-santander.png
     auxLogo: image/logo-pagofx.jpg
@@ -166,21 +166,21 @@ achievements:
         competitive real-time FX rates** available to a big bank. However, FX
         rates are quite volatile and **change frequently**. *Before the change*:
         a real-time FX rate was provided for an initial quote, then an **updated
-        real-time FX rate was silently applied** to an instructed payment which
+        real-time FX rate was silently applied** to the instructed payment which
         was totally unexpected to customers. This quickly transformed into a
         **negative feedback** and an **increased abandonment rate**
       - >
-        *Task*: offer to customers a **stable FX pricing** for the duration (15
+        *Task*: offer **stable FX pricing** to customers for the duration (15
         mins) of their payment journey from the initial quoting and payment
         funding through the beneficiary screening and risk assessment to the
-        payment routing and payment execution. The **company absorbed FX loss or
-        gain** due to volatility of FX pricing
+        payment routing and payment execution. The **company absorbed the FX
+        loss or gain** due to the volatility of FX pricing
       - >
         *Action*: design and implement a **stable FX pricing for 15 mins** with
-        a **notification** of a customer about a **new FX quote** after 15 mins
-        if a payment was not yet instructed
+        an **explicit notification** of a customer about a **new FX quote**
+        after 15 mins if a payment was not yet instructed
       - >
-        *Result*: **improved customer satisfaction** and **higher usage of the
+        *Result*: **increased customer satisfaction** and **higher usage of the
         payment service** due to elimination of unexpected changes of FX pricing
         during a payment journey
   - project: Automated digital identity verification
@@ -193,14 +193,16 @@ achievements:
         Spain, Belgium). *Before the change*: a **semi-manual process for
         customer onboarding** with manual validation of every new customer. A
         customer onboarding was finished and the **account activated only after
-        a manual check**. **Periodic check was not feasible** for manual
-        processing given a big number of customers
+        a manual check** that took 1-2 days. **Periodic check of expired
+        customer documents was not feasible** for manual processing given a big
+        number of customers
       - >
-        *Task*: design a **seamless and instant customer onboarding**,
+        *Task*: design a **seamless and fully automated customer onboarding**,
         **automatically collect and verify customer personal data**, enough to
-        support AML and fraud checks from the KYC perspective. Ensure **seamless
-        periodic checks of customer personal data** to stay compliant with
-        regulations
+        support AML and fraud checks from the KYC perspective. **Automatically
+        build a customer riks profile** and calculate a **customer risk score**.
+        Ensure **seamless periodic checks of expired customer documents** to stay
+        compliant with regulations
       - >
         *Action*: design and implement **integrations with country-specific
         providers of digital identity verification** (capture of a national ID
@@ -208,11 +210,11 @@ achievements:
         probe) to support a **fully automated instant onboarding of low risk
         customer profiles**
       - >
-        *Result*: **improved customer satisfaction**, **increased a
-        lead-to-customer conversion**, **decreased abandonment rate** due to a
+        *Result*: **increased a lead-to-customer conversion**, **increased
+        customer satisfaction**, **decreased abandonment rate** due to a
         **frictionless fully automated instant customer onboarding** through a
-        digital identity verification as well as periodic checks of customer
-        personal data
+        digital identity verification, as well as periodic checks of expired
+        customer documents customer personal data
 employment:
   - position: Senior Payments Architect
     contract: permanent, fully remote
