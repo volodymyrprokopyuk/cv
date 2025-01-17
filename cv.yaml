@@ -67,7 +67,7 @@ achievements:
     logo: image/logo-blockchain.png
     STAR:
       - >
-        Guided blockchain from scratch in Go
+        A guided blockchain from scratch in Go with gRPC
         <a href="https://github.com/volodymyrprokopyuk/go-blockchain"
         target="_blank" class="link font-medium">
         https://github.com/volodymyrprokopyuk/go-blockchain</a>
@@ -100,6 +100,27 @@ achievements:
         testing and usage examples, invaluable for **effective learning of the
         blockchain concepts**, and **progressive building of the blockchain from
         scratch in Go**
+  - project: BIP-32 HD wallet with BIP-39 mnemonics in Go and Nushell
+    logo: image/logo-wallet.png
+    STAR:
+      - >
+        A guided BIP-32 HD wallet with BIP-39 mnemonics in Go and Nushell
+        <a href="https://github.com/volodymyrprokopyuk/go-wallet"
+        target="_blank" class="link font-medium">
+        https://github.com/volodymyrprokopyuk/go-wallet</a>
+      - >
+        Designed, implemented, tested, and documented a **BIP-32 HD wallet**
+        with **BIP-39 mnemonics** in Go using Nushell for integration testing of
+        the provided CLI tools. The wallet CLI exposes convenient tools for
+        generating and deriving BIP-39 mnemonics, deriving BIP-32 HD wallet
+        extended public and private keys, generating and deriving **secp256k1
+        key pairs**, generating and verifying **ECDSA signatures**, **ERC-55
+        encoding of Ethereum addresses**, encoding and converting derived keys
+        into different formats. The modular design of the wallet CLI tools and
+        the underlying Go library functions allows for easy composition of
+        cryptographic primitives and standard-defined HD wallet operations to be
+        combined in flexible ways, which is invaluable for learning and
+        experimentation
   - project: Federated IAM for instant payment processing
     logo: image/logo-icon.png
     STAR:
