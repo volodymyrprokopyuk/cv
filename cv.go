@@ -147,7 +147,7 @@ func render() error {
   }
   // generate CSS
   twCmd := exec.Command(
-    "bunx", "tailwindcss", "--input", "cv.css", "--output", "tw.css", "--minify",
+    "bunx", "@tailwindcss/cli", "--input", "cv.css", "--output", "tw.css", "--minify",
   )
   twCmd.Stdout = os.Stdout
   twCmd.Stderr = os.Stderr

@@ -4,7 +4,7 @@
 
 #+BEGIN_SRC fish
 # Style the CV with TailwindCSS
-bun install tailwindcss
+bun install tailwindcss @tailwindcss/cli
 # Validate the CV HTML locally with html-validate
 bun install html-validate
 bunx html-validate --formatter codeframe index.html details/index.html
