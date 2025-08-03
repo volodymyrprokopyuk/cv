@@ -110,7 +110,9 @@ func render() error {
   if err != nil {
     return err
   }
-  defer file.Close()
+  defer func() {
+    _ = file.Close()
+  }()
   var cv cv
   err = yaml.NewDecoder(file).Decode(&cv)
   if err != nil {
@@ -128,7 +130,9 @@ func render() error {
   if err != nil {
     return err
   }
-  defer w.Close()
+  defer func() {
+    _ = file.Close()
+  }()
   err = tpl.ExecuteTemplate(w, "cv.html", cv)
   if err != nil {
     return err
@@ -140,7 +144,9 @@ func render() error {
   if err != nil {
     return err
   }
-  defer w.Close()
+  defer func() {
+    _ = file.Close()
+  }()
   err = tpl.ExecuteTemplate(w, "cv.html", cv)
   if err != nil {
     return err

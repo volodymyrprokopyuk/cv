@@ -9,3 +9,9 @@ bun install tailwindcss @tailwindcss/cli
 bun install html-validate
 bunx html-validate --formatter codeframe index.html details/index.html
 #+END_SRC
+
+** Local server
+
+#+BEGIN_SRC fish
+caddy run --config Caddyfile # http://localhost:1984/
+#+END_SRC

@@ -2,7 +2,7 @@
 ---
 title: CV Vlad - Summary
 name: Volodymyr Prokopyuk, Vlad
-role: Payments Architect, Solution Architect
+role: Payments Architect, Principal Architect
 industries: Instant payments, cross-border payments
 email: volodymyrprokopyuk@gmail.com
 phone: +(34) 663 564 178
@@ -31,7 +31,7 @@ summary: >
   technology, the algorithms and data structures
 profiles:
   - name: Personal profile discovery insights
-    URL: asset/2022-09-vlad-personal-profile-maxima.pdf
+    URL: asset/2022-09-personal-profile-maxima.pdf
     producer: Maxima
     producerURL: https://www.maximatraining.com/
     date: Sep 2022
@@ -59,9 +59,9 @@ technologies:
   - { tech: Redpanda, desc: Distributed streaming, logo: image/logo-redpanda.png }
   - { tech: gRPC, desc: Bi-directional communication, logo: image/logo-grpc.png }
   - { tech: AWS, desc: Cloud computing, logo: image/logo-aws.png }
-  - { tech: Terraform, desc: Infrastructure management, logo: image/logo-terraform.png }
-  - { tech: Kubernetes, desc: Container orchestration, logo: image/logo-kubernetes.png }
+  - { tech: Pulumi, desc: Infrastructure management, logo: image/logo-pulumi.png }
   - { tech: Docker, desc: Containeraized applications, logo: image/logo-docker.png }
+  - { tech: Stripe, desc: Payment processing, logo: image/logo-stripe.png }
 achievements:
   - project: Blockchain from scratch in Go with gRPC
     logo: image/logo-blockchain.png
@@ -237,9 +237,88 @@ achievements:
         digital identity verification, as well as periodic checks of expired
         customer documents customer personal data
 employment:
+  - position: CTO, Principal Architect
+    contract: permanent, fully remote
+    duration: Jun 2024 - current
+    summary: >
+      Worked as a CTO and a Principal Architect on the **next generation smart
+      fitness platform** for Stadami, the leading global smart fitness platform
+      that connects top-tier trainers with clients worldwide
+    company: Stadami
+    URL: https://stadami.com/
+    location: Madrid
+    description: >
+      Smart fitness platform that feels right for you
+    industry: Fitness and wellness (Startup)
+    logo: image/logo-stadami.svg
+    responsibilities:
+      - >
+        Architected the core components of the smart fitness platform that
+        connectes top-tier trainers with clients worldwide, including **trainer
+        onboarding and training publishing**, **client registration and training
+        search**, **payment procesing and trainer payouts**, discounts
+        management, and payment reconciliation
+      - >
+        Successfully designed, implemented, tested, and deployed the
+        GDPR-compliant, multi-country **trainer onboarding and KYC process**
+        fully integrated with **Stripe custom connected accounts** and Zoho CRM
+      - >
+        Led the design, implementation, and deployment of the **Stripe-based
+        payment processing system**. The payment processing system supports
+        payments for individual and group trainings, purchasing training
+        packages, as well as disputes and refunds management. All movements of
+        funds are precisely tracked in a **multi-position digital ledger** used
+        for trainer and client notifications, and payment reconciliation
+      - >
+        Designed, implemented, and deployed **the AWS instrastructure for the
+        smart fitness platform** that is fully automated with Pulumi. The
+        infrastructure uses **Amazon VPC with subnets** for zero-trust, layerd
+        networking; **PostgreSQL Amazon Aurora clusters** for secure distributed
+        sensitive data management; **Amazon ECS Fargate clusters** for
+        resilient, mission-critical tasks, services, and jobs; **Amazon SQS**
+        for reliable asynchronous payment processing and notifications; **Amazon
+        S3 private buckets** for secure management of trainer sensitive
+        documents
+      - >
+        Designed, implemented, and deployed the log analysis, system monitoring,
+        operational dashboarding, and anomaly notification systems using
+        **Amazon CloudWatch** and **Amazon SNS**. All infrastructure from the
+        ground up is designed following **standard-compliant system and cloud
+        best security practices** at multiple levels of abstractions using
+        zero-trust layered **Amazon VPC networking**, **Amazon Security
+        Groups**, **Amazon IAM**, and **Amazon Certificate Manager**
+    skills:
+      - DDD-focused fitness platform architecture design
+      - Secure identity management and access control
+      - Stripe-based trainer onboarding and KYC
+      - Stripe-based payment processing and digital ledger
+      - Security-focused, automated AWS infrastructure
+      - Zero-trust, layered Amazon VPC networking
+      - PostgreSQL data modeling with Amazon Aurora
+      - Amazon ECS Fargate culusters for resilient services
+      - Platform monitoring and anomaly notification
+    technologies:
+      - {tech: DDD, desc: Domain-Driven Design}
+      - {tech: EDA, desc: Event-Driven Architecture}
+      - {tech: CEP, desc: Complex Event Processing}
+      - {tech: MFA, desc: Microservices Architecture}
+      - {tech: Stripe, desc: Payment processing}
+      - {tech: Go, desc: Programming language}
+      - {tech: Amazon VPC, desc: Cloud networking}
+      - {tech: Pulumi, desc: Infrastructure management}
+      - {tech: Amazon Aurora, desc: Relational database}
+      - {tech: PostgreSQL, desc: Relational database}
+      - {tech: Amazon ECS, desc: Cloud containers}
+      - {tech: Docker, desc: Container management}
+      - {tech: Amazon SQS, desc: Cloud message queues}
+      - {tech: Amazon CloudWatch, desc: Platform monitoring}
+      - {tech: Amazon SNS, desc: Cloud notifications}
+      - {tech: Amazon IAM, desc: Cloud identity and access}
+      - {tech: OAuth2, desc: Authorization framework}
+      - {tech: OpenID Connect, desc: Authentication protocol}
   - position: Senior Payments Architect
     contract: permanent, fully remote
-    duration: Apr 2021 - current
+    duration: Apr 2021 - May 2024, (3 years, 1 month)
     summary: >
       Worked as a Senior Payments Architect on the **next generation instant
       payments framework** IPF for Icon Solutions, the leading global provider
