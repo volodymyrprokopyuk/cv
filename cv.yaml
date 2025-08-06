@@ -16,19 +16,19 @@ languages:
   - "**Russian** native"
 selfie: image/selfie.jpg
 summary: >
-  I'm a self-motivated **solution architect**, a **blockchain enthusiast**, and
-  a **technical leader** with the business focus, the learning mindset, and **16
-  years** of contrasted experience in the design and development of the **modern
-  payment systems**, with a proven track record in the **technical leadership of
+  I'm a self-motivated **principal architect**, a **blockchain enthusiast**, and
+  a **technical leader** with business focus, learning mindset, and **16 years**
+  of contrasted experience in the design and development of **modern payment
+  systems**, with a proven track record in the **technical leadership of
   engineering teams**. I always apply **critical thinking** and **continuous
   innovation** to system design and application development. I enjoy **working
   remotely** with efficient **time and task management**, applying the
   **emotional intelligence** to facilitate **effective communication**, boost
-  the **productive collaboration** and the feeling of achievement for the whole
-  team. I'm interested in the distributed system design, the blockchain
-  technology, the development of smart contracts, the distributed databases and
-  the data streaming, the cloud computing, the cybersecurity, the web3
-  technology, the algorithms and data structures
+  **productive collaboration** and the feeling of achievement for the whole
+  team. I'm interested in the distributed systems design, the blockchain
+  technology, the development of smart contracts, distributed databases and
+  data streaming, the cloud computing, the cybersecurity, the web3
+  technology, algorithms and data structures
 profiles:
   - name: Personal profile discovery insights
     URL: asset/2022-09-personal-profile-maxima.pdf
@@ -253,39 +253,41 @@ employment:
     logo: image/logo-stadami.svg
     responsibilities:
       - >
-        Architected the core components of the smart fitness platform that
-        connectes top-tier trainers with clients worldwide, including **trainer
-        onboarding and training publishing**, **client registration and training
-        search**, **payment procesing and trainer payouts**, discounts
-        management, and payment reconciliation
+        Architected core components of the smart fitness platform that connects
+        top-tier trainers with clients worldwide, including **trainer onboarding
+        and training publishing**, **client registration and training search**,
+        **payment procesing and trainer payouts**, discounts management, and
+        payment reconciliation
       - >
         Successfully designed, implemented, tested, and deployed the
-        GDPR-compliant, multi-country **trainer onboarding and KYC process**
-        fully integrated with **Stripe custom connected accounts** and Zoho CRM
+        GDPR-compliant, multi-country **trainer onboarding and KYC processes**
+        fully integrated with the **Stripe Connect platform** through custom
+        connected accounts and Zoho CRM
       - >
         Led the design, implementation, and deployment of the **Stripe-based
         payment processing system**. The payment processing system supports
         payments for individual and group trainings, purchasing training
-        packages, as well as disputes and refunds management. All movements of
-        funds are precisely tracked in a **multi-position digital ledger** used
-        for trainer and client notifications, and payment reconciliation
+        packages, as well as automated management of disputes and refunds
+        through Stripe API. All movements of funds are precisely tracked in a
+        **multi-position digital ledger** used for funds provisioning, trainer
+        and client notifications, and payment reconciliation
       - >
         Designed, implemented, and deployed **the AWS instrastructure for the
-        smart fitness platform** that is fully automated with Pulumi. The
-        infrastructure uses **Amazon VPC with subnets** for zero-trust, layerd
-        networking; **PostgreSQL Amazon Aurora clusters** for secure distributed
-        sensitive data management; **Amazon ECS Fargate clusters** for
-        resilient, mission-critical tasks, services, and jobs; **Amazon SQS**
-        for reliable asynchronous payment processing and notifications; **Amazon
-        S3 private buckets** for secure management of trainer sensitive
-        documents
+        smart fitness platform** that is fully automated using **Pulumi with
+        Go**. The infrastructure uses **Amazon VPC with subnets** for
+        zero-trust, layerd networking; **Amazon Aurora PostgreSQL clusters** for
+        secure distributed sensitive data management; **Amazon ECS Fargate
+        clusters** for resilient, mission-critical tasks, services, and jobs;
+        **Amazon SQS** for reliable asynchronous payment processing and
+        notifications; **Amazon S3 private buckets** for secure management of
+        trainer sensitive documents
       - >
         Designed, implemented, and deployed the log analysis, system monitoring,
         operational dashboarding, and anomaly notification systems using
         **Amazon CloudWatch** and **Amazon SNS**. All infrastructure from the
         ground up is designed following **standard-compliant system and cloud
         best security practices** at multiple levels of abstractions using
-        zero-trust layered **Amazon VPC networking**, **Amazon Security
+        zero-trust, layered **Amazon VPC networking**, **Amazon Security
         Groups**, **Amazon IAM**, and **Amazon Certificate Manager**
     skills:
       - DDD-focused fitness platform architecture design
@@ -301,7 +303,7 @@ employment:
       - {tech: DDD, desc: Domain-Driven Design}
       - {tech: EDA, desc: Event-Driven Architecture}
       - {tech: CEP, desc: Complex Event Processing}
-      - {tech: MFA, desc: Microservices Architecture}
+      - {tech: MSA, desc: Microservices Architecture}
       - {tech: Stripe, desc: Payment processing}
       - {tech: Go, desc: Programming language}
       - {tech: Amazon VPC, desc: Cloud networking}
@@ -382,7 +384,7 @@ employment:
       - {tech: CEP, desc: Complex Event Processing}
       - {tech: FRP, desc: Functional Reactive Programming}
       - {tech: ISO 20022, desc: Payments messaging standard}
-      - {tech: MFA, desc: Microservices Architecture}
+      - {tech: MSA, desc: Microservices Architecture}
       - {tech: OAuth2, desc: Authorization framework}
       - {tech: OpenID Connect, desc: Authentication protocol}
       - {tech: OpenSSL, desc: Cryptography library}
@@ -451,7 +453,7 @@ employment:
       - {tech: AML, desc: Anti-Money Laundering}
       - {tech: GDPR, desc: General Data Protection Regulation}
       - {tech: Salesforce CRM, desc: Customer Relationships Management}
-      - {tech: MFA, desc: Microservices Architecture}
+      - {tech: MSA, desc: Microservices Architecture}
       - {tech: OAuth2, desc: Authorization framework}
       - {tech: OpenID Connect, desc: Authentication protocol}
       - {tech: GCP, desc: Google Cloud Platform}
