@@ -62,6 +62,7 @@ technologies:
   - { tech: Pulumi, desc: Infrastructure management, logo: image/logo-pulumi.png }
   - { tech: Docker, desc: Containeraized applications, logo: image/logo-docker.png }
   - { tech: Stripe, desc: Payment processing, logo: image/logo-stripe.png }
+  - { tech: ZITADEL, desc: IAM infrastructure, logo: image/logo-zitadel.png }
 achievements:
   - project: Blockchain from scratch in Go with gRPC
     logo: image/logo-blockchain.png
