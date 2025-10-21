@@ -30,8 +30,8 @@
     <div class="basis-full lg:basis-6/12 lg:pl-4">
       <h1 class="head1">{{ .Name }}</h1>
       <h2 class="head2">{{ .Role }}</h2>
-      {{ range .Industries }}
-        <h3 class="hidden lg:block lg:font-normal">{{ . }}</h3>
+      {{ range .Highlights }}
+        <h3 class="block font-normal">{{ . }}</h3>
       {{ end }}
       <ul class="list">
         <li><a href="mailto:{{ .Email }}" class="link">{{ .Email }}</a></li>
@@ -46,7 +46,7 @@
       </ul>
     </div>
 
-    <div class="hidden lg:block lg:basis-3/12 lg:pl-4 print:basis-5/12">
+    <div class="lg:block lg:basis-3/12 lg:pl-4 print:basis-5/12">
       <h3 class="head3">Languages</h3>
       <ul class="list">{{ range .Languages }}<li>{{ . | md }}</li>{{ end }}</ul>
     </div>
@@ -60,7 +60,7 @@
     </div>
 
     <div class="hidden lg:block lg:basis-1/12"></div>
-    <div class="hidden lg:block lg:basis-6/12 lg:pl-4">
+    <div class="lg:block lg:basis-6/12 lg:pl-4">
       <p>{{ .Summary | md }}</p>
     </div>
 
