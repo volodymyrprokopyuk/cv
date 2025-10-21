@@ -5,33 +5,34 @@ html {
 }
 
 .head1 {
-  @apply text-2xl font-semibold
+  @apply text-2xl font-semibold;
 }
 .head2 {
-  @apply text-xl font-medium
+  @apply text-xl font-medium;
 }
 .head3 {
-  @apply text-lg font-medium
+  @apply text-lg font-medium;
 }
 @utility link {
-  @apply text-blue-700
+  @apply text-blue-700;
 }
 .list {
-  @apply list-disc list-outside ml-4
+  @apply list-disc list-outside ml-4;
 }
 .subhead {
-  @apply italic text-neutral-600
+  @apply italic text-neutral-600;
 }
 .separator {
-  @apply pb-2 border-b-2 border-neutral-300
+  @apply pb-2 border-b-2 border-neutral-300;
 }
 .company {
-  @apply link text-lg font-normal
+  @apply link text-lg font-normal;
 }
-.details {
-  @apply font-normal px-2 py-1 rounded-lg border border-rose-600 bg-yellow-100
+.portfolio {
+  @apply text-lg font-medium px-2 py-1 rounded-lg
+    border border-rose-600 bg-yellow-100;
 }
 .tag {
   @apply inline-block mr-1 mt-2 px-1 rounded-md
-    border border-neutral-400 bg-yellow-100
+    border border-neutral-400 bg-yellow-100;
 }

@@ -28,12 +28,6 @@ type achievement struct {
   STAR []string `yaml:"STAR"`
 }
 
-type technology struct {
-  Tech string `yaml:"tech"`
-  Desc string `yaml:"desc"`
-  Logo string `yaml:"logo"`
-}
-
 type employment struct {
   Position string `yaml:"position"`
   Contract string `yaml:"contract"`
@@ -49,6 +43,12 @@ type employment struct {
   Responsibilities []string `yaml:"responsibilities"`
   Skills []string `yaml:"skills"`
   Technologies []technology `yaml:"technologies"`
+}
+
+type technology struct {
+  Tech string `yaml:"tech"`
+  Desc string `yaml:"desc"`
+  Logo string `yaml:"logo"`
 }
 
 type course struct {
@@ -68,7 +68,7 @@ type cv struct {
   Title string `yaml:"title"`
   Name string `yaml:"name"`
   Role string `yaml:"role"`
-  Industries string `yaml:"industries"`
+  Industries []string `yaml:"industries"`
   Email string `yaml:"email"`
   Phone string `yaml:"phone"`
   Location string `yaml:"location"`
@@ -79,11 +79,11 @@ type cv struct {
   Summary string `yaml:"summary"`
   Profiles []profile `yaml:"profiles"`
   Capabilities []string `yaml:"capabilities"`
-  Technologies []technology `yaml:"technologies"`
   Achievements []achievement `yaml:"achievements"`
   Employment []employment `yaml:"employment"`
+  Technologies []technology `yaml:"technologies"`
   Education []education `yaml:"education"`
-  Details bool
+  Portfolio bool
 }
 
 var reCleanPhone = regexp.MustCompile(`[^\d\+]`)
@@ -137,10 +137,10 @@ func render() error {
   if err != nil {
     return err
   }
-  // write details/index.html
-  cv.Details = true
-  cv.Title = "CV Vlad - Details"
-  w, err = os.Create("details/index.html")
+  // write portfolio/index.html
+  cv.Portfolio = true
+  cv.Title = "Volodymyr Portfolio"
+  w, err = os.Create("portfolio/index.html")
   if err != nil {
     return err
   }

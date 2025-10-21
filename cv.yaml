@@ -1,9 +1,12 @@
 %YAML 1.1
 ---
-title: CV Vlad - Summary
-name: Volodymyr Prokopyuk, Vlad
-role: Payments Architect, Principal Architect
-industries: Instant payments, cross-border payments
+title: Volodymyr CV
+name: Volodymyr Prokopyuk
+role: CTO, Principal Architect, Payments Architect
+industries:
+  - Building trusted relationships for long-term business IT strategy
+  - Defining next-generation target architecture for financial services
+  - Leading engineering teams through innovation to digital excellence
 email: volodymyrprokopyuk@gmail.com
 phone: +(34) 663 564 178
 location: Madrid, Spain
@@ -16,19 +19,21 @@ languages:
   - "**Russian** native"
 selfie: image/selfie.jpg
 summary: >
-  I'm a self-motivated **principal architect**, a **blockchain enthusiast**, and
-  a **technical leader** with business focus, learning mindset, and **16 years**
-  of contrasted experience in the design and development of **modern payment
-  systems**, with a proven track record in the **technical leadership of
-  engineering teams**. I always apply **critical thinking** and **continuous
-  innovation** to system design and application development. I enjoy **working
-  remotely** with efficient **time and task management**, applying the
-  **emotional intelligence** to facilitate **effective communication**, boost
-  **productive collaboration** and the feeling of achievement for the whole
-  team. I'm interested in the distributed systems design, the blockchain
-  technology, the development of smart contracts, distributed databases and
-  data streaming, the cloud computing, the cybersecurity, the web3
-  technology, algorithms and data structures
+  I'm a self-motivated **senior IT professional** with **16 years** of
+  contrasted and **intense IT experience** in diverse industries: **financial
+  services**, instant and cross-border payments, core banking, credit cards,
+  content protection, travel and leisure. I build **trusted business
+  relationships** with clients for **long-term business IT strategy** based on
+  trust, values, strong commitment, **effective and transparent communication**.
+  I have contrasted experience in **business IT strategy advisory**, **risk
+  management**, **enterprise architecture**, and **digital transformation
+  programmes** earned from **leading financial services organizations** (BBVA,
+  Santander, Diners Club) and **top-tier IT consultancy firms** (Icon Solutions,
+  Kairos, TCS). I hold a proven track record of **leading** global, diverse,
+  cross-functional, and distributed **engineering teams** through technical
+  innovation to digital excellence. I have **strong focus on customer
+  satisfaction** from the definition of their business IT strategy to the
+  delivery and support of their mission-critical systems
 profiles:
   - name: Personal profile discovery insights
     URL: asset/2022-09-personal-profile-maxima.pdf
@@ -36,92 +41,61 @@ profiles:
     producerURL: https://www.maximatraining.com/
     date: Sep 2022
 capabilities:
-  - Technical leadership and effective communication
+  - Strong customer focus and client relationships
+  - Business IT strategy advisory and risk management
+  - Enterprise architecture and digital transformation
   - Effective mediation between business and engineering
+  - Technical leadership and effective communication
   - Technical mentoring and coaching of engineering teams
-  - Blockchain design and development of smart contracts
   - Design and development of modern payment systems
   - Standards-compliant, cloud-native security solutions
   - DevSecOps design and development of IAM solutions
+  - Blockchain design and development of smart contracts
   - Self-motivation, learning mindset, continuous innovation
   - Efficient time management and focus on results
-technologies:
-  - { tech: Ethereum, desc: Smart contracts platform, logo: image/logo-ethereum.png }
-  - { tech: Solidity, desc: Smart contracts language, logo: image/logo-solidity.png }
-  - { tech: Foundry, desc: Smart contracts development, logo: image/logo-foundry.png }
-  - { tech: Uniswap, desc: Decentralized exchange, logo: image/logo-uniswap.png }
-  - { tech: Go, desc: Programming language, logo: image/logo-go.png }
-  - { tech: Node.js, desc: JavaScript runtime, logo: image/logo-nodejs.png }
-  - { tech: Bun, desc: JavaScript runtime, logo: image/logo-bun.png }
-  - { tech: PostgreSQL, desc: Relational database, logo: image/logo-postgresql.png }
-  - { tech: CockroachDB, desc: Distributed database, logo: image/logo-cockroachdb.png }
-  - { tech: Kafka, desc: Distributed streaming, logo: image/logo-kafka.png }
-  - { tech: Redpanda, desc: Distributed streaming, logo: image/logo-redpanda.png }
-  - { tech: gRPC, desc: Bi-directional communication, logo: image/logo-grpc.png }
-  - { tech: AWS, desc: Cloud computing, logo: image/logo-aws.png }
-  - { tech: Pulumi, desc: Infrastructure management, logo: image/logo-pulumi.png }
-  - { tech: Docker, desc: Containeraized applications, logo: image/logo-docker.png }
-  - { tech: Stripe, desc: Payment processing, logo: image/logo-stripe.png }
-  - { tech: ZITADEL, desc: IAM infrastructure, logo: image/logo-zitadel.png }
 achievements:
-  - project: Blockchain from scratch in Go with gRPC
-    logo: image/logo-blockchain.png
+  - project: GDPR-compliant Stripe-based KYC and onboarding platform
+    logo: image/logo-stadami.svg
     STAR:
       - >
-        A guided blockchain from scratch in Go with gRPC
-        <a href="https://github.com/volodymyrprokopyuk/go-blockchain"
-        target="_blank" class="link font-medium">
-        https://github.com/volodymyrprokopyuk/go-blockchain</a>
+        **Led and coordinated a cross-functional team of professionals** in the
+        design, implementation, testing, deployment, and operation of a
+        **GDPR-compliant, Stripe-based, multi-country KYC and onboarding
+        platform** for trainers, demonstrating a **strong focus on customer
+        satisfaction**, and the ability to **make informed technological
+        decisions** in defining the **long-term business IT strategy**
       - >
-        Designed, implemented, tested, and documented a **complete blockchain
-        from scratch in Go using gRPC** as the inter-node communication
-        protocol. The blockchain manages accounts using the **Secp256k1 elliptic
-        curve key pairs** and the **AES-GCM encryption** with the **Argon2
-        KDF**. The blockchain verifies transactions and creates blocks using the
-        **ECDSA Secp256k1 digital signatures** and the **Keccak256 hash
-        function**. The blockchain employs the **Merkle proof** to prove the
-        inclusion of transactions into blocks, and verify the integrity of
-        transactions on the blockchain. The blockchain implements the
-        **concurrency safe peer discovery** mechanism in the **peer-to-peer
-        blockchain network**. The **concurrency safe transaction relay** and the
-        **block relay mechanisms** ensure the resilient propagation of
-        transactions through the peer-to-peer network, and the synchronization
-        of the blockchain state on each node using the **Go channel composition
-        and multiplexing**, and the **gRPC server and client streaming**. The
-        **blockchain state** manages the lifecycle of transactions and blocks in
-        the concurrency safe way using the **Go mutexes and channels**. The
-        blockchain implements the **Proof of Authority consensus**. The
-        **concurrency safe blockchain node event streaming** concurrently
-        delivers blockchain domain events in real-time to subscribed clients
-        using the **Go concurrency primitives** and the **gRPC server
-        streaming**. The blockchain provides the **CLI over the gRPC** to have
-        complete control of the blockchain from the command line. The **140-page
-        guide** fully documents the blockchain design and implementation. The
-        guide explains the theoretical foundations, and provides the practical
-        testing and usage examples, invaluable for **effective learning of the
-        blockchain concepts**, and **progressive building of the blockchain from
-        scratch in Go**
-  - project: BIP-32 HD wallet with BIP-39 mnemonics in Go and Nushell
-    logo: image/logo-wallet.png
+        The onboarding platform automatically conducts trainer KYC and
+        onboarding processes **in compliance with mandatory regulations** in
+        each supported country. The platform **securely acquires and stores
+        trainer personal and financial data** following the applicable
+        regulations and security best practices. The platform performs the
+        **automatic digital identity verification** of a trainer, along with the
+        **automatic risk assessment** of a trainer profile, automatically
+        detecting high-risk profiles. The platform provides facilities for
+        trainers to exercise their GDPR rights
+  - project: Stripe-connected digital ledger and payment reconciliation platform
+    logo: image/logo-stadami.svg
     STAR:
       - >
-        A guided BIP-32 HD wallet with BIP-39 mnemonics in Go and Nushell
-        <a href="https://github.com/volodymyrprokopyuk/go-wallet"
-        target="_blank" class="link font-medium">
-        https://github.com/volodymyrprokopyuk/go-wallet</a>
+        **Led and coordinated a cross-functional team of professionals** in the
+        design, implementation, testing, deployment, and operation of a
+        **Stripe-connected digital ledger and payment reconciliation platform**,
+        proving **deep technical expertise in defining the next-generation
+        target architecture for financial services** and **effective
+        communication skills in leading engineering teams** through innovation
+        to digital excellence
       - >
-        Designed, implemented, tested, and documented a **BIP-32 HD wallet**
-        with **BIP-39 mnemonics** in Go using Nushell for integration testing of
-        the provided CLI tools. The wallet CLI exposes convenient tools for
-        generating and deriving BIP-39 mnemonics, deriving BIP-32 HD wallet
-        extended public and private keys, generating and deriving **secp256k1
-        key pairs**, generating and verifying **ECDSA signatures**, **ERC-55
-        encoding of Ethereum addresses**, encoding and converting derived keys
-        into different formats. The modular design of the wallet CLI tools and
-        the underlying Go library functions allows for easy composition of
-        cryptographic primitives and standard-defined HD wallet operations to be
-        combined in flexible ways, which is invaluable for learning and
-        experimentation
+        The digital ledger accurately and precisely **tracks all movements of
+        funds** from clients to the platform and to trainers in **near
+        real-time**. The distributed multi-country and multi-position
+        architecture of the ledger allows for **precise modelling of business
+        processes** and **immediate alerting on many anomalies**. The ledger
+        became the **single source of truth** and the **core system of record*
+        for the whole smart fitness platform. The ledger support operational
+        issue resolution, client receipts, trainer invoices, platform financial
+        accounting, financial analytics and reporting, anomaly detection and
+        alerting
   - project: Federated IAM for instant payment processing
     logo: image/logo-icon.png
     STAR:
@@ -237,6 +211,64 @@ achievements:
         **frictionless fully automated instant customer onboarding** through a
         digital identity verification, as well as periodic checks of expired
         customer documents customer personal data
+  - project: Blockchain from scratch in Go with gRPC
+    logo: image/logo-blockchain.png
+    STAR:
+      - >
+        A guided blockchain from scratch in Go with gRPC
+        <a href="https://github.com/volodymyrprokopyuk/go-blockchain"
+        target="_blank" class="link font-medium">
+        https://github.com/volodymyrprokopyuk/go-blockchain</a>
+      - >
+        Designed, implemented, tested, and documented a **complete blockchain
+        from scratch in Go using gRPC** as the inter-node communication
+        protocol. The blockchain manages accounts using the **Secp256k1 elliptic
+        curve key pairs** and the **AES-GCM encryption** with the **Argon2
+        KDF**. The blockchain verifies transactions and creates blocks using the
+        **ECDSA Secp256k1 digital signatures** and the **Keccak256 hash
+        function**. The blockchain employs the **Merkle proof** to prove the
+        inclusion of transactions into blocks, and verify the integrity of
+        transactions on the blockchain. The blockchain implements the
+        **concurrency safe peer discovery** mechanism in the **peer-to-peer
+        blockchain network**. The **concurrency safe transaction relay** and the
+        **block relay mechanisms** ensure the resilient propagation of
+        transactions through the peer-to-peer network, and the synchronization
+        of the blockchain state on each node using the **Go channel composition
+        and multiplexing**, and the **gRPC server and client streaming**. The
+        **blockchain state** manages the lifecycle of transactions and blocks in
+        the concurrency safe way using the **Go mutexes and channels**. The
+        blockchain implements the **Proof of Authority consensus**. The
+        **concurrency safe blockchain node event streaming** concurrently
+        delivers blockchain domain events in real-time to subscribed clients
+        using the **Go concurrency primitives** and the **gRPC server
+        streaming**. The blockchain provides the **CLI over the gRPC** to have
+        complete control of the blockchain from the command line. The **140-page
+        guide** fully documents the blockchain design and implementation. The
+        guide explains the theoretical foundations, and provides the practical
+        testing and usage examples, invaluable for **effective learning of the
+        blockchain concepts**, and **progressive building of the blockchain from
+        scratch in Go**
+  - project: BIP-32 HD wallet with BIP-39 mnemonics in Go and Nushell
+    logo: image/logo-wallet.png
+    STAR:
+      - >
+        A guided BIP-32 HD wallet with BIP-39 mnemonics in Go and Nushell
+        <a href="https://github.com/volodymyrprokopyuk/go-wallet"
+        target="_blank" class="link font-medium">
+        https://github.com/volodymyrprokopyuk/go-wallet</a>
+      - >
+        Designed, implemented, tested, and documented a **BIP-32 HD wallet**
+        with **BIP-39 mnemonics** in Go using Nushell for integration testing of
+        the provided CLI tools. The wallet CLI exposes convenient tools for
+        generating and deriving BIP-39 mnemonics, deriving BIP-32 HD wallet
+        extended public and private keys, generating and deriving **secp256k1
+        key pairs**, generating and verifying **ECDSA signatures**, **ERC-55
+        encoding of Ethereum addresses**, encoding and converting derived keys
+        into different formats. The modular design of the wallet CLI tools and
+        the underlying Go library functions allows for easy composition of
+        cryptographic primitives and standard-defined HD wallet operations to be
+        combined in flexible ways, which is invaluable for learning and
+        experimentation
 employment:
   - position: CTO, Principal Architect
     contract: permanent, fully remote
@@ -317,6 +349,7 @@ employment:
       - {tech: Amazon CloudWatch, desc: Platform monitoring}
       - {tech: Amazon SNS, desc: Cloud notifications}
       - {tech: Amazon IAM, desc: Cloud identity and access}
+      - {tech: ZITADEL, desc: IAM infrastructure}
       - {tech: OAuth2, desc: Authorization framework}
       - {tech: OpenID Connect, desc: Authentication protocol}
   - position: Senior Payments Architect
@@ -761,6 +794,23 @@ employment:
       - {tech: MS SQL Server, desc: Relational database}
       - {tech: HTML, desc: HyperText Markup Language}
       - {tech: CSS, desc: Cascading Style Sheets}
+technologies:
+  - { tech: AWS, desc: Cloud computing, logo: image/logo-aws.png }
+  - { tech: Pulumi, desc: Infrastructure management, logo: image/logo-pulumi.png }
+  - { tech: Docker, desc: Containeraized applications, logo: image/logo-docker.png }
+  - { tech: Stripe, desc: Payment processing, logo: image/logo-stripe.png }
+  - { tech: ZITADEL, desc: IAM infrastructure, logo: image/logo-zitadel.png }
+  - { tech: Go, desc: Programming language, logo: image/logo-go.png }
+  - { tech: Node.js, desc: JavaScript runtime, logo: image/logo-nodejs.png }
+  - { tech: PostgreSQL, desc: Relational database, logo: image/logo-postgresql.png }
+  - { tech: CockroachDB, desc: Distributed database, logo: image/logo-cockroachdb.png }
+  - { tech: Kafka, desc: Distributed streaming, logo: image/logo-kafka.png }
+  - { tech: gRPC, desc: Bi-directional communication, logo: image/logo-grpc.png }
+
+  - { tech: Ethereum, desc: Smart contracts platform, logo: image/logo-ethereum.png }
+  - { tech: Solidity, desc: Smart contracts language, logo: image/logo-solidity.png }
+  - { tech: Foundry, desc: Smart contracts development, logo: image/logo-foundry.png }
+
 education:
   - courses:
     - title: Master of Business Administration, MBA

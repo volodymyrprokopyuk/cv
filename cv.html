@@ -10,9 +10,9 @@
   <body class="text-base font-light">
     <main class="mx-2 my-2 lg:mx-[10%] lg:mt-4 print:mx-0">
       {{ template "summary" . }}
-      {{ template "technologies" . }}
       {{ template "achievements" . }}
       {{ template "employment" . }}
+      {{ template "technologies" . }}
       {{ template "education" . }}
     </main>
   </body>
@@ -30,7 +30,9 @@
     <div class="basis-full lg:basis-6/12 lg:pl-4">
       <h1 class="head1">{{ .Name }}</h1>
       <h2 class="head2">{{ .Role }}</h2>
-      <h3 class="hidden lg:block lg:font-normal">{{ .Industries }}</h3>
+      {{ range .Industries }}
+        <h3 class="hidden lg:block lg:font-normal">{{ . }}</h3>
+      {{ end }}
       <ul class="list">
         <li><a href="mailto:{{ .Email }}" class="link">{{ .Email }}</a></li>
         <li>
@@ -50,10 +52,10 @@
     </div>
 
     <div class="hidden lg:block lg:basis-2/12 print:hidden">
-      {{ if .Details }}
-        <a href="/cv/" class="details">Summary</a>
+      {{ if .Portfolio }}
+        <a href="/cv/" class="portfolio">Summary</a>
       {{ else }}
-        <a href="/cv/details/" class="details">Details</a>
+        <a href="/cv/portfolio/" class="portfolio">Portfolio</a>
       {{ end }}
     </div>
 
@@ -85,51 +87,32 @@
 </section>
 {{ end }}
 
-{{ define "technologies" }}
-<section id="technologies">
-  <h1 class="head1 mt-4 mb-2">Technologies</h1>
-  <div class="flex flex-row flex-wrap gap-y-4">
-    {{ range .Technologies }}
-
-      <div class="flex flex-col justify-between basis-4/12 break-inside-avoid
-                  md:basis-3/12 lg:basis-2/12">
-        <img src="/cv/{{ .Logo }}" alt="Technology logo"
-             class="m-auto w-3/5 max-h-28 lg:w-1/2 lg:max-h-32">
-        <div>
-          <h3 class="font-medium text-center">{{ .Tech }}</h3>
-          <p class="text-sm text-center">{{ .Desc }}</p>
-        </div>
-      </div>
-
-    {{ end }}
-  </div>
-</section>
-{{ end }}
-
 {{ define "achievements" }}
-<section id="achievements">
-  <h1 class="head1 mt-4 mb-2">Achievements</h1>
-    <div class="flex flex-row flex-wrap gap-y-4">
-      {{ range .Achievements }}
+{{ if .Portfolio }}
+  <section id="achievements">
+    <h1 class="head1 mt-4 mb-2">Achievements</h1>
+      <div class="flex flex-row flex-wrap gap-y-4">
+        {{ range .Achievements }}
 
-        <div class="basis-full max-lg:flex max-lg:justify-center lg:basis-1/12
-                    break-inside-avoid">
-          <div class="max-lg:w-2/5">
-            <img src="/cv/{{ .Logo }}" alt="Achievement logo">
-            {{ if .AuxLogo }}
-              <img src="/cv/{{ .AuxLogo }}" alt="Achievement auxiliary logo">
-            {{ end }}
+          <div class="basis-full max-lg:flex max-lg:justify-center lg:basis-1/12
+                      break-inside-avoid">
+            <div class="max-lg:w-2/5">
+              <img src="/cv/{{ .Logo }}" alt="Achievement logo">
+              {{ if .AuxLogo }}
+                <img src="/cv/{{ .AuxLogo }}" alt="Achievement auxiliary logo">
+              {{ end }}
+            </div>
           </div>
-        </div>
 
-        <div class="basis-full max-lg:separator lg:basis-11/12 lg:pl-4">
-          <h2 class="head2">{{ .Project }}</h2>
-          <ul class="list">{{ range .STAR }}<li>{{ . | md }}</li>{{ end }}</ul>
-        </div>
+          <div class="basis-full max-lg:separator lg:basis-11/12 lg:pl-4">
+            <h2 class="head2">{{ .Project }}</h2>
+            <ul class="list">{{ range .STAR }}<li>{{ . | md }}</li>{{ end }}</ul>
+          </div>
 
-      {{ end }}
-    </div>
-</section>
+        {{ end }}
+      </div>
+  </section>
+  {{ end }}
 {{ end }}
 
 {{ define "employment" }}
@@ -163,7 +146,7 @@
         <div class="font-normal">{{ .Industry }}</div>
       </div>
 
-      {{ if and $.Details .Responsibilities }}
+      {{ if and $.Portfolio .Responsibilities }}
         <div class="hidden lg:block lg:basis-1/12"></div>
 
         <div class="hidden lg:block lg:basis-6/12 lg:pl-4">
@@ -186,6 +169,29 @@
     {{ end }}
   </div>
 </section>
+{{ end }}
+
+{{ define "technologies" }}
+{{ if .Portfolio }}
+  <section id="technologies">
+    <h1 class="head1 mt-4 mb-2">Technologies</h1>
+    <div class="flex flex-row flex-wrap gap-y-4">
+      {{ range .Technologies }}
+
+        <div class="flex flex-col justify-between basis-4/12 break-inside-avoid
+                    md:basis-3/12 lg:basis-2/12">
+          <img src="/cv/{{ .Logo }}" alt="Technology logo"
+               class="m-auto w-3/5 max-h-28 lg:w-1/2 lg:max-h-32">
+          <div>
+            <h3 class="font-medium text-center">{{ .Tech }}</h3>
+            <p class="text-sm text-center">{{ .Desc }}</p>
+          </div>
+        </div>
+
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
 {{ end }}
 
 {{ define "education" }}
