@@ -49,6 +49,8 @@
     <div class="lg:block lg:basis-3/12 lg:pl-4 print:basis-5/12">
       <h3 class="head3">Languages</h3>
       <ul class="list">{{ range .Languages }}<li>{{ . | md }}</li>{{ end }}</ul>
+      <h3 class="head3">Industries</h3>
+      <ul class="list">{{ range .Industries }}<li>{{ . | md }}</li>{{ end }}</ul>
     </div>
 
     <div class="hidden lg:block lg:basis-2/12 print:hidden">

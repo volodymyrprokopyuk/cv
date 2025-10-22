@@ -2,11 +2,11 @@
 ---
 title: Volodymyr CV
 name: Volodymyr Prokopyuk
-role: CTO, Principal Architect, Payments Architect
-industries:
-  - Building trusted relationships for long-term business IT strategy
-  - Defining next-generation target architecture for financial services
-  - Leading engineering teams through innovation to digital excellence
+role: CTO | Principal Architect | Payments Architect
+highlights:
+  - Building trusted relationships to drive long-term business IT strategy
+  - Defining next-generation target architectures for financial services
+  - Leading engineering teams through innovation toward digital excellence
 email: volodymyrprokopyuk@gmail.com
 phone: +(34) 663 564 178
 location: Madrid, Spain
@@ -17,23 +17,31 @@ languages:
   - "**Spanish** fluent"
   - "**Ukrainian** mother tongue"
   - "**Russian** native"
+industries:
+  - Instant and cross-border payments
+  - Credit cards, clearing, and reconciliation
+  - Content protection, security, and compliance
+  - IT consulting and strategic advisory
+  - Travel, leisure, and hospitality
+  - Fitness, health, and wellness
 selfie: image/selfie.jpg
 summary: >
-  I'm a self-motivated **senior IT professional** with **16 years** of
-  contrasted and **intense IT experience** in diverse industries: **financial
+  I am a self-motivated **senior IT leader** with **over 16 years** of **proven
+  high-intensity IT experience** across diverse industries including **financial
   services**, instant and cross-border payments, core banking, credit cards,
   content protection, travel and leisure. I build **trusted business
-  relationships** with clients for **long-term business IT strategy** based on
-  trust, values, strong commitment, **effective and transparent communication**.
-  I have contrasted experience in **business IT strategy advisory**, **risk
-  management**, **enterprise architecture**, and **digital transformation
-  programmes** earned from **leading financial services organizations** (BBVA,
-  Santander, Diners Club) and **top-tier IT consultancy firms** (Icon Solutions,
-  Kairos, TCS). I hold a proven track record of **leading** global, diverse,
-  cross-functional, and distributed **engineering teams** through technical
-  innovation to digital excellence. I have **strong focus on customer
-  satisfaction** from the definition of their business IT strategy to the
-  delivery and support of their mission-critical systems
+  relationships** with clients to drive **long-term business IT strategy** based
+  on trust, values, strong commitment, **effective and transparent
+  communication**. I have contrasted experience in **business IT strategy
+  advisory**, **risk management**, **enterprise architecture**, and **digital
+  transformation programmes** gained from **leading financial services
+  organizations** (BBVA, Santander, Diners Club) and **top-tier IT consultancy
+  firms** (Icon Solutions, Kairos, TCS). I hold a proven track record of
+  **leading** global, diverse, cross-functional, and distributed **engineering
+  teams** through technical innovation toward digital excellence. I demonstrated
+  **strong focus on customer satisfaction** from the definition of their
+  business IT strategy to the delivery and support of their mission-critical
+  systems
 profiles:
   - name: Personal profile discovery insights
     URL: asset/2022-09-personal-profile-maxima.pdf
@@ -41,61 +49,62 @@ profiles:
     producerURL: https://www.maximatraining.com/
     date: Sep 2022
 capabilities:
-  - Strong customer focus and client relationships
+  - Strong customer focus and trusted client relationships
   - Business IT strategy advisory and risk management
   - Enterprise architecture and digital transformation
   - Effective mediation between business and engineering
   - Technical leadership and effective communication
   - Technical mentoring and coaching of engineering teams
-  - Design and development of modern payment systems
+  - Design and delivery of modern, scalable payment systems
   - Standards-compliant, cloud-native security solutions
-  - DevSecOps design and development of IAM solutions
-  - Blockchain design and development of smart contracts
+  - DevSecOps design and implementation of IAM solutions
+  - Blockchain architecture and smart contracts development
   - Self-motivation, learning mindset, continuous innovation
-  - Efficient time management and focus on results
+  - Efficient time management and results-oriented execution
 achievements:
   - project: GDPR-compliant Stripe-based KYC and onboarding platform
     logo: image/logo-stadami.svg
     STAR:
       - >
-        **Led and coordinated a cross-functional team of professionals** in the
-        design, implementation, testing, deployment, and operation of a
-        **GDPR-compliant, Stripe-based, multi-country KYC and onboarding
-        platform** for trainers, demonstrating a **strong focus on customer
-        satisfaction**, and the ability to **make informed technological
-        decisions** in defining the **long-term business IT strategy**
+        **Led and coordinated a cross-functional team** in the design,
+        implementation, testing, deployment, and operation of a
+        **GDPR-compliant, multi-country KYC and onboarding platform** for
+        trainers, built on the Stripe Connect infrastructure. Demonstrated a
+        **strong focus on customer satisfaction**, and the ability to **make
+        informed technological decisions** in defining the **long-term business
+        IT strategy**
       - >
-        The onboarding platform automatically conducts trainer KYC and
-        onboarding processes **in compliance with mandatory regulations** in
-        each supported country. The platform **securely acquires and stores
-        trainer personal and financial data** following the applicable
-        regulations and security best practices. The platform performs the
-        **automatic digital identity verification** of a trainer, along with the
-        **automatic risk assessment** of a trainer profile, automatically
-        detecting high-risk profiles. The platform provides facilities for
-        trainers to exercise their GDPR rights
+        The platform **automates the entire KYC and onboarding process** in
+        **full compliance with country-specific regulations**. It securely
+        collects, processes, and stores **personal and financial data**
+        according to **GDPR and industry security best practices**. It performs
+        **automated digital identity verification**, **risk assessment**, and
+        **high-risk profile detection**, ensuring compliance and operational
+        integrity across multiple jurisdictions. Additionally, the platform
+        provides integrated tools for trainers to exercise their GDPR rights
+        seamlessly within the system
   - project: Stripe-connected digital ledger and payment reconciliation platform
     logo: image/logo-stadami.svg
     STAR:
       - >
         **Led and coordinated a cross-functional team of professionals** in the
         design, implementation, testing, deployment, and operation of a
-        **Stripe-connected digital ledger and payment reconciliation platform**,
-        proving **deep technical expertise in defining the next-generation
+        **Stripe-connected digital ledger and payment reconciliation platform**
+        Demonstrated **deep technical expertise in defining the next-generation
         target architecture for financial services** and **effective
         communication skills in leading engineering teams** through innovation
-        to digital excellence
+        toward digital excellence
       - >
-        The digital ledger accurately and precisely **tracks all movements of
-        funds** from clients to the platform and to trainers in **near
-        real-time**. The distributed multi-country and multi-position
-        architecture of the ledger allows for **precise modelling of business
-        processes** and **immediate alerting on many anomalies**. The ledger
-        became the **single source of truth** and the **core system of record*
-        for the whole smart fitness platform. The ledger support operational
-        issue resolution, client receipts, trainer invoices, platform financial
-        accounting, financial analytics and reporting, anomaly detection and
-        alerting
+        The platform provides **near real-time tracking of all fund movements**
+        between clients, the platform, and trainers. Its **distributed,
+        multi-country, multi-entity architecture** enables precise **modelling
+        of complex business processes** and **proactive anomaly detection**.
+        Serving as the **single source of truth** and **core financial system of
+        record** for the entire smart fitness ecosystem, the ledger supports
+        **operational issue resolution**, client receipts, trainer invoicing,
+        **financial accounting, analytics, reporting**, and **automated alerting
+        on anomalies**, ensuring transparency, accuracy, and trust across all
+        financial operations
   - project: Federated IAM for instant payment processing
     logo: image/logo-icon.png
     STAR:
@@ -282,7 +291,7 @@ employment:
     location: Madrid
     description: >
       Smart fitness platform that feels right for you
-    industry: Fitness and wellness (Startup)
+    industry: Fitness, health, and wellness (Startup)
     logo: image/logo-stadami.svg
     responsibilities:
       - >
@@ -509,7 +518,7 @@ employment:
     location: Madrid
     description: >
       Connecting people to the content they love
-    industry: Content protection industry
+    industry: Content protection, security, and compliance
     logo: image/logo-nagra.png
     responsibilities:
       - >
@@ -578,7 +587,7 @@ employment:
     description: >
       We hope to create a leading company in digital transformation by joining
       people, technology and business
-    industry: IT consultancy
+    industry: IT consulting and strategic advisory
     logo: image/logo-atsistemas.png
     responsibilities: []
     skills: []
@@ -595,7 +604,7 @@ employment:
     location: Madrid
     description: >
       Experience and innovation in credit cards
-    industry: Credit cards industry
+    industry: Credit cards, clearing, and reconciliation
     logo: image/logo-dinersclub.jpg
     responsibilities:
       - >
@@ -646,7 +655,7 @@ employment:
     location: Madrid
     description: >
       Global leader in IT services, digital and business solutions
-    industry: IT consultancy
+    industry: IT consulting and strategic advisory
     logo: image/logo-tcs.png
     responsibilities: []
     skills: []
@@ -662,7 +671,7 @@ employment:
     location: Madrid
     description: >
       Leading airline between Europe and Latin America
-    industry: Airline and travel industry
+    industry: Travel, leisure, and hospitality
     logo: image/logo-iberia.png
     responsibilities:
       - >
@@ -701,7 +710,7 @@ employment:
     location: Madrid
     description: >
       We transform organizations supported by agile principles
-    industry: IT consultancy
+    industry: IT consulting and strategic advisory
     logo: image/logo-kairos.png
     responsibilities: []
     skills: []
@@ -718,7 +727,7 @@ employment:
     location: Madrid
     description: >
       The best digital bank of the 21<sup>st</sup> century
-    industry: Mobile banking industry
+    industry: Mobile banking and digital channels
     logo: image/logo-bbva.png
     responsibilities:
       - >
@@ -754,7 +763,7 @@ employment:
     location: Madrid
     description: >
       World leading IT provider for the global travel and tourism industry
-    industry: Travel and tourism industry
+    industry: Travel, leisure, and hospitality
     logo: image/logo-amadeus.png
     responsibilities:
       - >
@@ -842,10 +851,3 @@ education:
     URL: https://www.sbs.ox.ac.uk/
     location: UK
     logo: image/logo-said.png
-  - courses:
-    - title: Blockchains, Cryptocurrencies, Smart Contracts, and Ethereum
-      duration: Apr 2019 (1 week)
-    center: CEU IAM Institute for Advanced Management
-    URL: https://www.uspceu.com/
-    location: Madrid
-    logo: image/logo-ceu.png

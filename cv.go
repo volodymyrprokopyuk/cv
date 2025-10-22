@@ -68,13 +68,14 @@ type cv struct {
   Title string `yaml:"title"`
   Name string `yaml:"name"`
   Role string `yaml:"role"`
-  Highlights []string `yaml:"industries"`
+  Highlights []string `yaml:"highlights"`
   Email string `yaml:"email"`
   Phone string `yaml:"phone"`
   Location string `yaml:"location"`
   URL string `yaml:"URL"`
   LinkedIn string `yaml:"linkedin"`
   Languages []string `yaml:"languages"`
+  Industries []string `yaml:"industries"`
   Selfie string `yaml:"selfie"`
   Summary string `yaml:"summary"`
   Profiles []profile `yaml:"profiles"`
