@@ -13,14 +13,6 @@ import (
 	"gopkg.in/yaml.v3"
 )
 
-type profile struct {
-  Name string `yaml:"name"`
-  URL string `yaml:"URL"`
-  Producer string `yaml:"producer"`
-  ProducerURL string `yaml:"producerURL"`
-  Date string `yaml:"date"`
-}
-
 type achievement struct {
   Project string `yaml:"project"`
   Logo string `yaml:"logo"`
@@ -78,7 +70,6 @@ type cv struct {
   Industries []string `yaml:"industries"`
   Selfie string `yaml:"selfie"`
   Summary string `yaml:"summary"`
-  Profiles []profile `yaml:"profiles"`
   Capabilities []string `yaml:"capabilities"`
   Achievements []achievement `yaml:"achievements"`
   Employment []employment `yaml:"employment"`
