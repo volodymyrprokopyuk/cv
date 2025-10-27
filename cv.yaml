@@ -353,6 +353,7 @@ employment:
       - {tech: Amazon SNS, desc: Cloud notifications}
       - {tech: Amazon IAM, desc: Cloud identity and access}
       - {tech: ZITADEL, desc: IAM infrastructure}
+      - {tech: Traefik, desc: API management platform}
       - {tech: OAuth2, desc: Authorization framework}
       - {tech: OpenID Connect, desc: Authentication protocol}
   - position: Senior Payments Architect
@@ -803,17 +804,16 @@ technologies:
   - { tech: Docker, desc: Containeraized applications, logo: image/logo-docker.png }
   - { tech: Stripe, desc: Payment processing, logo: image/logo-stripe.png }
   - { tech: ZITADEL, desc: IAM infrastructure, logo: image/logo-zitadel.png }
+  - { tech: Traefik, desc: API management platform, logo: image/logo-traefik.png }
+  - { tech: gRPC, desc: Bi-directional communication, logo: image/logo-grpc.png }
   - { tech: Go, desc: Programming language, logo: image/logo-go.png }
   - { tech: Node.js, desc: JavaScript runtime, logo: image/logo-nodejs.png }
   - { tech: PostgreSQL, desc: Relational database, logo: image/logo-postgresql.png }
   - { tech: CockroachDB, desc: Distributed database, logo: image/logo-cockroachdb.png }
   - { tech: Kafka, desc: Distributed streaming, logo: image/logo-kafka.png }
-  - { tech: gRPC, desc: Bi-directional communication, logo: image/logo-grpc.png }
-
   - { tech: Ethereum, desc: Smart contracts platform, logo: image/logo-ethereum.png }
   - { tech: Solidity, desc: Smart contracts language, logo: image/logo-solidity.png }
   - { tech: Foundry, desc: Smart contracts development, logo: image/logo-foundry.png }
-
 education:
   - courses:
     - title: Master of Business Administration, MBA
