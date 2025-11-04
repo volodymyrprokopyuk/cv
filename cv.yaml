@@ -802,10 +802,10 @@ technologies:
   - { tech: AWS, desc: Cloud computing, logo: image/logo-aws.png }
   - { tech: Pulumi, desc: Infrastructure management, logo: image/logo-pulumi.png }
   - { tech: Docker, desc: Containeraized applications, logo: image/logo-docker.png }
-  - { tech: Stripe, desc: Payment processing, logo: image/logo-stripe.png }
   - { tech: ZITADEL, desc: IAM infrastructure, logo: image/logo-zitadel.png }
   - { tech: Traefik, desc: API management platform, logo: image/logo-traefik.png }
   - { tech: gRPC, desc: Bi-directional communication, logo: image/logo-grpc.png }
+  - { tech: Stripe, desc: Payment processing, logo: image/logo-stripe.png }
   - { tech: Go, desc: Programming language, logo: image/logo-go.png }
   - { tech: Node.js, desc: JavaScript runtime, logo: image/logo-nodejs.png }
   - { tech: PostgreSQL, desc: Relational database, logo: image/logo-postgresql.png }
