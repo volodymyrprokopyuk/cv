@@ -298,7 +298,8 @@ employment:
         Successfully designed, implemented, tested, and deployed the
         GDPR-compliant, multi-country **trainer onboarding and KYC processes**
         fully integrated with the **Stripe Connect platform** through custom
-        connected accounts and Zoho CRM
+        connected accounts and Zoho CRM. The **Stadami IAM platform** is based
+        on **Amazon Cognito**
       - >
         Led the design, implementation, and deployment of the **Stripe-based
         payment processing system**. The payment processing system supports
@@ -307,6 +308,15 @@ employment:
         through Stripe API. All movements of funds are precisely tracked in a
         **multi-position digital ledger** used for funds provisioning, trainer
         and client notifications, and payment reconciliation
+      - >
+        Built, scaled, and **managed a high-performing team of 7 senior
+        engineers** in end-to-end delivery of the next-generation global
+        distribution marketplace, focusing on **customer satisfaction**,
+        **cross-functional collaboration**, **transparent communication**, and
+        **growth-focused engineering culture**. Took ownership and responsiblity
+        of building a cohesive team of highly-motivated individuals that share
+        the idea and belong to the community, where **digital excellence** meets
+        **profesional growth**
       - >
         Designed, implemented, and deployed **the AWS instrastructure for the
         smart fitness platform** that is fully automated using **Pulumi with
@@ -320,11 +330,13 @@ employment:
       - >
         Designed, implemented, and deployed the log analysis, system monitoring,
         operational dashboarding, and anomaly notification systems using
-        **Amazon CloudWatch** and **Amazon SNS**. All infrastructure from the
-        ground up is designed following **standard-compliant system and cloud
-        best security practices** at multiple levels of abstractions using
-        zero-trust, layered **Amazon VPC networking**, **Amazon Security
-        Groups**, **Amazon IAM**, and **Amazon Certificate Manager**
+        **Amazon CloudWatch** and **Amazon SNS**
+      - >
+        All infrastructure from the ground up is designed following
+        **standard-compliant system and cloud best security practices** at
+        multiple levels of abstractions using zero-trust, layered **Amazon VPC
+        networking**, **Amazon Security Groups**, **Amazon IAM**, **Amazon
+        Cognito**, and **Amazon Certificate Manager**
     skills:
       - DDD-focused fitness platform architecture design
       - Secure identity management and access control
@@ -352,6 +364,7 @@ employment:
       - {tech: Amazon CloudWatch, desc: Platform monitoring}
       - {tech: Amazon SNS, desc: Cloud notifications}
       - {tech: Amazon IAM, desc: Cloud identity and access}
+      - {tech: Amazon Cognito, desc: Customer identity and access}
       - {tech: ZITADEL, desc: IAM infrastructure}
       - {tech: Traefik, desc: API management platform}
       - {tech: OAuth2, desc: Authorization framework}
@@ -675,7 +688,8 @@ employment:
         between the business stakeholders and the engineering team**
       - >
         Successfully **led and coordinated the cross-functional and
-        multi-cultural engineering team** distributed between Spain and India
+        multi-cultural engineering team of 18-20 memeber** distributed between
+        Spain and India
       - >
         Designed the **intelligent integration layer between the Iberia core
         business systems and the Salesforce CRM cloud services** as a set of 30+
@@ -802,14 +816,12 @@ technologies:
   - { tech: AWS, desc: Cloud computing, logo: image/logo-aws.png }
   - { tech: Pulumi, desc: Infrastructure management, logo: image/logo-pulumi.png }
   - { tech: Docker, desc: Containeraized applications, logo: image/logo-docker.png }
-  - { tech: ZITADEL, desc: IAM infrastructure, logo: image/logo-zitadel.png }
   - { tech: Traefik, desc: API management platform, logo: image/logo-traefik.png }
   - { tech: gRPC, desc: Bi-directional communication, logo: image/logo-grpc.png }
   - { tech: Stripe, desc: Payment processing, logo: image/logo-stripe.png }
   - { tech: Go, desc: Programming language, logo: image/logo-go.png }
   - { tech: Node.js, desc: JavaScript runtime, logo: image/logo-nodejs.png }
   - { tech: PostgreSQL, desc: Relational database, logo: image/logo-postgresql.png }
-  - { tech: CockroachDB, desc: Distributed database, logo: image/logo-cockroachdb.png }
   - { tech: Kafka, desc: Distributed streaming, logo: image/logo-kafka.png }
   - { tech: Ethereum, desc: Smart contracts platform, logo: image/logo-ethereum.png }
   - { tech: Solidity, desc: Smart contracts language, logo: image/logo-solidity.png }
