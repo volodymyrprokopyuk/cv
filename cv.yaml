@@ -2,10 +2,12 @@
 ---
 title: Volodymyr CV
 name: Volodymyr Prokopyuk
-role: CTO | Principal Architect | Payments Architect
+role: Principal Enterprise Architect | Payments Architect
 highlights:
   - Building trusted relationships to drive long-term business IT strategy
+  - Earning customer trust by being genuinely invested in the outcome
   - Defining next-generation target architectures for financial services
+  - Building AI-enabled Modern Airline Retailing Order Management Systems
   - Leading engineering teams through innovation toward digital excellence
 email: volodymyrprokopyuk@gmail.com
 phone: +(34) 663 564 178
@@ -26,17 +28,17 @@ industries:
   - Fitness, health, and wellness
 selfie: image/selfie.jpg
 summary: >
-  I am a self-motivated **senior IT leader** with **over 16 years** of **proven
+  I am a self-motivated **senior IT leader** with **over 18 years** of **proven
   high-intensity IT experience** across diverse industries including **financial
   services**, instant and cross-border payments, core banking, credit cards,
-  content protection, travel and leisure. I build **trusted business
+  content protection, and Modern Airline Retailing. I build **trusted business
   relationships** with clients to drive **long-term business IT strategy** based
   on trust, values, strong commitment, **effective and transparent
   communication**. I have contrasted experience in **business IT strategy
   advisory**, **risk management**, **enterprise architecture**, and **digital
-  transformation programmes** gained from **leading financial services
-  organizations** (BBVA, Santander, Diners Club) and **top-tier IT consultancy
-  firms** (Icon Solutions, Kairos, TCS). I hold a proven track record of
+  transformation programs** gained from **leading financial services
+  organizations** (BBVA, Santander, Diners Club, Icon Solutions) and **top-tier
+  IT consultancy firms** (Unisys, Kairos, TCS). I hold a proven track record of
   **leading** global, diverse, cross-functional, and distributed **engineering
   teams** through technical innovation toward digital excellence. I demonstrated
   **strong focus on customer satisfaction** from the definition of their
@@ -48,8 +50,10 @@ capabilities:
   - Enterprise architecture and digital transformation
   - Effective mediation between business and engineering
   - Technical leadership and effective communication
-  - Technical mentoring and coaching of engineering teams
+  - Effective mentoring and coaching or engineering teams
   - Design and delivery of modern, scalable payment systems
+  - AI-enabled Modern Airline Retailing Order Management
+  - API-first, secure delivery of digital services
   - Standards-compliant, cloud-native security solutions
   - DevSecOps design and implementation of IAM solutions
   - Blockchain architecture and smart contracts development
@@ -214,68 +218,166 @@ achievements:
         **frictionless fully automated instant customer onboarding** through a
         digital identity verification, as well as periodic checks of expired
         customer documents customer personal data
-  - project: Blockchain from scratch in Go with gRPC
-    logo: image/logo-blockchain.png
-    STAR:
-      - >
-        A guided blockchain from scratch in Go with gRPC
-        <a href="https://github.com/volodymyrprokopyuk/go-blockchain"
-        target="_blank" class="link font-medium">
-        https://github.com/volodymyrprokopyuk/go-blockchain</a>
-      - >
-        Designed, implemented, tested, and documented a **complete blockchain
-        from scratch in Go using gRPC** as the inter-node communication
-        protocol. The blockchain manages accounts using the **Secp256k1 elliptic
-        curve key pairs** and the **AES-GCM encryption** with the **Argon2
-        KDF**. The blockchain verifies transactions and creates blocks using the
-        **ECDSA Secp256k1 digital signatures** and the **Keccak256 hash
-        function**. The blockchain employs the **Merkle proof** to prove the
-        inclusion of transactions into blocks, and verify the integrity of
-        transactions on the blockchain. The blockchain implements the
-        **concurrency safe peer discovery** mechanism in the **peer-to-peer
-        blockchain network**. The **concurrency safe transaction relay** and the
-        **block relay mechanisms** ensure the resilient propagation of
-        transactions through the peer-to-peer network, and the synchronization
-        of the blockchain state on each node using the **Go channel composition
-        and multiplexing**, and the **gRPC server and client streaming**. The
-        **blockchain state** manages the lifecycle of transactions and blocks in
-        the concurrency safe way using the **Go mutexes and channels**. The
-        blockchain implements the **Proof of Authority consensus**. The
-        **concurrency safe blockchain node event streaming** concurrently
-        delivers blockchain domain events in real-time to subscribed clients
-        using the **Go concurrency primitives** and the **gRPC server
-        streaming**. The blockchain provides the **CLI over the gRPC** to have
-        complete control of the blockchain from the command line. The **140-page
-        guide** fully documents the blockchain design and implementation. The
-        guide explains the theoretical foundations, and provides the practical
-        testing and usage examples, invaluable for **effective learning of the
-        blockchain concepts**, and **progressive building of the blockchain from
-        scratch in Go**
-  - project: BIP-32 HD wallet with BIP-39 mnemonics in Go and Nushell
-    logo: image/logo-wallet.png
-    STAR:
-      - >
-        A guided BIP-32 HD wallet with BIP-39 mnemonics in Go and Nushell
-        <a href="https://github.com/volodymyrprokopyuk/go-wallet"
-        target="_blank" class="link font-medium">
-        https://github.com/volodymyrprokopyuk/go-wallet</a>
-      - >
-        Designed, implemented, tested, and documented a **BIP-32 HD wallet**
-        with **BIP-39 mnemonics** in Go using Nushell for integration testing of
-        the provided CLI tools. The wallet CLI exposes convenient tools for
-        generating and deriving BIP-39 mnemonics, deriving BIP-32 HD wallet
-        extended public and private keys, generating and deriving **secp256k1
-        key pairs**, generating and verifying **ECDSA signatures**, **ERC-55
-        encoding of Ethereum addresses**, encoding and converting derived keys
-        into different formats. The modular design of the wallet CLI tools and
-        the underlying Go library functions allows for easy composition of
-        cryptographic primitives and standard-defined HD wallet operations to be
-        combined in flexible ways, which is invaluable for learning and
-        experimentation
+  # - project: Blockchain from scratch in Go with gRPC
+  #   logo: image/logo-blockchain.png
+  #   STAR:
+  #     - >
+  #       A guided blockchain from scratch in Go with gRPC
+  #       <a href="https://github.com/volodymyrprokopyuk/go-blockchain"
+  #       target="_blank" class="link font-medium">
+  #       https://github.com/volodymyrprokopyuk/go-blockchain</a>
+  #     - >
+  #       Designed, implemented, tested, and documented a **complete blockchain
+  #       from scratch in Go using gRPC** as the inter-node communication
+  #       protocol. The blockchain manages accounts using the **Secp256k1 elliptic
+  #       curve key pairs** and the **AES-GCM encryption** with the **Argon2
+  #       KDF**. The blockchain verifies transactions and creates blocks using the
+  #       **ECDSA Secp256k1 digital signatures** and the **Keccak256 hash
+  #       function**. The blockchain employs the **Merkle proof** to prove the
+  #       inclusion of transactions into blocks, and verify the integrity of
+  #       transactions on the blockchain. The blockchain implements the
+  #       **concurrency safe peer discovery** mechanism in the **peer-to-peer
+  #       blockchain network**. The **concurrency safe transaction relay** and the
+  #       **block relay mechanisms** ensure the resilient propagation of
+  #       transactions through the peer-to-peer network, and the synchronization
+  #       of the blockchain state on each node using the **Go channel composition
+  #       and multiplexing**, and the **gRPC server and client streaming**. The
+  #       **blockchain state** manages the lifecycle of transactions and blocks in
+  #       the concurrency safe way using the **Go mutexes and channels**. The
+  #       blockchain implements the **Proof of Authority consensus**. The
+  #       **concurrency safe blockchain node event streaming** concurrently
+  #       delivers blockchain domain events in real-time to subscribed clients
+  #       using the **Go concurrency primitives** and the **gRPC server
+  #       streaming**. The blockchain provides the **CLI over the gRPC** to have
+  #       complete control of the blockchain from the command line. The **140-page
+  #       guide** fully documents the blockchain design and implementation. The
+  #       guide explains the theoretical foundations, and provides the practical
+  #       testing and usage examples, invaluable for **effective learning of the
+  #       blockchain concepts**, and **progressive building of the blockchain from
+  #       scratch in Go**
+  # - project: BIP-32 HD wallet with BIP-39 mnemonics in Go and Nushell
+  #   logo: image/logo-wallet.png
+  #   STAR:
+  #     - >
+  #       A guided BIP-32 HD wallet with BIP-39 mnemonics in Go and Nushell
+  #       <a href="https://github.com/volodymyrprokopyuk/go-wallet"
+  #       target="_blank" class="link font-medium">
+  #       https://github.com/volodymyrprokopyuk/go-wallet</a>
+  #     - >
+  #       Designed, implemented, tested, and documented a **BIP-32 HD wallet**
+  #       with **BIP-39 mnemonics** in Go using Nushell for integration testing of
+  #       the provided CLI tools. The wallet CLI exposes convenient tools for
+  #       generating and deriving BIP-39 mnemonics, deriving BIP-32 HD wallet
+  #       extended public and private keys, generating and deriving **secp256k1
+  #       key pairs**, generating and verifying **ECDSA signatures**, **ERC-55
+  #       encoding of Ethereum addresses**, encoding and converting derived keys
+  #       into different formats. The modular design of the wallet CLI tools and
+  #       the underlying Go library functions allows for easy composition of
+  #       cryptographic primitives and standard-defined HD wallet operations to be
+  #       combined in flexible ways, which is invaluable for learning and
+  #       experimentation
 employment:
+  - position: Principal Enterprise Architect
+    contract: permanent, hybrid
+    duration: Jan 2026 - current
+    summary: >
+      Worked as a Principal Enterprise Architect for Unisys (Cloud Applications
+      and Infrastructure BU), the global technology solutions provider, on the
+      **next-generation Modern Airline Retailing Order Management System for
+      Iberia**, the flag carrier airline of Spain
+    company: Unisys
+    URL: https://www.unisys.com/
+    location: Madrid
+    description: >
+      Global technology solutions provider
+    industry: IT consulting and strategic advisory
+    logo: image/logo-unisys.svg
+    auxLogo: image/logo-iberia.png
+    responsibilities:
+      - >
+        Confidently built **long-term, trusted strategic relationships with
+        clients**, founded on trust, values, clients' expectations, dedicated
+        commitment, and complete responsibility, emphasizing **strong customer
+        focus** and **growth-enabled business value proposition**, demonstrating
+        **excellent communication skills**, and **high proficiency in technical
+        and strategic advisory**
+      - >
+        Designed from scratch the **next-generation, AI-enabled,
+        security-focused and compliant, cloud-native, data-centric,
+        event-driven, API- and stream-oriented Modern Airline Retailing Order
+        Management System OMS for Iberia**, matifesting contrasted experience in
+        domian-driven design, microserives architecture, event-driven
+        architecture and complex event processing, confirming
+        **enterprise-grade, real world experience in design of horizntally
+        scalable, highly available, reliable, secure, and cloud-native
+        distributed systems on AWS**
+      - >
+        Designed a **correct, flexible, extensible, transactional, and highly
+        efficient data model for the Order Management System** that processes
+        100k+ orders per day, using Amazon Aurora Postgres and Amazon Valkey,
+        confirming **deep understaning of data modeling priciples, transaction
+        isolation, advanced indexing in building large-scale data systems**
+      - >
+        Led the DevOps and DevSecOps engineering teams in **design and
+        implementation of scalable, reliable, security-focused, and regulatory
+        compliant, cloud-native, enterprise infrastructure on AWS**, proving
+        **practical capabilities in designing enterprise-grade infrastructure on
+        AWS8* and implementing **fully automated infrastructure provisioning
+        using modernt Infrastructure as Code techniques**
+      - >
+        Designed from the ground up a **layered enterprise-scale security model
+        for the Order Management System** including network and infrastructure
+        security, data security, applicaiotn and API security. Implemented
+        comprehensive set of IAM policies that govern fully automated
+        infrastructure provisining, applications deployment, operation, and
+        monitoring, matifesting **high proficiency in designing highly secure
+        and fully compliant large-scale enterprise system in heavily regulated
+        business domains**
+      - >
+        **Successfully mediated strategic negotiation and business communication
+        from technical prespective between C-suite client executives, client
+        architecture authority board members, Unisys strategic leaders**, and
+        Unisys distributed, multi-disciplinary, cross-functional engineering
+        teams, demonstrating **strong focus on customer satisfaction**, **high
+        confidence in technological advasory of clients**, **successful
+        translation of ambitious business requirements into simple and reliable
+        technical solutions with tailoed communication to each audience level**
+    skills:
+      - Customer-focused, trusted strategic relationthips
+      - Confident mediation between business and engineering
+      - AI-enabled Modern Airline Retailing Order Management
+      - Elaboration of RFPs and pre-sales technical solutions
+      - Effective mentoring and coaching or engineering teams
+      - API-first, secure delivery of digital services
+      - Secure identity management and access control
+      - Security-focused, automated AWS infrastructure
+      - Zero-trust, layered Amazon VPC networking
+      - PostgreSQL data modeling with Amazon Aurora
+      - Kafka streaming for event-driven, real-time integrations
+      - Amazon ECS Fargate culusters for resilient services
+      - Platform monitoring and anomaly notification
+    technologies:
+      - {tech: DDD, desc: Domain-Driven Design}
+      - {tech: EDA, desc: Event-Driven Architecture}
+      - {tech: CEP, desc: Complex Event Processing}
+      - {tech: MSA, desc: Microservices Architecture}
+      - {tech: MOA, desc: Message-Oriented Architecture}
+      - {tech: Amazon VPC, desc: Cloud networking}
+      - {tech: Pulumi, desc: Infrastructure management}
+      - {tech: Amazon Aurora, desc: Relational database}
+      - {tech: PostgreSQL, desc: Relational database}
+      - {tech: Amazon ECS, desc: Cloud containers}
+      - {tech: Docker, desc: Container management}
+      - {tech: Amazon SQS, desc: Cloud message queues}
+      - {tech: Amazon CloudWatch, desc: Platform monitoring}
+      - {tech: Amazon SNS, desc: Cloud notifications}
+      - {tech: Amazon IAM, desc: Cloud identity and access}
+      - {tech: Amazon Cognito, desc: Customer identity and access}
+      - {tech: OAuth2, desc: Authorization framework}
+      - {tech: OpenID Connect, desc: Authentication protocol}
   - position: CTO, Principal Architect
     contract: permanent, fully remote
-    duration: Jun 2024 - current
+    duration: Jun 2024 - Dec 2025, (1 year, 6 months)
     summary: >
       Worked as a CTO and a Principal Architect on the **next generation smart
       fitness platform** for Stadami, the leading global smart fitness platform
@@ -823,9 +925,8 @@ technologies:
   - { tech: Node.js, desc: JavaScript runtime, logo: image/logo-nodejs.png }
   - { tech: PostgreSQL, desc: Relational database, logo: image/logo-postgresql.png }
   - { tech: Kafka, desc: Distributed streaming, logo: image/logo-kafka.png }
-  - { tech: Ethereum, desc: Smart contracts platform, logo: image/logo-ethereum.png }
-  - { tech: Solidity, desc: Smart contracts language, logo: image/logo-solidity.png }
-  - { tech: Foundry, desc: Smart contracts development, logo: image/logo-foundry.png }
+  - { tech: Valkey, desc: Key-value store, logo: image/logo-valkey.png }
+  - { tech: ORY, desc: CIAM and enterprise IAM, logo: image/logo-ory.png }
 education:
   - courses:
     - title: Master of Business Administration, MBA
